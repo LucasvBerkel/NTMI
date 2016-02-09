@@ -8,7 +8,7 @@ import argparse
 import itertools
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-corpus", help="set the corpus", type=str)
+parser.add_argument("corpus", help="set the corpus", type=str)
 parser.add_argument("n", help="set the sequence length", type=int)
 parser.add_argument("conditional_prob_file", help="conditional-prob-file", type=str)
 parser.add_argument("sequence_prob_file", help="sequence-prob-file", type=str)
@@ -106,10 +106,6 @@ def calculate_propability(line, sequence_dictN, sequence_dictN1, n):
 		print("P({}|{}) = {}".format(W_n, N1, valueN/valueN1))
 		return valueN/valueN1
 				
-# def opdracht3(prob_file, sequence_dictN, sequence_dictN1, n):
-<<<<<<< HEAD
-# def sequence_prob(seq_file, sequence_dictN, sequence_dictN1, n):
-=======
 def sequence_prob(seq_file, sequence_dictN, sequence_dictN1, n):
 	with open(seq_file) as data_file:
 		line = line.split("\n")
@@ -120,14 +116,6 @@ def sequence_prob(seq_file, sequence_dictN, sequence_dictN1, n):
 			splitLine = ["<s>"] + splitLine
 		for x in range(n, length):
 			line = splitLine[:x]
-
-
-
-
-
-
-
->>>>>>> 5f349468812ed448b907669793d373f317b28efd
 
 if __name__ == "__main__":
 	corpus = args.corpus
