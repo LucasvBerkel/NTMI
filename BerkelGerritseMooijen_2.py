@@ -9,7 +9,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("corpus", help="set the corpus", type=str)
 parser.add_argument("n", help="set the sequence length", type=int)
-parser.add_argument("conditional_prob_file", help="conditional-prob-file", type=str)
+#parser.add_argument("conditional_prob_file", help="conditional-prob-file", type=str)
 parser.add_argument("sequence_prob_file", help="sequence-prob-file", type=str)
 args = parser.parse_args()
 
@@ -86,7 +86,8 @@ def get_top_m(sequence_dict, n, m=10):
 def conditional_prob(prob_file, sequence_dictN, sequence_dictN1, n):
 	with open(prob_file) as data_file:
 		for line in data_file:
-			calculate_propability(line, sequence_dictN, sequence_dictN1, n)
+			probability = calculate_propability(line, sequence_dictN, sequence_dictN1, n)
+			print("P({}|{}) = {}".format(W_n, N1, probability))
 
 def calculate_propability(line, sequence_dictN, sequence_dictN1, n):
 	line = line.split("\n")
@@ -99,44 +100,36 @@ def calculate_propability(line, sequence_dictN, sequence_dictN1, n):
 		try:
 			valueN = sequence_dictN[line]
 		except Exception:
-			print("P({}|{}) = {}".format(W_n, N1, 0.0))
-			return valueN/valueN1
+			return 0.0
 		valueN1 = sequence_dictN1[N1]
-		print("P({}|{}) = {}".format(W_n, N1, valueN/valueN1))
 		return valueN/valueN1
 				
 # def opdracht3(prob_file, sequence_dictN, sequence_dictN1, n):
 def sequence_prob(seq_file, sequence_dictN, sequence_dictN1, n):
 	with open(seq_file) as data_file:
-		line = line.split("\n")
-		line = line[0]
-		splitLine = line.split(" ")
-		length = len(splitLine)
-		for x in range(1, n):
-			splitLine = ["<s>"] + splitLine
-		for x in range(n, length):
-			line = splitLine[:x]
-
-
-
-
-
-
-
+		for line in data_file:
+			line = line.split("\n")
+			line = line[0]
+			splitLine = line.split(" ")
+			splitLine = ["<s>"] * (n-1) + splitLine
+			probability = 1
+			for x in range(n, len(splitLine)+1):
+				line = splitLine[x-n:x]
+				line = " ".join(line)
+				probability *= calculate_propability(line, sequence_dictN, sequence_dictN1, n)
+			print(probability)
 
 if __name__ == "__main__":
 	corpus = args.corpus
 	n = args.n
 	m = 10
-	prob_file = args.conditional_prob_file
+	#prob_file = args.conditional_prob_file
 	seq_prob_file = args.sequence_prob_file
 	sentencelistCorpus = convert_txt_to_sentencelist(corpus, n)
 	sequence_dictN = get_frequencies_sequences(sentencelistCorpus, n)
 	sequence_dictN1 = get_frequencies_sequences(sentencelistCorpus, n-1)
 	# conditional_prob(prob_file, sequence_dictN, sequence_dictN1, n)
-	sentencelist3 = convert_txt_to_sentencelist(corpus, n)
-	print(sentencelist3)
-
+	sequence_prob(seq_prob_file, sequence_dictN, sequence_dictN1, n)
 	# get_top_m(sequence_dictN, n, m)
 	# get_top_m(sequence_dictN1, n-1, m)
 
