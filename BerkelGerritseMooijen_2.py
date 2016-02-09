@@ -26,7 +26,7 @@ def convert_txt_to_sentencelist(corpus, n):
 	n-=1
 	sentencelist = []
 	firstline = 1
-	previousline = ""o
+	previousline = ""
 	with open(corpus) as data_file:
 		sentence = ["<s>"] * n
 		for line in data_file:
