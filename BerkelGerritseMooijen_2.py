@@ -12,7 +12,7 @@ parser.add_argument("-corpus", help="set the corpus", type=str)
 parser.add_argument("-n", help="set the sequence length", type=int)
 parser.add_argument("-conditional_prob_file", help="conditional-prob-file", type=str)
 parser.add_argument("-sequence_prob_file", help="sequence-prob-file", type=str)
-parser.add_argument("-scored_permutations", nargs='+', help="list of words")
+parser.add_argument("-scored_permutations", nargs='+', help="set of words, inputexample: word1 word2 etc.")
 parser.add_argument("-assignmentNumber", help="set which assignment to start", type=int)
 args = parser.parse_args()
 
@@ -26,7 +26,7 @@ def convert_txt_to_sentencelist(corpus, n):
 	n-=1
 	sentencelist = []
 	firstline = 1
-	previousline = ""
+	previousline = ""o
 	with open(corpus) as data_file:
 		sentence = ["<s>"] * n
 		for line in data_file:
@@ -210,4 +210,4 @@ if __name__ == "__main__":
 		probability_dict = sequence_prob(permutations, sequence_dictN, sequence_dictN1, n, assignmentNumber)
 		get_top_m(probability_dict, n, 2)
 	else:
-		print("Combation of inputs unknown")
+		print("Combination of inputs unknown")
