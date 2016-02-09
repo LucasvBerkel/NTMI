@@ -157,6 +157,7 @@ def sequence_prob(sentencelist, sequence_dictN, sequence_dictN1, n, assignmentNu
 			probability_dict[sentence] = probability
 	if assignmentNumber == 4:
 		return probability_dict
+		
 # Calculates the posterior probability given the full sentence
 # Input(s):
 # - line is the sentence for which the probability is to be calculated, the last word of the line will be cut of later on
