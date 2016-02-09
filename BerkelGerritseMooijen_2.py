@@ -79,10 +79,16 @@ def get_top_m(sequence_dict, n, m=10):
 	sorted_sequence_dict = sorted(sequence_dict.items(), key=operator.itemgetter(1))
 	if m > len(sorted_sequence_dict):
 		limit = -1
-		print("Top {} most occuring sequences of length {}".format(len(sorted_sequence_dict), n))
+		if args.scored_permutations == None:
+			print("Top {} most occuring sequences of length {}".format(len(sorted_sequence_dict), n))
+		else:
+			print("Top {} most occuring permutations".format(len(sorted_sequence_dict)))
 	else:
 		limit = len(sorted_sequence_dict)-m-1
-		print("Top {} most occuring sequences of length {}".format(m, n))
+		if args.scored_permutations == None:
+			print("Top {} most occuring sequences of length {}".format(m, n))
+		else:
+			print("Top {} most occuring permutations".format(len(sorted_sequence_dict)))
 	for i in range(len(sorted_sequence_dict)-1, limit, -1):
 		print(sorted_sequence_dict[i])
 
