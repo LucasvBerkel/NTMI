@@ -202,7 +202,7 @@ if __name__ == "__main__":
 	elif(args.n != None and args.sequence_prob_file != None and assignmentNumber == 3):
 		seq_prob_file = args.sequence_prob_file
 		sequence_opener(seq_prob_file, sequence_dictN, sequence_dictN1, n)
-	elif(assignmentNumber == 4):
+	elif(args.scored_permutations != None and assignmentNumber == 4):
 		set_of_words = args.scored_permutations
 		permutations = list(itertools.permutations(set_of_words))
 		for x in range(len(permutations)):
