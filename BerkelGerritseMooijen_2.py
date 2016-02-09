@@ -12,6 +12,7 @@ parser.add_argument("-corpus", help="set the corpus", type=str)
 parser.add_argument("-n", help="set the sequence length", type=int)
 parser.add_argument("-conditional_prob_file", help="conditional-prob-file", type=str)
 parser.add_argument("-sequence_prob_file", help="sequence-prob-file", type=str)
+parser.add_argument("-scored_permutations", nargs='+', help="list of words")
 parser.add_argument("-assignmentNumber", help="set which assignment to start", type=int)
 args = parser.parse_args()
 
@@ -94,8 +95,26 @@ def get_top_m(sequence_dict, n, m=10):
 def conditional_prob(prob_file, sequence_dictN, sequence_dictN1, n):
 	with open(prob_file) as data_file:
 		for line in data_file:
+			line = line.split("\n")
+			line = line[0]
 			probability = calculate_propability(line, sequence_dictN, sequence_dictN1, n)
+			if probability == -1:
+				continue
+			splitLine = line.split(" ")
+			W_n, N1 = get_wn_and_n1(splitLine)
 			print("P({}|{}) = {}".format(W_n, N1, probability))
+
+# Returns the strings of the last word of a string and the sentence without this last word
+# Input(s):
+# - splitLine is a list of words (strings)
+# Outputs(s):
+# - W_n is the last word of splitLine
+# - N1 is a string of the which equals to splitLine without the last word
+def get_wn_and_n1(splitLine):
+	W_n = splitLine[-1]
+	del splitLine[-1]
+	N1 = " ".join(splitLine)
+	return W_n, N1
 
 # Reads the sequence probability file, in order to use the same code multiple times, every line in the file is put into a list.
 # Input(s):
@@ -107,6 +126,8 @@ def sequence_opener(seq_file, sequence_dictN, sequence_dictN1, n):
 	with open(seq_file) as data_file:
 		List = []
 		for line in data_file:
+			line = line.split("\n")
+			line = line[0]
 			List = [line] + List
 		sequence_prob(List, sequence_dictN, sequence_dictN1, n)
 
@@ -116,7 +137,10 @@ def sequence_opener(seq_file, sequence_dictN, sequence_dictN1, n):
 # - sequence_dictN is the dict containing the frequencies of sequences of length n
 # - sequence_dictN1 is the dict containing the frequencesie of sequences of length n-1
 # - n is a number which represents the length of the sequences
-def sequence_prob(sentencelist, sequence_dictN, sequence_dictN1, n):
+# Output(s):
+# - probability_dict is a dictionary which contains all the permutations and their probability (only for assignment 4)
+def sequence_prob(sentencelist, sequence_dictN, sequence_dictN1, n, assignmentNumber=0):
+	probability_dict = {}
 	for sentence in sentencelist:
 		line = sentence.split("\n")
 		line = line[0]
@@ -127,8 +151,12 @@ def sequence_prob(sentencelist, sequence_dictN, sequence_dictN1, n):
 			line = splitLine[x-n:x]
 			line = " ".join(line)
 			probability *= calculate_propability(line, sequence_dictN, sequence_dictN1, n)
-		print("The probability of the line: '{}' is {}".format(sentence,probability))
-
+		if assignmentNumber != 4:
+			print("The probability of the line: '{}' is {}".format(sentence,probability))
+		else:
+			probability_dict[sentence] = probability
+	if assignmentNumber == 4:
+		return probability_dict
 # Calculates the posterior probability given the full sentence
 # Input(s):
 # - line is the sentence for which the probability is to be calculated, the last word of the line will be cut of later on
@@ -142,38 +170,43 @@ def calculate_propability(line, sequence_dictN, sequence_dictN1, n):
 	line = line[0]
 	splitLine = line.split(" ")
 	if len(splitLine)==n:
-		W_n = splitLine[-1]
-		del splitLine[-1]
-		N1 = " ".join(splitLine)
+		W_n, N1 = get_wn_and_n1(splitLine)
 		try:
 			valueN = sequence_dictN[line]
 		except Exception:
 			return 0.0
 		valueN1 = sequence_dictN1[N1]
-		return valueN/valueN1			
-
+		return valueN/valueN1		
+	else:
+	 return -1	
 
 if __name__ == "__main__":
-	m = 10
-	if(args.corpus != None and args.n != None and args.assignmentNumber == 1):
+	corpus = args.corpus
+	assignmentNumber = args.assignmentNumber
+	if(assignmentNumber == 1 or assignmentNumber == 2 or assignmentNumber == 3):
 		n = args.n
-		corpus = args.corpus
-		sentencelistCorpus = convert_txt_to_sentencelist(corpus, n)
-		sequence_dictN = get_frequencies_sequences(sentencelistCorpus, n)
-		sequence_dictN1 = get_frequencies_sequences(sentencelistCorpus, n-1)
+	else:
+		n = 2
+	sentencelistCorpus = convert_txt_to_sentencelist(corpus, n)
+	sequence_dictN = get_frequencies_sequences(sentencelistCorpus, n)
+	sequence_dictN1 = get_frequencies_sequences(sentencelistCorpus, n-1)
+
+	if(args.n != None and assignmentNumber == 1):
+		m = 10
 		get_top_m(sequence_dictN, n, m)
 		get_top_m(sequence_dictN1, n-1, m)
-	if(args.corpus != None and args.n != None and args.conditional_prob_file != None and args.assignmentNumber == 2):
+	elif(args.n != None and args.conditional_prob_file != None and assignmentNumber == 2):
 		prob_file = args.conditional_prob_file
 		conditional_prob(prob_file, sequence_dictN, sequence_dictN1, n)
-	if(args.corpus != None and args.n != None and args.sequence_prob_file != None and args.assignmentNumber == 3):
+	elif(args.n != None and args.sequence_prob_file != None and assignmentNumber == 3):
 		seq_prob_file = args.sequence_prob_file
 		sequence_opener(seq_prob_file, sequence_dictN, sequence_dictN1, n)
-	if(args.corpus != None and args.assignmentNumber == 4):
-		set_of_words = {'I', 'do', 'not', 'know', 'what'}
+	elif(assignmentNumber == 4):
+		set_of_words = args.scored_permutations
 		permutations = list(itertools.permutations(set_of_words))
 		for x in range(len(permutations)):
 			permutations[x] = " ".join(permutations[x])
-		sequence_prob(permutations, sequence_dictN, sequence_dictN1, 2)
-
-
+		probability_dict = sequence_prob(permutations, sequence_dictN, sequence_dictN1, n, assignmentNumber)
+		get_top_m(probability_dict, n, 2)
+	else:
+		print("Combation of inputs unknown")
