@@ -114,8 +114,9 @@ def sequence_prob(seq_file, sequence_dictN, sequence_dictN1, n):
 		length = len(splitLine)
 		for x in range(1, n):
 			splitLine = ["<s>"] + splitLine
-		for x in range(n-1, length):
-			
+		for x in range(n, length):
+			line = splitLine[:x]
+
 
 
 
