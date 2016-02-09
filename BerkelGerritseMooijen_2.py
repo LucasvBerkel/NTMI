@@ -5,9 +5,10 @@
 
 import operator
 import argparse
+import itertools
 
 parser = argparse.ArgumentParser()
-parser.add_argument("corpus", help="set the corpus", type=str)
+parser.add_argument("-corpus", help="set the corpus", type=str)
 parser.add_argument("n", help="set the sequence length", type=int)
 parser.add_argument("conditional_prob_file", help="conditional-prob-file", type=str)
 parser.add_argument("sequence_prob_file", help="sequence-prob-file", type=str)
@@ -105,7 +106,7 @@ def calculate_propability(line, sequence_dictN, sequence_dictN1, n):
 			print("P({}|{}) = {}".format(W_n, N1, valueN/valueN1))
 				
 # def opdracht3(prob_file, sequence_dictN, sequence_dictN1, n):
-def sequence_prob(seq_file, sequence_dictN, sequence_dictN1, n):
+# def sequence_prob(seq_file, sequence_dictN, sequence_dictN1, n):
 
 if __name__ == "__main__":
 	corpus = args.corpus
@@ -113,12 +114,16 @@ if __name__ == "__main__":
 	m = 10
 	prob_file = args.conditional_prob_file
 	seq_prob_file = args.sequence_prob_file
+	set_of_words = {'know', 'I', 'opinion', 'do', 'be', 'your', 'not', 'may', 'what'}
+
 	sentencelistCorpus = convert_txt_to_sentencelist(corpus, n)
 	sequence_dictN = get_frequencies_sequences(sentencelistCorpus, n)
 	sequence_dictN1 = get_frequencies_sequences(sentencelistCorpus, n-1)
 	# conditional_prob(prob_file, sequence_dictN, sequence_dictN1, n)
 	sentencelist3 = convert_txt_to_sentencelist(seq_prob_file, n)
-	print(sentencelist3)
+
+	permutations = list(itertools.permutations(set_of_words))
+
 
 	# get_top_m(sequence_dictN, n, m)
 	# get_top_m(sequence_dictN1, n-1, m)
