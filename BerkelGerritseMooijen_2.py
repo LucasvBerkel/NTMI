@@ -182,34 +182,32 @@ def calculate_propability(line, sequence_dictN, sequence_dictN1, n):
 	 return -1	
 
 if __name__ == "__main__":
-	# corpus = args.corpus
-	# assignmentNumber = args.assignmentNumber
-	# if(assignmentNumber == 1 or assignmentNumber == 2 or assignmentNumber == 3):
-	# 	n = args.n
-	# else:
-	# 	n = 2
-	# sentencelistCorpus = convert_txt_to_sentencelist(corpus, n)
-	# sequence_dictN = get_frequencies_sequences(sentencelistCorpus, n)
-	# sequence_dictN1 = get_frequencies_sequences(sentencelistCorpus, n-1)
+	corpus = args.corpus
+	assignmentNumber = args.assignmentNumber
+	if(assignmentNumber == 1 or assignmentNumber == 2 or assignmentNumber == 3):
+		n = args.n
+	else:
+		n = 2
+	sentencelistCorpus = convert_txt_to_sentencelist(corpus, n)
+	sequence_dictN = get_frequencies_sequences(sentencelistCorpus, n)
+	sequence_dictN1 = get_frequencies_sequences(sentencelistCorpus, n-1)
 
-	print(args.scored_permutations)
-
-	# if(args.n != None and assignmentNumber == 1):
-	# 	m = 10
-	# 	get_top_m(sequence_dictN, n, m)
-	# 	get_top_m(sequence_dictN1, n-1, m)
-	# elif(args.n != None and args.conditional_prob_file != None and assignmentNumber == 2):
-	# 	prob_file = args.conditional_prob_file
-	# 	conditional_prob(prob_file, sequence_dictN, sequence_dictN1, n)
-	# elif(args.n != None and args.sequence_prob_file != None and assignmentNumber == 3):
-	# 	seq_prob_file = args.sequence_prob_file
-	# 	sequence_opener(seq_prob_file, sequence_dictN, sequence_dictN1, n)
-	# elif(assignmentNumber == 4):
-	# 	set_of_words = args.scored_permutations
-	# 	permutations = list(itertools.permutations(set_of_words))
-	# 	for x in range(len(permutations)):
-	# 		permutations[x] = " ".join(permutations[x])
-	# 	probability_dict = sequence_prob(permutations, sequence_dictN, sequence_dictN1, n, assignmentNumber)
-	# 	get_top_m(probability_dict, n, 2)
-	# else:
-	# 	print("Combation of inputs unknown")
+	if(args.n != None and assignmentNumber == 1):
+		m = 10
+		get_top_m(sequence_dictN, n, m)
+		get_top_m(sequence_dictN1, n-1, m)
+	elif(args.n != None and args.conditional_prob_file != None and assignmentNumber == 2):
+		prob_file = args.conditional_prob_file
+		conditional_prob(prob_file, sequence_dictN, sequence_dictN1, n)
+	elif(args.n != None and args.sequence_prob_file != None and assignmentNumber == 3):
+		seq_prob_file = args.sequence_prob_file
+		sequence_opener(seq_prob_file, sequence_dictN, sequence_dictN1, n)
+	elif(assignmentNumber == 4):
+		set_of_words = args.scored_permutations
+		permutations = list(itertools.permutations(set_of_words))
+		for x in range(len(permutations)):
+			permutations[x] = " ".join(permutations[x])
+		probability_dict = sequence_prob(permutations, sequence_dictN, sequence_dictN1, n, assignmentNumber)
+		get_top_m(probability_dict, n, 2)
+	else:
+		print("Combation of inputs unknown")
