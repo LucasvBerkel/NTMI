@@ -83,29 +83,42 @@ def get_top_m(sequence_dict, n, m=10):
 	for i in range(len(sorted_sequence_dict)-1, limit, -1):
 		print(sorted_sequence_dict[i])
 
-def conditional_prob1(prob_file, sequence_dictN, sequence_dictN1, n):
+def conditional_prob(prob_file, sequence_dictN, sequence_dictN1, n):
 	with open(prob_file) as data_file:
 		for line in data_file:
 			calculate_propability(line, sequence_dictN, sequence_dictN1, n)
 
 def calculate_propability(line, sequence_dictN, sequence_dictN1, n):
-		line = line.split("\n")
-		line = line[0]
-		splitLine = line.split(" ")
-		if len(splitLine)==n:
-			W_n = splitLine[-1]
-			del splitLine[-1]
-			N1 = " ".join(splitLine)
-			try:
-				valueN = sequence_dictN[line]
-			except Exception:
-				print("P({}|{}) = {}".format(W_n, N1, 0.0))
-				continue
-			valueN1 = sequence_dictN1[N1]
-			print("P({}|{}) = {}".format(W_n, N1, valueN/valueN1))
+	line = line.split("\n")
+	line = line[0]
+	splitLine = line.split(" ")
+	if len(splitLine)==n:
+		W_n = splitLine[-1]
+		del splitLine[-1]
+		N1 = " ".join(splitLine)
+		try:
+			valueN = sequence_dictN[line]
+		except Exception:
+			print("P({}|{}) = {}".format(W_n, N1, 0.0))
+			return valueN/valueN1
+		valueN1 = sequence_dictN1[N1]
+		print("P({}|{}) = {}".format(W_n, N1, valueN/valueN1))
+		return valueN/valueN1
 				
 # def opdracht3(prob_file, sequence_dictN, sequence_dictN1, n):
 def sequence_prob(seq_file, sequence_dictN, sequence_dictN1, n):
+	with open(seq_file) as data_file:
+		line = line.split("\n")
+		line = line[0]
+		splitLine = line.split(" ")
+		length = len(splitLine)
+		for x in range(1, n):
+			splitLine = ["<s>"] + splitLine
+		for x in range(n-1, length):
+			
+
+
+
 
 
 
