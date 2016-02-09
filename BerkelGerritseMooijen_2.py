@@ -104,35 +104,48 @@ def calculate_propability(line, sequence_dictN, sequence_dictN1, n):
 			return 0.0
 		valueN1 = sequence_dictN1[N1]
 		return valueN/valueN1
-				
-def sequence_prob(seq_file, sequence_dictN, sequence_dictN1, n):
+
+def sequence_opener(seq_file, sequence_dictN, sequence_dictN1, n):
 	with open(seq_file) as data_file:
+		List = []
 		for line in data_file:
-			line = line.split("\n")
-			line = line[0]
-			splitLine = line.split(" ")
-			splitLine = ["<s>"] * (n-1) + splitLine
-			probability = 1
-			for x in range(n, len(splitLine)+1):
-				line = splitLine[x-n:x]
-				line = " ".join(line)
-				probability *= calculate_propability(line, sequence_dictN, sequence_dictN1, n)
-			print(probability)
+			List = [line] + List
+		sequence_prob(List, sequence_dictN, sequence_dictN1, n)
+
+def sequence_prob(sentencelist, sequence_dictN, sequence_dictN1, n):
+	for sentence in sentencelist:
+		line = sentence.split("\n")
+		line = line[0]
+		splitLine = line.split(" ")
+		splitLine = ["<s>"] * (n-1) + splitLine
+		probability = 1
+		for x in range(n, len(splitLine)+1):
+			line = splitLine[x-n:x]
+			line = " ".join(line)
+			probability *= calculate_propability(line, sequence_dictN, sequence_dictN1, n)
+		print("The probability of the line: '{}' is {}".format(sentence,probability))			
+
 
 if __name__ == "__main__":
-	corpus = args.corpus
-	n = args.n
 	m = 10
-	#prob_file = args.conditional_prob_file
-	seq_prob_file = args.sequence_prob_file
-	set_of_words = {'know', 'I', 'opinion', 'do', 'be', 'your', 'not', 'may', 'what'}
-
-	sentencelistCorpus = convert_txt_to_sentencelist(corpus, n)
-	sequence_dictN = get_frequencies_sequences(sentencelistCorpus, n)
-	sequence_dictN1 = get_frequencies_sequences(sentencelistCorpus, n-1)
-	# conditional_prob(prob_file, sequence_dictN, sequence_dictN1, n)
-	sequence_prob(seq_prob_file, sequence_dictN, sequence_dictN1, n)
-	permutations = list(itertools.permutations(set_of_words))
+	if(args.corpus != None and 	args.n != None):
+		n = args.n
+		corpus = args.corpus
+		sentencelistCorpus = convert_txt_to_sentencelist(corpus, n)
+		sequence_dictN = get_frequencies_sequences(sentencelistCorpus, n)
+		sequence_dictN1 = get_frequencies_sequences(sentencelistCorpus, n-1)
+	if(args.corpus != None and args.n != None and args.conditional_prob_file != None):
+		prob_file = args.conditional_prob_file
+		conditional_prob(prob_file, sequence_dictN, sequence_dictN1, n)
+	if(args.corpus != None and args.n != None and args.sequence_prob_file != None):
+		seq_prob_file = args.sequence_prob_file
+		sequence_prob(seq_prob_file, sequence_dictN, sequence_dictN1, n)
+	if(args.corpus != None):
+		set_of_words = {'I', 'do', 'not', 'know', 'what'}
+		permutations = list(itertools.permutations(set_of_words))
+		for x in range(len(permutations)):
+			permutations[x] = " ".join(permutations[x])
+		sequence_prob(permutations, sequence_dictN, sequence_dictN1, n)
 	# get_top_m(sequence_dictN, n, m)
 	# get_top_m(sequence_dictN1, n-1, m)
 
