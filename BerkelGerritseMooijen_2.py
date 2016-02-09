@@ -8,10 +8,10 @@ import argparse
 import itertools
 
 parser = argparse.ArgumentParser()
-parser.add_argument("corpus", help="set the corpus", type=str)
-parser.add_argument("n", help="set the sequence length", type=int)
-#parser.add_argument("conditional_prob_file", help="conditional-prob-file", type=str)
-parser.add_argument("sequence_prob_file", help="sequence-prob-file", type=str)
+parser.add_argument("-corpus", help="set the corpus", type=str)
+parser.add_argument("-n", help="set the sequence length", type=int)
+parser.add_argument("-conditional_prob_file", help="conditional-prob-file", type=str)
+parser.add_argument("-sequence_prob_file", help="sequence-prob-file", type=str)
 args = parser.parse_args()
 
 # Reads a txt-file and returns a list. This list contains lists, which each represents a paragraph.
@@ -107,16 +107,6 @@ def calculate_propability(line, sequence_dictN, sequence_dictN1, n):
 				
 def sequence_prob(seq_file, sequence_dictN, sequence_dictN1, n):
 	with open(seq_file) as data_file:
-<<<<<<< HEAD
-		line = line.split("\n")
-		line = line[0]
-		splitLine = line.split(" ")
-		length = len(splitLine)
-		for x in range(1, n):
-			splitLine = ["<s>"] + splitLine
-		for x in range(n, length):
-			line = splitLine[:x]
-=======
 		for line in data_file:
 			line = line.split("\n")
 			line = line[0]
@@ -128,7 +118,6 @@ def sequence_prob(seq_file, sequence_dictN, sequence_dictN1, n):
 				line = " ".join(line)
 				probability *= calculate_propability(line, sequence_dictN, sequence_dictN1, n)
 			print(probability)
->>>>>>> 4d5448d3539d50f53480802797bbb08798208d62
 
 if __name__ == "__main__":
 	corpus = args.corpus
@@ -142,15 +131,8 @@ if __name__ == "__main__":
 	sequence_dictN = get_frequencies_sequences(sentencelistCorpus, n)
 	sequence_dictN1 = get_frequencies_sequences(sentencelistCorpus, n-1)
 	# conditional_prob(prob_file, sequence_dictN, sequence_dictN1, n)
-<<<<<<< HEAD
-	sentencelist3 = convert_txt_to_sentencelist(seq_prob_file, n)
-
-	permutations = list(itertools.permutations(set_of_words))
-
-
-=======
 	sequence_prob(seq_prob_file, sequence_dictN, sequence_dictN1, n)
->>>>>>> 4d5448d3539d50f53480802797bbb08798208d62
+	permutations = list(itertools.permutations(set_of_words))
 	# get_top_m(sequence_dictN, n, m)
 	# get_top_m(sequence_dictN1, n-1, m)
 
