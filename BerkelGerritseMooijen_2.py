@@ -103,9 +103,6 @@ def conditional_prob(prob_file, sequence_dictN, sequence_dictN1, n):
 				
 # def opdracht3(prob_file, sequence_dictN, sequence_dictN1, n):
 
-
-
-
 if __name__ == "__main__":
 	corpus = args.corpus
 	n = args.n
@@ -116,7 +113,7 @@ if __name__ == "__main__":
 	sequence_dictN = get_frequencies_sequences(sentencelistCorpus, n)
 	sequence_dictN1 = get_frequencies_sequences(sentencelistCorpus, n-1)
 	# conditional_prob(prob_file, sequence_dictN, sequence_dictN1, n)
-	sentencelist3 = convert_txt_to_sentencelist(corpus, n)
+	sentencelist3 = convert_txt_to_sentencelist(seq_prob_file, n)
 	print(sentencelist3)
 
 	# get_top_m(sequence_dictN, n, m)
