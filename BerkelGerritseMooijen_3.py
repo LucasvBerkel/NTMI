@@ -144,10 +144,6 @@ def appendDict(seq_dict):
 
 # create datadump
 def createdatadump(o, dict):
-    filename = str(o) + ".json"
-    with open(filename, 'w') as fp:
-        json.dump(dict, fp)
-
     filename = str(o) + ".p"
     with open(filename, 'wb') as fp:
         pickle.dump(dict, fp)
