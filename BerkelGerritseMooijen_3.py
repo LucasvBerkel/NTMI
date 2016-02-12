@@ -82,7 +82,7 @@ def get_frequencies_sequences(sentencelist, n):
 # - n is a number which represents the length of the sequences
 # Output:
 # - posterior probability given the sentence
-def calculate_propability(line, sequence_dictN, sequence_dictN1, n, offset=0):
+def calculate_propability(line, sequence_dictN, sequence_dictN1, n, offset, smoothing):
 	line = line.split("\n")
 	line = line[0]
 	splitLine = line.split(" ")
@@ -91,7 +91,19 @@ def calculate_propability(line, sequence_dictN, sequence_dictN1, n, offset=0):
 		try:
 			valueN = sequence_dictN[line]
 		except Exception:
-			return 0.0
+			if(smoothing == "add1"):
+				try:
+					valueN1 = sequence_dictN1[N1]
+					return(1/valueN1+offset)
+				except Exception:
+					print(N1 + " does not exist.")
+			elif(smoothing == "gt"):
+				try:
+					count = goodTuringSmoothingUnseen(sequence_dictN)
+					valueN1 = sequence_dictN1[N1]
+					return(count/valueN1)
+				except Exception:
+					print(N1 + " does not exist.")
 		valueN1 = sequence_dictN1[N1]
 		
 		print(valueN)
@@ -118,54 +130,39 @@ def addOneSmoothing(seq_dict):
 	for element in seq_dict:
 		seq_dict[element] += 1
 
-def makeZeros(sequence_dictAddOneN, sequence_dictN1):
-	length = len(sequence_dictN1)
+def goodTuringSmoothingUnseen(seq_dict):
+	length = len(seq_dict)
+	totalUnseen = (length**2)-length
+	totalSeenOnce =countValueOccurances(seq_dict, 1) 
+	return (totalSeenOnce/totalUnseen)
+
+def countValueOccurances(seq_dict, value):
 	counter = 0
-	with open("temp.txt", "w") as File:
-		for firstElement in sequence_dictN1:
-			writestatus(counter, length)
+	for element in seq_dict:
+		if(seq_dict[element])==value):
 			counter += 1
-			for secondElement in sequence_dictN1:
-				checkString = firstElement + " " + secondElement
-				if not(checkString in sequence_dictAddOneN):
-					File.write(checkString + "\n")
+	return counter
 
-def appendDict(seq_dict):
-	with open("temp.txt", "r") as File:
-		counter = 0
-		for line in File:
-			line = line.split("\n")
-			actualLine = line[0]
-			seq_dict[actualLine] = 0
-			stdout.write("\r%s" % counter)
-			stdout.flush()
-			counter += 1
-	createdatadump('dataset', seq_dict)
+def goodTuringSmoothingSeenTillK(seq_dict, k):
+	for r in range(1, k+1):
+		n1 = countValueOccurances(seq_dict, 1)
+		n_r = countValueOccurances(seq_dict, r)
+		n_r1 = countValueOccurances(seq_dict, r+1)
+		n_k1 = countValueOccurances(seq_dict, k+1)
+		rStar = (((r+1)*(n_r1)/(n_r))-(r*(((k+1)*n_k1)/(n1))))/(1-(((k+1)*n_k1)/(n1)))
+		for element in seq_dict:
+			if (seq_dict[element] == r):
+				seq_dict[element] = rStar
 
-# create datadump
-def createdatadump(o, dict):
-    filename = str(o) + ".json"
-    with open(filename, 'w') as fp:
-        json.dump(dict, fp)
-
-    filename = str(o) + ".p"
-    with open(filename, 'wb') as fp:
-        pickle.dump(dict, fp)
-
-
-def writestatus(currentline, totallines):
-    i = getpercent(currentline, totallines)
-    stdout.write("\r%s" % i)
-    stdout.flush()
-
-def getpercent(currentline, totallines):
-    i = (currentline / totallines) * 100
-    return i
-
-def readDict():
-	pkl_file = open('dataset.p', 'rb')
-	seq_dict = pickle.load(pkl_file)
-	pkl_file.close()
+def createSmoothedN1Dict(seq_dict):
+	uniGramDict = {}
+	for element in seq_dict:
+		words = element.split(" ")
+		if words[0] in uniGramDict:
+			uniGramDict[words[0]] += seq_dict[element]
+		else:
+			uniGramDict[words[0]] = seq_dict[element]
+	return uniGramDict
 
 if __name__ == "__main__":
 	corpus = args.corpus
@@ -174,14 +171,18 @@ if __name__ == "__main__":
 	# Assignment 1
 	sequence_dictN = get_frequencies_sequences(sentencelistCorpus, n)
 	sequence_dictN1 = get_frequencies_sequences(sentencelistCorpus, n-1)
+	print(calculate_propability("of the", sequence_dictN, sequence_dictN1, n, 0, "no"))
 	# Assignment 2
 	sequence_dictAddOneN = sequence_dictN.copy()
 	start = time.clock()
-	#makeZeros(sequence_dictAddOneN, sequence_dictN1)
-	appendDict(sequence_dictAddOneN)
+	addOneSmoothing(sequence_dictAddOneN)
+	vocabularySize = len(get_frequencies_sequences(sentencelistCorpus, 1))
+	print(calculate_propability("of the", sequence_dictAddOneN, sequence_dictN1, n, vocabularySize, "add1"))
 	end = time.clock()
 	elapsed = end - start
 	print("Elapsed time: " + str(elapsed))
-	# addOneSmoothing(sequence_dictAddOneN)
-	# vocabularySize = len(get_frequencies_sequences(sentencelistCorpus, 1))
-	# print(calculate_propability("of the", sequence_dictAddOneN, sequence_dictN1, n, vocabularySize))
+	# Assignment 3
+	sequence_dictTuringSmoothN = sequence_dictN.copy()
+	goodTuringSmoothingSeenTillK(sequence_dictTuringSmoothN, 5)
+	sequence_dictTuringSmoothN1 = createSmoothedN1Dict(sequence_dictTuringSmoothN)
+	print(calculate_propability("of the", sequence_dictTuringSmoothN, sequence_dictTuringSmoothN1, n, 0, "gt"))
