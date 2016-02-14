@@ -169,7 +169,7 @@ def createSmoothedN1Dict(seq_dict):
 	return uniGramDict
 
 
-# Calculatess the probability of the inputted line using add1-smoothing
+# Calculates the probability of the inputted line using add1-smoothing
 # Input(s):
 # - line is a sequence of words
 # - sequence_dictN is a dictonary which contains the counts of the sequences with length n from the training corpus
