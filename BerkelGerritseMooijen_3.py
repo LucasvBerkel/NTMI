@@ -15,8 +15,10 @@ import pickle
 import re
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-corpus", help="set the corpus", type=str)
+parser.add_argument("-train_corpus", help="set the training corpus", type=str)
+parser.add_argument("-test_corpus", help="set the test_corpus", type=str)
 parser.add_argument("-n", help="set the sequence length", type=int)
+parser.add_argument("-smoothing", help="set the smoothing to be used (no, add1 or gt)", type=str)
 args = parser.parse_args()
 
 # Reads a txt-file and returns a list. This list contains lists, which each represents a paragraph.
@@ -118,14 +120,16 @@ def calculate_propability(line, sequence_dictN, sequence_dictN1, n, offset, smoo
 # Input(s):
 # - splitLine is a list of words (strings)
 # Outputs(s):
-# - W_n is the last word of splitLine
-# - N1 is a string of the which equals to splitLine without the last word
+# - wN is the last word of splitLine
+# - evidence is a string of the which equals to splitLine without the last word
 def get_wn_and_n1(splitLine):
-	W_n = splitLine[-1]
+	wN = splitLine[-1]
 	del splitLine[-1]
-	N1 = " ".join(splitLine)
-	return W_n, N1
+	evidence = " ".join(splitLine)
+	return wN, evidence
 
+# Adds one to the count of each sequence in the sequence dictonary
+# Inputs
 def addOneSmoothing(seq_dict):
 	for element in seq_dict:
 		seq_dict[element] += 1
@@ -139,7 +143,7 @@ def goodTuringSmoothingUnseen(seq_dict):
 def countValueOccurances(seq_dict, value):
 	counter = 0
 	for element in seq_dict:
-		if(seq_dict[element])==value):
+		if(seq_dict[element]==value):
 			counter += 1
 	return counter
 
@@ -164,25 +168,66 @@ def createSmoothedN1Dict(seq_dict):
 			uniGramDict[words[0]] = seq_dict[element]
 	return uniGramDict
 
+
+# Calculatess the probability of the inputted line using add1-smoothing
+# Input(s):
+# - line is a sequence of words
+# - sequence_dictN is a dictonary which contains the counts of the sequences with length n from the training corpus
+# - sequence_dictN1 is a dictonary which contains the counts of the sequences with length n-1 from the training corpus
+# - vocabularySize is the number of words in the vocabulary
+# Output(s)
+# - probability is the calculated probability of the inputted line given the training corpus
+def calculate_propability_add1(line, sequence_dictN, sequence_dictN1, vocabularySize):
+	line = line.split("\n")
+	line = line[0]
+	splitLine = line.split(" ")
+	wN, evidence = get_wn_and_n1(splitLine)
+
+	numerator = 1
+	if line in sequence_dictN:
+		numerator += sequence_dictN[line] 
+		
+	denominator = vocabularySize
+	if wN in sequence_dictN1:
+		denominator += sequence_dictN1[evidence]
+
+	probability = numerator/denominator
+	return probability
+
 if __name__ == "__main__":
-	corpus = args.corpus
+	train_corpus = args.train_corpus
+	test_corpus = args.test_corpus
 	n = args.n
-	sentencelistCorpus = convert_txt_to_sentencelist(corpus, n)
+	smoothing = args.smoothing
+
+
 	# Assignment 1
+	sentencelistCorpus = convert_txt_to_sentencelist(train_corpus, n)
 	sequence_dictN = get_frequencies_sequences(sentencelistCorpus, n)
 	sequence_dictN1 = get_frequencies_sequences(sentencelistCorpus, n-1)
-	print(calculate_propability("of the", sequence_dictN, sequence_dictN1, n, 0, "no"))
-	# Assignment 2
-	sequence_dictAddOneN = sequence_dictN.copy()
-	start = time.clock()
-	addOneSmoothing(sequence_dictAddOneN)
-	vocabularySize = len(get_frequencies_sequences(sentencelistCorpus, 1))
-	print(calculate_propability("of the", sequence_dictAddOneN, sequence_dictN1, n, vocabularySize, "add1"))
-	end = time.clock()
-	elapsed = end - start
-	print("Elapsed time: " + str(elapsed))
-	# Assignment 3
-	sequence_dictTuringSmoothN = sequence_dictN.copy()
-	goodTuringSmoothingSeenTillK(sequence_dictTuringSmoothN, 5)
-	sequence_dictTuringSmoothN1 = createSmoothedN1Dict(sequence_dictTuringSmoothN)
-	print(calculate_propability("of the", sequence_dictTuringSmoothN, sequence_dictTuringSmoothN1, n, 0, "gt"))
+	# print(calculate_propability("of the", sequence_dictN, sequence_dictN1, n, 0, "no"))
+
+	if smoothing == "add1":
+		# Assignment 2
+		# sequence_dictAddOneN = sequence_dictN.copy()
+		# start = time.clock()
+		# addOneSmoothing(sequence_dictAddOneN)
+
+		# vocabularySize = len(get_frequencies_sequences(sentencelistCorpus, 1))
+		# print(calculate_propability("of the", sequence_dictAddOneN, sequence_dictN1, n, vocabularySize, smoothing))
+		
+		# end = time.clock()
+		# elapsed = end - start
+		# print("Elapsed time: " + str(elapsed))
+
+		vocabularySize = len(get_frequencies_sequences(sentencelistCorpus, 1))
+		probability = calculate_propability_add1("of the", sequence_dictN, sequence_dictN1, vocabularySize)
+		print(probability)
+
+	elif smoothing == "gt":
+		# Assignment 3
+		sequence_dictTuringSmoothN = sequence_dictN.copy()
+		goodTuringSmoothingSeenTillK(sequence_dictTuringSmoothN, 5)
+		sequence_dictTuringSmoothN1 = createSmoothedN1Dict(sequence_dictTuringSmoothN)
+		print(calculate_propability("of the", sequence_dictTuringSmoothN, sequence_dictTuringSmoothN1, n, 0, smoothing))
+
