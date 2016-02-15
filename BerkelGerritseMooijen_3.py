@@ -98,14 +98,16 @@ def calculate_propability(line, sequence_dictN, sequence_dictN1, n, offset, smoo
 					valueN1 = sequence_dictN1[N1]
 					return(1/valueN1+offset)
 				except Exception:
-					print(N1 + " does not exist.")
+					return 0.0
 			elif(smoothing == "gt"):
 				try:
 					count = goodTuringSmoothingUnseen(sequence_dictN)
 					valueN1 = sequence_dictN1[N1]
 					return(count/valueN1)
 				except Exception:
-					print(N1 + " does not exist.")
+					return 0.0
+			else:
+				return 0.0
 		valueN1 = sequence_dictN1[N1]
 		
 		print(valueN)
