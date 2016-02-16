@@ -126,9 +126,6 @@ def goodTuringSmoothingUnseen(seq_dict):
 	length = len(seq_dict)
 	totalUnseen = (length**2)-length
 	totalSeenOnce = countValueOccurances(seq_dict, 1) 
-	print(length)
-	print(totalSeenOnce)
-	print(totalUnseen)
 	return (totalSeenOnce/totalUnseen)
 
 def countValueOccurances(seq_dict, value):
@@ -172,32 +169,35 @@ if __name__ == "__main__":
 	sequence_dictN = get_frequencies_sequences(sentencelistCorpus, n)
 	sequence_dictN1 = get_frequencies_sequences(sentencelistCorpus, n-1)
 
-
-
+	if smoothing == "add1":
+		# Assignment 2
+		sequence_dictAddOneN = sequence_dictN.copy()
+		addOneSmoothing(sequence_dictAddOneN)
+		vocabularySize = len(get_frequencies_sequences(sentencelistCorpus, 1))
+	elif smoothing == "gt":
+		# Assignment 3
+		sequence_dictTuringSmoothN = sequence_dictN.copy()
+		sequence_dictTuringSmoothN = goodTuringSmoothingSeenTillK(sequence_dictTuringSmoothN, 5)
+		sequence_dictTuringSmoothN1 = createSmoothedN1Dict(sequence_dictTuringSmoothN)
+			
 	sentencelistTestCorpus = convert_txt_to_sentencelist(test_corpus, n)
 	sequenceTestCorpus_dict = get_frequencies_sequences(sentencelistTestCorpus, n)
 
-	for line in sequenceTestCorpus_dict:
+	length = len(sequenceTestCorpus_dict)
+	for counter, line in enumerate(sequenceTestCorpus_dict):
+		print("{}/{}".format(counter, length), end="\r")
 		if smoothing == "add1":
-			# Assignment 2
-			sequence_dictAddOneN = sequence_dictN.copy()
-			addOneSmoothing(sequence_dictAddOneN)
-
-			vocabularySize = len(get_frequencies_sequences(sentencelistCorpus, 1))
 			probability = calculate_propability(line, sequence_dictAddOneN, sequence_dictN1, n, vocabularySize, smoothing)
 		elif smoothing == "gt":
-			# Assignment 3
 			if not line in sequence_dictN:
 				probability = goodTuringSmoothingUnseen(sequence_dictN)
-				print(probability)
 			else:
-				sequence_dictTuringSmoothN = sequence_dictN.copy()
-				sequence_dictTuringSmoothN = goodTuringSmoothingSeenTillK(sequence_dictTuringSmoothN, 5)
-				sequence_dictTuringSmoothN1 = createSmoothedN1Dict(sequence_dictTuringSmoothN)
-				probablity = calculate_propability(line, sequence_dictTuringSmoothN, sequence_dictTuringSmoothN1, n, 0, smoothing)		
+				probability = calculate_propability(line, sequence_dictTuringSmoothN, sequence_dictTuringSmoothN1, n, 0, smoothing)		
 		else:
 			probability = calculate_propability(line, sequence_dictN, sequence_dictN1, n, 0, smoothing)
 		sequenceTestCorpus_dict[line] = probability
+
+
 
 	for key, value in sequenceTestCorpus_dict.items():
 		if value == 0:
