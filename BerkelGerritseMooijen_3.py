@@ -88,35 +88,21 @@ def calculate_propability(line, sequence_dictN, sequence_dictN1, n, offset, smoo
 	line = line.split("\n")
 	line = line[0]
 	splitLine = line.split(" ")
-	if len(splitLine)==n:
-		W_n, N1 = get_wn_and_n1(splitLine)
-		try:
-			valueN = sequence_dictN[line]
-		except Exception:
-			if(smoothing == "add1"):
-				try:
-					valueN1 = sequence_dictN1[N1]
-					return(1/valueN1+offset)
-				except Exception:
-					return 0.0
-			elif(smoothing == "gt"):
-				try:
-					count = goodTuringSmoothingUnseen(sequence_dictN)
-					valueN1 = sequence_dictN1[N1]
-					return(count/valueN1)
-				except Exception:
-					return 0.0
-			else:
-				return 0.0
-		valueN1 = sequence_dictN1[N1]
-		
-		print(valueN)
-		print(valueN1)
-		print(offset)
-		
-		return valueN/(valueN1+offset)		
-	else:
-	 	return -1
+
+	W_n, N1 = get_wn_and_n1(splitLine)
+	try:
+		valueN = sequence_dictN[line]
+	except Exception:
+		if(smoothing == "add1"):
+			try:
+				valueN1 = sequence_dictN1[N1]
+				return(1/valueN1+offset)
+			except Exception:
+				return(1/offset)
+		else:
+			return 0.0
+	valueN1 = sequence_dictN1[N1]
+	return valueN/valueN1		
 
 # Returns the strings of the last word of a string and the sentence without this last word
 # Input(s):
@@ -139,7 +125,10 @@ def addOneSmoothing(seq_dict):
 def goodTuringSmoothingUnseen(seq_dict):
 	length = len(seq_dict)
 	totalUnseen = (length**2)-length
-	totalSeenOnce =countValueOccurances(seq_dict, 1) 
+	totalSeenOnce = countValueOccurances(seq_dict, 1) 
+	print(length)
+	print(totalSeenOnce)
+	print(totalUnseen)
 	return (totalSeenOnce/totalUnseen)
 
 def countValueOccurances(seq_dict, value):
@@ -150,15 +139,17 @@ def countValueOccurances(seq_dict, value):
 	return counter
 
 def goodTuringSmoothingSeenTillK(seq_dict, k):
+	n1 = countValueOccurances(seq_dict, 1)
+	n_k1 = countValueOccurances(seq_dict, k+1)
 	for r in range(1, k+1):
-		n1 = countValueOccurances(seq_dict, 1)
 		n_r = countValueOccurances(seq_dict, r)
 		n_r1 = countValueOccurances(seq_dict, r+1)
-		n_k1 = countValueOccurances(seq_dict, k+1)
 		rStar = (((r+1)*(n_r1)/(n_r))-(r*(((k+1)*n_k1)/(n1))))/(1-(((k+1)*n_k1)/(n1)))
+
 		for element in seq_dict:
 			if (seq_dict[element] == r):
 				seq_dict[element] = rStar
+	return seq_dict
 
 def createSmoothedN1Dict(seq_dict):
 	uniGramDict = {}
@@ -170,32 +161,6 @@ def createSmoothedN1Dict(seq_dict):
 			uniGramDict[words[0]] = seq_dict[element]
 	return uniGramDict
 
-
-# Calculates the probability of the inputted line using add1-smoothing
-# Input(s):
-# - line is a sequence of words
-# - sequence_dictN is a dictonary which contains the counts of the sequences with length n from the training corpus
-# - sequence_dictN1 is a dictonary which contains the counts of the sequences with length n-1 from the training corpus
-# - vocabularySize is the number of words in the vocabulary
-# Output(s)
-# - probability is the calculated probability of the inputted line given the training corpus
-def calculate_propability_add1(line, sequence_dictN, sequence_dictN1, vocabularySize):
-	line = line.split("\n")
-	line = line[0]
-	splitLine = line.split(" ")
-	wN, evidence = get_wn_and_n1(splitLine)
-
-	numerator = 1
-	if line in sequence_dictN:
-		numerator += sequence_dictN[line] 
-		
-	denominator = vocabularySize
-	if wN in sequence_dictN1:
-		denominator += sequence_dictN1[evidence]
-
-	probability = numerator/denominator
-	return probability
-
 if __name__ == "__main__":
 	train_corpus = args.train_corpus
 	test_corpus = args.test_corpus
@@ -206,29 +171,34 @@ if __name__ == "__main__":
 	sentencelistCorpus = convert_txt_to_sentencelist(train_corpus, n)
 	sequence_dictN = get_frequencies_sequences(sentencelistCorpus, n)
 	sequence_dictN1 = get_frequencies_sequences(sentencelistCorpus, n-1)
-	# print(calculate_propability("of the", sequence_dictN, sequence_dictN1, n, 0, "no"))
 
-	if smoothing == "add1":
-		# Assignment 2
-		# sequence_dictAddOneN = sequence_dictN.copy()
-		# start = time.clock()
-		# addOneSmoothing(sequence_dictAddOneN)
 
-		# vocabularySize = len(get_frequencies_sequences(sentencelistCorpus, 1))
-		# print(calculate_propability("of the", sequence_dictAddOneN, sequence_dictN1, n, vocabularySize, smoothing))
-		
-		# end = time.clock()
-		# elapsed = end - start
-		# print("Elapsed time: " + str(elapsed))
 
-		vocabularySize = len(get_frequencies_sequences(sentencelistCorpus, 1))
-		probability = calculate_propability_add1("of the", sequence_dictN, sequence_dictN1, vocabularySize)
-		print(probability)
+	sentencelistTestCorpus = convert_txt_to_sentencelist(test_corpus, n)
+	sequenceTestCorpus_dict = get_frequencies_sequences(sentencelistTestCorpus, n)
 
-	elif smoothing == "gt":
-		# Assignment 3
-		sequence_dictTuringSmoothN = sequence_dictN.copy()
-		goodTuringSmoothingSeenTillK(sequence_dictTuringSmoothN, 5)
-		sequence_dictTuringSmoothN1 = createSmoothedN1Dict(sequence_dictTuringSmoothN)
-		print(calculate_propability("of the", sequence_dictTuringSmoothN, sequence_dictTuringSmoothN1, n, 0, smoothing))
+	for line in sequenceTestCorpus_dict:
+		if smoothing == "add1":
+			# Assignment 2
+			sequence_dictAddOneN = sequence_dictN.copy()
+			addOneSmoothing(sequence_dictAddOneN)
 
+			vocabularySize = len(get_frequencies_sequences(sentencelistCorpus, 1))
+			probability = calculate_propability(line, sequence_dictAddOneN, sequence_dictN1, n, vocabularySize, smoothing)
+		elif smoothing == "gt":
+			# Assignment 3
+			if not line in sequence_dictN:
+				probability = goodTuringSmoothingUnseen(sequence_dictN)
+				print(probability)
+			else:
+				sequence_dictTuringSmoothN = sequence_dictN.copy()
+				sequence_dictTuringSmoothN = goodTuringSmoothingSeenTillK(sequence_dictTuringSmoothN, 5)
+				sequence_dictTuringSmoothN1 = createSmoothedN1Dict(sequence_dictTuringSmoothN)
+				probablity = calculate_propability(line, sequence_dictTuringSmoothN, sequence_dictTuringSmoothN1, n, 0, smoothing)		
+		else:
+			probability = calculate_propability(line, sequence_dictN, sequence_dictN1, n, 0, smoothing)
+		sequenceTestCorpus_dict[line] = probability
+
+	for key, value in sequenceTestCorpus_dict.items():
+		if value == 0:
+			print(key)
