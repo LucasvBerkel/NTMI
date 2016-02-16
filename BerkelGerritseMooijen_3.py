@@ -96,7 +96,7 @@ def calculate_propability(line, sequence_dictN, sequence_dictN1, n, offset, smoo
 		if(smoothing == "add1"):
 			try:
 				valueN1 = sequence_dictN1[N1]
-				return(1/valueN1+offset)
+				return(1/(valueN1+offset))
 			except Exception:
 				return(1/offset)
 		else:
@@ -121,6 +121,7 @@ def get_wn_and_n1(splitLine):
 def addOneSmoothing(seq_dict):
 	for element in seq_dict:
 		seq_dict[element] += 1
+	return seq_dict
 
 def goodTuringSmoothingUnseen(seq_dict):
 	length = len(seq_dict)
@@ -158,6 +159,20 @@ def createSmoothedN1Dict(seq_dict):
 			uniGramDict[words[0]] = seq_dict[element]
 	return uniGramDict
 
+def get_m_lowest_probabilities(sequence_dict, m):
+	sorted_sequence_dict = sorted(sequence_dict.items(), key=operator.itemgetter(1))
+	for i in range(0, m):
+		print(sorted_sequence_dict[i])
+
+def percentage_0_probability(sequence_dict):
+	counter = 0
+	total = len(sequence_dict)
+	for probability in sequence_dict:
+		if sequence_dict[probability] == 0:
+			counter+=1
+	return counter/total
+
+
 if __name__ == "__main__":
 	train_corpus = args.train_corpus
 	test_corpus = args.test_corpus
@@ -172,7 +187,7 @@ if __name__ == "__main__":
 	if smoothing == "add1":
 		# Assignment 2
 		sequence_dictAddOneN = sequence_dictN.copy()
-		addOneSmoothing(sequence_dictAddOneN)
+		sequence_dictAddOneN = addOneSmoothing(sequence_dictAddOneN)
 		vocabularySize = len(get_frequencies_sequences(sentencelistCorpus, 1))
 	elif smoothing == "gt":
 		# Assignment 3
@@ -197,8 +212,6 @@ if __name__ == "__main__":
 			probability = calculate_propability(line, sequence_dictN, sequence_dictN1, n, 0, smoothing)
 		sequenceTestCorpus_dict[line] = probability
 
+	get_m_lowest_probabilities(sequenceTestCorpus_dict, 5)
 
-
-	for key, value in sequenceTestCorpus_dict.items():
-		if value == 0:
-			print(key)
+	# print(percentage_0_probability(sequenceTestCorpus_dict))
