@@ -200,7 +200,6 @@ if __name__ == "__main__":
 	n = args.n
 	smoothing = args.smoothing
 
-
 	# Assignment 1
 	sentencelistCorpus = convert_txt_to_sentencelist(train_corpus, n)
 	sequence_dictN = get_frequencies_sequences(sentencelistCorpus, n)
