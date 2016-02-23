@@ -1,3 +1,10 @@
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("-smoothing", help="yes/no", type=str)
+parser.add_argument("-train_set", help="path to the training set", type=str)
+parser.add_argument("-test_set", help="path to the test set", type=str)
+parser.add_argument("-test_set_predicted", help="path to test set predicted", type=str)
+args = parser.parse_args()
 
 def convert_txt_to_sentencelist(corpus, n):
 	n-=1
@@ -27,7 +34,12 @@ def convert_txt_to_sentencelist(corpus, n):
 	return sentencelist
 
 if __name__ == "__main__":
-	corpus = "test.pos"
-	sentencelist = convert_txt_to_sentencelist(corpus, 2)
+	smoothing = args.smoothing
+	train_set = args.train_set
+	test_set = args.test_set
+	test_set_predicted = args.test_set_predicted
+	n = 2
+	
+	sentencelist = convert_txt_to_sentencelist(corpus, n)
 	for x in range(len(sentencelist)):
 		print(sentencelist[x])
