@@ -34,31 +34,48 @@ def convert_txt_to_sentencelist(corpus, n):
 	return sentencelist
 
 def get_frequencies_sequences(sentencelist, n):
-	sequence_dict = {}
+	wordTag_dict = {}
+	tagSeq_dict = {}
 	tag_dict = {}
+	word_dict = {}
 	for sentence in sentencelist:
 		for word_index in range(len(sentence)):
 			if word_index >= n-1:
-				sequence = ""
+				wordTag = ""
 				tagSeq = ""
+				tag = ""
+				word = ""
 				for offset in range(n):
 					if offset == 0:
 						split = sentence[word_index].split("/")
-						sequence = split[0] + " " + split[1]
+						wordTag = split[1] + " " + split[0]
 						tagSeq = split[1]
+						word = split[0]
+						tag = split[1]
 					else:
 						split = sentence[word_index - offset].split("/")
 						tagSeq = split[1] + " " + tagSeq
-				if sequence in sequence_dict:
-					sequence_dict[sequence] += 1
+				if wordTag in wordTag_dict:
+					wordTag_dict[wordTag] += 1
 				else:
-					sequence_dict[sequence] = 1
-				if tagSeq in tag_dict:
-					tag_dict[tagSeq] += 1
-				else:
-					tag_dict[tagSeq] = 1
+					wordTag_dict[wordTag] = 1
 
-	return sequence_dict, tag_dict
+				if tagSeq in tagSeq_dict:
+					tagSeq_dict[tagSeq] += 1
+				else:
+					tagSeq_dict[tagSeq] = 1
+
+				if tag in tag_dict:
+					tag_dict[tag] += 1
+				else:
+					tag_dict[tag] = 1
+
+				if word in word_dict:
+					word_dict[word] += 1
+				else:
+					word_dict[word] = 1
+
+	return wordTag_dict, tagSeq_dict, tag_dict, word_dict
 
 
 if __name__ == "__main__":
@@ -69,12 +86,4 @@ if __name__ == "__main__":
 	n = 2
 	
 	sentencelist = convert_txt_to_sentencelist(train_set, n)
-	word_dict, tag_dict = get_frequencies_sequences(sentencelist, n)
-	for element in word_dict:
-		print(element)
-		print(word_dict[element])
-		break
-	for element in tag_dict:
-		print(element)
-		print(tag_dict[element])
-		break
+	wordTag_dict, tagSeq_dict, tag_dict, word_dict = get_frequencies_sequences(sentencelist, n)
