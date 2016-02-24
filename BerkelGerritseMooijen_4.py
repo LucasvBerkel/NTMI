@@ -1,4 +1,7 @@
+
 import argparse
+from sys import stdout
+
 parser = argparse.ArgumentParser()
 parser.add_argument("-smoothing", help="yes/no", type=str)
 parser.add_argument("-train_set", help="path to the training set", type=str)
@@ -11,7 +14,11 @@ def convert_txt_to_sentencelist(corpus, n):
 	sentencelist = []
 	with open(corpus) as data_file:
 		sentence = ["START/START"] * n
+		counter = 0
 		for line in data_file:
+			counter += 1
+			if(counter%100 == 0):
+				writestatus(counter)
 			line = line.replace("\n", "")
 			if line != "======================================":
 				if line == "./. ":
@@ -37,7 +44,11 @@ def get_frequencies_sequences(sentencelist, n):
 	wordTag_dict = {}
 	tagSeq_dict = {}
 	tag_dict = {}
+	counter = 0
+	length = len(sentencelist)
 	for sentence in sentencelist:
+		writestatus(counter, length)
+		counter += 1
 		for word_index in range(len(sentence)):
 			tag = "START"
 			if word_index >= n-1:
@@ -128,6 +139,15 @@ def convertSentence(sentence):
 		tagSentence.append(parts[1])
 	return wordSentence, tagSentence
 
+def getpercent(currentline, totallines):
+    i = (currentline / totallines) * 100
+    return i
+
+# Prints the status to stdout
+def writestatus(currentline, totallines=638073):
+    i = getpercent(currentline, totallines)
+    stdout.write("\r%s 	percent" % i)
+    stdout.flush()
 			
 
 if __name__ == "__main__":
@@ -137,28 +157,24 @@ if __name__ == "__main__":
 	test_set_predicted = args.test_set_predicted
 	n = 2
 	
-
+	print("Converting text to sentences: ")
 	sentencelist = convert_txt_to_sentencelist(train_set, n)
+	print("\nConverting text to sentences: Completed")
 	attemptedSentence = sentencelist[0]
-	print(attemptedSentence)
-	print(sentencelist[1])
-	print(sentencelist[2])
-	# sentence, tags = convertSentence(attemptedSentence)
-	# print(attemptedSentence)
-	# wordTag_dict, tagSeq_dict, tag_dict  = get_frequencies_sequences(sentencelist, n)
-	# viterbi_dict = calculateTag(wordTag_dict, tagSeq_dict, tag_dict, sentence)
-	# for element in viterbi_dict:
-	# 	lijst = element.split(" ")
-	# 	print(lijst)
-	# print(tags)
-	# counter = 0
-	# for x in range(len(tags)):
-	# 	if (tags[x] == lijst[x]):
-	# 		counter += 1
-	# print(counter/len(tags)*100)
-	# print("Great Succes")
-	# print(len(tags))
-	# print(counter)
-	# sentence = ["START", "change"]
-	# viterbi_dict = calculateTag(wordTag_dict, tagSeq_dict, tag_dict, sentence)
-	# print(viterbi_dict)
+	sentence, tags = convertSentence(attemptedSentence)
+	print("Converting sentences into dicts:")
+	wordTag_dict, tagSeq_dict, tag_dict  = get_frequencies_sequences(sentencelist, n)
+	print("\nConverting sentences into dicts: Completed")
+	viterbi_dict = calculateTag(wordTag_dict, tagSeq_dict, tag_dict, sentence)
+	for element in viterbi_dict:
+		lijst = element.split(" ")
+		print(lijst)
+	print(tags)
+	counter = 0
+	for x in range(len(tags)):
+		if (tags[x] == lijst[x]):
+			counter += 1
+	print(counter/len(tags)*100)
+	print("Great Succes")
+	print(len(tags))
+	print(counter)
