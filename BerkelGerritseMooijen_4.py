@@ -148,7 +148,33 @@ def writestatus(currentline, totallines=638073):
     i = getpercent(currentline, totallines)
     stdout.write("\r%s 	percent" % i)
     stdout.flush()
+
+def evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_dict, test_set_predicted):
+	
+
+
+	correct_tag_count = 0
+	total_tag_count = 0
+	for sentence_counter, attemptedSentence in enumerate(test_sentencelist):
+		print(sentence_counter)
+		sentence, real_tags = convertSentence(attemptedSentence)
+		print(sentence)		
+		viterbi_dict = calculateTag(wordTag_dict, tagSeq_dict, tag_dict, sentence)
 			
+		# print("Original tags: {}".format(real_tags))			
+		for element in viterbi_dict:
+			predicted_tags = element.split(" ")
+		# print("Predicted tags: {}".format(predicted_tags))
+
+		for x in range(len(real_tags)):
+			if not (real_tags[x] == "START" or real_tags[x] == "STOP"):
+				if (real_tags[x] == predicted_tags[x]):
+					correct_tag_count += 1
+				total_tag_count += 1
+
+	accuracy = correct_tag_count / total_tag_count
+	print("Accuracy: {}".format(accuracy))
+	
 
 if __name__ == "__main__":
 	smoothing = args.smoothing
@@ -160,21 +186,11 @@ if __name__ == "__main__":
 	print("Converting text to sentences: ")
 	sentencelist = convert_txt_to_sentencelist(train_set, n)
 	print("\nConverting text to sentences: Completed")
-	attemptedSentence = sentencelist[0]
-	sentence, tags = convertSentence(attemptedSentence)
+
 	print("Converting sentences into dicts:")
 	wordTag_dict, tagSeq_dict, tag_dict  = get_frequencies_sequences(sentencelist, n)
 	print("\nConverting sentences into dicts: Completed")
-	viterbi_dict = calculateTag(wordTag_dict, tagSeq_dict, tag_dict, sentence)
-	for element in viterbi_dict:
-		lijst = element.split(" ")
-		print(lijst)
-	print(tags)
-	counter = 0
-	for x in range(len(tags)):
-		if (tags[x] == lijst[x]):
-			counter += 1
-	print(counter/len(tags)*100)
-	print("Great Succes")
-	print(len(tags))
-	print(counter)
+
+	test_sentencelist = convert_txt_to_sentencelist(test_set, n)
+
+	evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_dict, test_set_predicted)	
