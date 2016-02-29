@@ -91,8 +91,19 @@ def retrievePossibleTags(word, tag_dict, wordTag_dict):
 			tagList.append(element)
 	return tagList
 
-def emissionProbability(word, tag, wordTag_dict):
+def emissionProbability(word, tag, wordTag_dict, smoothing):
 	temp = tag + " " + word
+	if not temp in wordTag_dict:
+		if smoothing == "yes":
+			print("please fix code at line 98")
+			# formule for P(u|t) here. 
+			# n1_t = 
+			# N_t = 
+
+			# for now return 0 so it doesn't crash
+			return 0 
+		else:
+			return 0
 	countN = wordTag_dict[temp]
 	countN1 = 0
 	for element in wordTag_dict:
@@ -103,33 +114,38 @@ def emissionProbability(word, tag, wordTag_dict):
 
 def stateTranstitionProbability(previousTag, tag, tagSeq_dict, tag_dict):
 	temp = previousTag + " " + tag
-	if temp not in tagSeq_dict:
+	if not temp in tagSeq_dict:
 		return 0
 	countN = tagSeq_dict[temp]
 	countN1 = tag_dict[previousTag]
 	return countN/countN1
 
-def highestCandidate(viterbi_dict, tag, word, tag_dict, wordTag_dict, tagSeq_dict):
+def highestCandidate(viterbi_dict, tag, word, tag_dict, wordTag_dict, tagSeq_dict, smoothing):
 	maxProb = 0
 	maxTag = ""
 	for previousTags in viterbi_dict:
 		previousTag = previousTags.split(" ")
-		eProb = emissionProbability(word, tag, wordTag_dict)
+		eProb = emissionProbability(word, tag, wordTag_dict, smoothing)
 		sTProb = stateTranstitionProbability(previousTag[-1], tag, tagSeq_dict, tag_dict)
 		probNode = eProb*sTProb*viterbi_dict[previousTags]
-		if(probNode > maxProb):
+		if(probNode >= maxProb):
 			maxProb = probNode
 			maxTag = previousTags + " " + tag
 	return maxProb, maxTag
 
-def calculateTag(wordTag_dict, tagSeq_dict, tag_dict , sentence):
+def calculateTag(wordTag_dict, tagSeq_dict, tag_dict , sentence, smoothing):
 	viterbi_dict = {}
 	viterbi_dict["START"] = 1
 	for x in range(1, len(sentence)):
 		tagList = retrievePossibleTags(sentence[x], tag_dict, wordTag_dict)
+		if not tagList:
+			if smoothing == "yes":
+				tagList = list(tag_dict.keys())
+			else:
+				tagList = ['X']
 		temp_dict = {}
 		for tag in tagList:
-			maxProb, maxTag = highestCandidate(viterbi_dict, tag, sentence[x], tag_dict, wordTag_dict, tagSeq_dict) 
+			maxProb, maxTag = highestCandidate(viterbi_dict, tag, sentence[x], tag_dict, wordTag_dict, tagSeq_dict, smoothing) 
 			temp_dict[maxTag] = maxProb
 		viterbi_dict = temp_dict
 	return viterbi_dict
@@ -154,7 +170,7 @@ def writestatus(currentline, totallines=638073):
     stdout.flush()
 
 # Predicts the tags and writes them to a file.
-def evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_dict, test_set_predicted):
+def evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_dict, test_set_predicted, smoothing):
 	with open(test_set_predicted, "w") as textfile:
 		correct_tag_count = 0
 		total_tag_count = 0
@@ -162,11 +178,16 @@ def evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_d
 		for sentence_counter, attemptedSentence in enumerate(test_sentencelist):
 			writestatus(sentence_counter, length)
 			sentence, real_tags = convertSentence(attemptedSentence)
-			viterbi_dict = calculateTag(wordTag_dict, tagSeq_dict, tag_dict, sentence)
+			viterbi_dict = calculateTag(wordTag_dict, tagSeq_dict, tag_dict, sentence, smoothing)
+			print(viterbi_dict)
 					
 			for element in viterbi_dict:
 				predicted_tags = element.split(" ")
 			# print("Predicted tags: {}".format(predicted_tags))
+
+			# print(real_tags)
+			# print(predicted_tags)
+
 			for x in range(len(real_tags)):
 				if not (real_tags[x] == "START" or real_tags[x] == "STOP"):
 					if (real_tags[x] == predicted_tags[x]):
@@ -285,4 +306,4 @@ if __name__ == "__main__":
 
 		evaluation(sentencelist, test_sentencelist, wordTag_dictTuringSmoothN, tagSeq_dictTuringSmoothN, tag_dict, test_set_predicted)	
 	else:
-		evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_dict, test_set_predicted)	
+		evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_dict, test_set_predicted, smoothing)	
