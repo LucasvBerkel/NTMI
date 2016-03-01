@@ -1,5 +1,6 @@
 import sys
 import argparse
+import re
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-smoothing", help="yes/no", type=str)
@@ -75,13 +76,16 @@ def get_frequencies_sequences(sentencelist, n):
 						split = sentence[word_index].split("/")
 						if len(split)>2:
 							del split[1:-1]
+							split[0] = re.sub("\\\\", "", split[0])
 						tagSplit = split[1].split("|")
 						wordTag = tagSplit[0] + " " + split[0]
 						tagSeq = tagSplit[0]
 						word = split[0]
-						tag = split[1]
+						tag = tagSplit[0]
 					else:
 						split = sentence[word_index - offset].split("/")
+						if len(split)>2:
+							del split[1:-1]
 						tagSplit = split[1].split("|")
 						tagSeq = tagSplit[0] + " " + tagSeq
 				if wordTag in wordTag_dict:
@@ -424,9 +428,14 @@ if __name__ == "__main__":
 			wordTag_dictTuringSmoothN, totalN_1 = smoothLexicalGoodTuring(wordTag_dictTuringSmoothN)
 
 			print(tag_dictTuringSmoothN1)
+			print(len(tag_dictTuringSmoothN1))
 			sys.exit()
 			evaluation(sentencelist, test_sentencelist, wordTag_dictTuringSmoothN, tagSeq_dictTuringSmoothN, tag_dict, test_set_predicted, smoothing)	
 		else:
+
+			print(tag_dict)
+			print(len(tag_dict))
+			sys.exit()
 			evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_dict, test_set_predicted, smoothing)	
 	else:
 		parser.print_help()
