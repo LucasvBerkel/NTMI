@@ -179,7 +179,7 @@ def evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_d
 			writestatus(sentence_counter, length)
 			sentence, real_tags = convertSentence(attemptedSentence)
 			viterbi_dict = calculateTag(wordTag_dict, tagSeq_dict, tag_dict, sentence, smoothing)
-			print(viterbi_dict)
+			# print(viterbi_dict)
 					
 			for element in viterbi_dict:
 				predicted_tags = element.split(" ")
@@ -283,7 +283,8 @@ if __name__ == "__main__":
 	test_set = args.test_set
 	test_set_predicted = args.test_set_predicted
 	n = 2
-	smooth = True
+
+	
 	
 	print("Converting text to sentences: ")
 	sentencelist = convert_txt_to_sentencelist(train_set, n)
