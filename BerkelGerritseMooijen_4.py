@@ -3,6 +3,7 @@ import sys
 import argparse
 import re
 
+#hoi
 parser = argparse.ArgumentParser()
 parser.add_argument("-smoothing", help="yes/no", type=str)
 parser.add_argument("-train_set", help="path to the training set", type=str)
