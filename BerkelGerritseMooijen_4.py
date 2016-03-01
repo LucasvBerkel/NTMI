@@ -97,16 +97,12 @@ def get_frequencies_sequences(sentencelist, n):
 	writestatus(length, length)
 	return wordTag_dict, tagSeq_dict, tag_dict 
 
-<<<<<<< HEAD
 # Obtains all the possible tags for a word
 # Input(s):
 # - word is a word in string form
 # - tag_dict is a dict which contains all the tags 
 # Output(s):
 # - tagList is a list of tags corrosponding to the inputted word
-=======
-
->>>>>>> 3e8f33ac53408176dd68169e3cc1b8fd588efbad
 def retrievePossibleTags(word, tag_dict, wordTag_dict):
 	tagList = []
 	for element in tag_dict:
@@ -121,7 +117,7 @@ def retrievePossibleTags(word, tag_dict, wordTag_dict):
 # - tag is a tag in string form
 # - wordTag_dict is a dict which contains words and their corrosponding tag
 # - unknown_dict is a dict which contains the emission probability for unknown words given a tag
-# - smoothing determines whether smoothing is used
+# - smoothing, yes or no, according to the user if he/she wants to smooth the dicts
 # Output(s):
 # - the emission probability
 def emissionProbability(word, tag, wordTag_dict, unknown_dict, smoothing):
@@ -145,7 +141,7 @@ def emissionProbability(word, tag, wordTag_dict, unknown_dict, smoothing):
 # - tag is the tag from the current state
 # - tagSeq_dict is a dict which contains the tag bigrams
 # - tag_dict is a dict which contains all the tags in the sentencelist
-# - smoothing determines whether smoothing is used
+# - smoothing, yes or no, according to the user if he/she wants to smooth the dicts
 def stateTranstitionProbability(previousTag, tag, tagSeq_dict, tag_dict, smoothing):
 	temp = previousTag + " " + tag
 	if not temp in tagSeq_dict:
@@ -161,7 +157,17 @@ def stateTranstitionProbability(previousTag, tag, tagSeq_dict, tag_dict, smoothi
 
 # Calculates and returns the tag and its probability with the highest probability
 # Input(s):
-# 
+# - viterbi_dict, the dictonary which contains the paths with the highest probability ending in a specific tag given time 
+# - tag, the tag from the current state
+# - word, the word in the current time
+# - wordTag_dict is a dict which contains words and their corrosponding tag
+# - tagSeq_dict is a dict which contains the tag bigrams
+# - tag_dict is a dict which contains all the tags in the sentencelist
+# - unknown_dict is a dict which contains the emission probability for unknown words given a tag
+# - smoothing, yes or no, according to the user if he/she wants to smooth the dicts
+# Output(s):
+# - maxProb, highest probability 
+# - maxTag, tag with the highest probability
 def highestCandidate(viterbi_dict, tag, word, tag_dict, wordTag_dict, tagSeq_dict, unknown_dict, smoothing):
 	maxProb = 0
 	maxTag = ""
@@ -175,6 +181,16 @@ def highestCandidate(viterbi_dict, tag, word, tag_dict, wordTag_dict, tagSeq_dic
 			maxTag = previousTags + " " + tag
 	return maxProb, maxTag
 
+# Calculates the tag sequences with the highest probability given a sentence
+# Input(s):
+# - wordTag_dict, the dictionary containing the word and tag combinations and its frequency
+# - tagSeq_dict, the dictionary containing the tag after tag sequence and its frequency
+# - tag_dict, the dictionary containing every tag and its frequency
+# - unknown_dict, the dictionary with every tag as key and its emission probability as value for unseen words
+# - sentence, 
+# - smoothing, yes or no, according to the user if he/she wants to smooth the dicts
+# Output(s)
+# - viterbi_dict, the dictionary containing the tags with the highest probability for a sentence
 def calculateTag(wordTag_dict, tagSeq_dict, tag_dict, unknown_dict, sentence, smoothing):
 	viterbi_dict = {}
 	viterbi_dict["START"] = 1
