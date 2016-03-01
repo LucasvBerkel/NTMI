@@ -10,10 +10,10 @@ args = parser.parse_args()
 
 # Reads a txt-file and returns a list. This list contains lists, which each represents a paragraph.
 # Input(s):
-# - corpus is a path to the text-file to be read and converted to a list
-# - n is a natural number which represents the length of the sequences
+# - corpus, a path to the text-file to be read and converted to a list
+# - n, a natural number which represents the length of the sequences
 # Output(s):
-# - sentencelist is a list of lists which contains all the paragraphs of the inputted txt-file
+# - sentencelist, the list of lists which contains all the sentences of the inputted txt-file
 def convert_txt_to_sentencelist(corpus, n):
 	n-=1
 	sentencelist = []
@@ -48,12 +48,12 @@ def convert_txt_to_sentencelist(corpus, n):
 
 # Reads a list of lists (sentences) and counts the number of times a sequence of n words is contained in this list.
 # Input(s):
-# - sentencelist is a list of lists which contains all the paragraphs of the inputted txt-file
-# - n is a natural number which represents the length of the sequences
+# - sentencelist, a list of lists which contains all the paragraphs of the inputted txt-file
+# - n, a natural number which represents the length of the sequences
 # Output(s):
-# - wordTag_dict is a dict which contains words and their corrosponding tag
-# - tagSeq_dict is a dict which contains the tag bigrams
-# - tag_dict is a dict which contains all the tags in the sentencelist
+# - wordTag_dict, the dictionary containing the word and tag combinations and its frequency
+# - tagSeq_dict, the dictionary containing the tag after tag sequence and its frequency
+# - tag_dict, the dictionary containing every tag and its frequency
 def get_frequencies_sequences(sentencelist, n):
 	wordTag_dict = {}
 	tagSeq_dict = {}
@@ -99,8 +99,8 @@ def get_frequencies_sequences(sentencelist, n):
 
 # Obtains all the possible tags for a word
 # Input(s):
-# - word is a word in string form
-# - tag_dict is a dict which contains all the tags 
+# - word, a word in string form
+# - tag_dict, a dict which contains all the tags 
 # Output(s):
 # - tagList is a list of tags corrosponding to the inputted word
 def retrievePossibleTags(word, tag_dict, wordTag_dict):
@@ -113,8 +113,8 @@ def retrievePossibleTags(word, tag_dict, wordTag_dict):
 
 # Calculates the emission probability for a word and a tag
 # Input(s):
-# - word is a word in string form
-# - tag is a tag in string form
+# - word, a word in string form
+# - tag, a tag in string form
 # - wordTag_dict is a dict which contains words and their corrosponding tag
 # - unknown_dict is a dict which contains the emission probability for unknown words given a tag
 # - smoothing, yes or no, according to the user if he/she wants to smooth the dicts
@@ -137,11 +137,13 @@ def emissionProbability(word, tag, wordTag_dict, unknown_dict, smoothing):
 
 # Calculates the state transition probability for a sequence of tags
 # Input(s):
-# - previousTag is the tag from the previous state
-# - tag is the tag from the current state
-# - tagSeq_dict is a dict which contains the tag bigrams
-# - tag_dict is a dict which contains all the tags in the sentencelist
+# - previousTag, the tag from the previous state
+# - tag, the tag from the current state
+# - tagSeq_dict, the dictionary containing the tag after tag sequence and its frequency
+# - tag_dict, the dictionary containing every tag and its frequency
 # - smoothing, yes or no, according to the user if he/she wants to smooth the dicts
+# Output(s):
+# - the state transition probability
 def stateTranstitionProbability(previousTag, tag, tagSeq_dict, tag_dict, smoothing):
 	temp = previousTag + " " + tag
 	if not temp in tagSeq_dict:
@@ -160,9 +162,9 @@ def stateTranstitionProbability(previousTag, tag, tagSeq_dict, tag_dict, smoothi
 # - viterbi_dict, the dictonary which contains the paths with the highest probability ending in a specific tag given time 
 # - tag, the tag from the current state
 # - word, the word in the current time
-# - wordTag_dict is a dict which contains words and their corrosponding tag
-# - tagSeq_dict is a dict which contains the tag bigrams
-# - tag_dict is a dict which contains all the tags in the sentencelist
+# - wordTag_dict, the dictionary containing the word and tag combinations and its frequency
+# - tagSeq_dict, the dictionary containing the tag after tag sequence and its frequency
+# - tag_dict, the dictionary containing every tag and its frequency
 # - unknown_dict is a dict which contains the emission probability for unknown words given a tag
 # - smoothing, yes or no, according to the user if he/she wants to smooth the dicts
 # Output(s):
