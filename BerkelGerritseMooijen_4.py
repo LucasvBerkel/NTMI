@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 import re
-=======
 import sys
->>>>>>> 9831f256046b7f6931c6fbe9ab964f7a0103dfb5
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -76,42 +73,28 @@ def get_frequencies_sequences(sentencelist, n):
 				word = ""
 				for offset in range(n):
 					if offset == 0:
-<<<<<<< HEAD
-						presplit = re.sub("\\\/", " ", sentence[word_index])
-						split = presplit.split("/")
-						print(split)
-						wordTag = split[1] + " " + split[0]
-						tagSeq = split[1]
-=======
 						split = sentence[word_index].split("/")
-						if len(split)>2:
-							del split[1:-1]
-						tagSplit = split[1].split("|")
-						wordTag = tagSplit[0] + " " + split[0]
-						tagSeq = tagSplit[0]
->>>>>>> 9831f256046b7f6931c6fbe9ab964f7a0103dfb5
+						wordTag = split[0] + " " + split[0]
+						tagSeq = split[0]
 						word = split[0]
 						tag = split[1]
 					else:
 						split = sentence[word_index - offset].split("/")
 						tagSplit = split[1].split("|")
 						tagSeq = tagSplit[0] + " " + tagSeq
-				if wordTag in wordTag_dict:
-					wordTag_dict[wordTag] += 1
-				else:
-					wordTag_dict[wordTag] = 1
-
-				if tagSeq in tagSeq_dict:
-					tagSeq_dict[tagSeq] += 1
-				else:
-					tagSeq_dict[tagSeq] = 1
-
-			if tag in tag_dict:
-				tag_dict[tag] += 1
-			else:
-				tag_dict[tag] = 1
+				addToDict(wordTag, wordTag_dict)
+				addToDict(tagSeq, tagSeq_dict)
+			addToDict(tag, tag_dict)
 	writestatus(length, length)
+	print(tag_dict)
 	return wordTag_dict, tagSeq_dict, tag_dict 
+
+def addToDict(key, input_dict):
+	if key in input_dict:
+		input_dict[key] += 1
+	else:
+		input_dict[key] = 1	
+
 
 # Obtains all the possible tags for a word
 # Input(s):
