@@ -335,7 +335,18 @@ def goodTuringSmoothingSeenTillK(seq_dict, k):
 	for r in range(1, k+1):
 		n_r = countValueOccurances(seq_dict, r)
 		n_r1 = countValueOccurances(seq_dict, r+1)
-		rStar = (((r+1)*(n_r1)/(n_r))-(r*(((k+1)*n_k1)/(n1))))/(1-(((k+1)*n_k1)/(n1)))
+		rStar = n_r
+		if n_r != 0:
+			temp1 = (r*(((k+1)*n_k1)/(n1)))
+			temp2 = ((r+1)*(n_r1)/(n_r))
+			temp3 = (temp2-temp1)
+			temp4 = (1-(((k+1)*n_k1)/(n1)))
+			rStar = temp3/temp4
+		# temp1 = (r*(((k+1)*n_k1)/(n1)))
+		# temp2 = ((r+1)*(n_r1)/(n_r))
+		# temp3 = (temp2-temp1)
+		# temp4 = (1-(((k+1)*n_k1)/(n1)))
+		# rStar = temp3/temp4
 
 		for element in seq_dict:
 			if (seq_dict[element] == r):
@@ -412,7 +423,6 @@ if __name__ == "__main__":
 		print("Converting sentences into dicts:")
 		wordTag_dict, tagSeq_dict, tag_dict  = get_frequencies_sequences(sentencelist, n)
 		print("\nConverting sentences into dicts: Completed")
-
 		test_sentencelist = convert_txt_to_sentencelist(test_set, n)
 
 		if smoothing == "yes":
@@ -423,9 +433,29 @@ if __name__ == "__main__":
 			# Smooth lexical model
 			wordTag_dictTuringSmoothN = wordTag_dict.copy()
 			wordTag_dictTuringSmoothN, totalN_1 = smoothLexicalGoodTuring(wordTag_dictTuringSmoothN)
+<<<<<<< HEAD
 			evaluation(sentencelist, test_sentencelist, wordTag_dictTuringSmoothN, tagSeq_dictTuringSmoothN, tag_dictTuringSmoothN1s, test_set_predicted, smoothing)	
 
 		else:
+=======
+			
+
+			# print(tag_dict)
+			# print(tag_dictTuringSmoothN1)
+			# for element in tag_dict:
+			# 	if tag_dict[element]<100:
+			# 		print(element, tag_dict[element])
+			# print(len(tag_dict))
+			# print(len(tag_dictTuringSmoothN1))
+			# sys.exit()
+			if "STOP" in tag_dictTuringSmoothN1:
+				tag_dictTuringSmoothN1.pop("STOP")
+			evaluation(sentencelist, test_sentencelist, wordTag_dictTuringSmoothN, tagSeq_dictTuringSmoothN, tag_dictTuringSmoothN1, test_set_predicted, smoothing)
+
+		else:
+			if "STOP" in tag_dict:
+				tag_dict.pop("STOP")
+>>>>>>> 69c6f6789e315732372b2df12a6b993575e5c63d
 			evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_dict, test_set_predicted, smoothing)	
 	else:
 		parser.print_help()
