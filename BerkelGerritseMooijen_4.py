@@ -1,4 +1,4 @@
-
+import sys
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -73,13 +73,17 @@ def get_frequencies_sequences(sentencelist, n):
 				for offset in range(n):
 					if offset == 0:
 						split = sentence[word_index].split("/")
-						wordTag = split[1] + " " + split[0]
-						tagSeq = split[1]
+						if len(split)>2:
+							del split[1:-1]
+						tagSplit = split[1].split("|")
+						wordTag = tagSplit[0] + " " + split[0]
+						tagSeq = tagSplit[0]
 						word = split[0]
 						tag = split[1]
 					else:
 						split = sentence[word_index - offset].split("/")
-						tagSeq = split[1] + " " + tagSeq
+						tagSplit = split[1].split("|")
+						tagSeq = tagSplit[0] + " " + tagSeq
 				if wordTag in wordTag_dict:
 					wordTag_dict[wordTag] += 1
 				else:
@@ -419,6 +423,8 @@ if __name__ == "__main__":
 			wordTag_dictTuringSmoothN = wordTag_dict.copy()
 			wordTag_dictTuringSmoothN, totalN_1 = smoothLexicalGoodTuring(wordTag_dictTuringSmoothN)
 
+			print(tag_dictTuringSmoothN1)
+			sys.exit()
 			evaluation(sentencelist, test_sentencelist, wordTag_dictTuringSmoothN, tagSeq_dictTuringSmoothN, tag_dict, test_set_predicted, smoothing)	
 		else:
 			evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_dict, test_set_predicted, smoothing)	
