@@ -1,6 +1,5 @@
 
 import argparse
-from sys import stdout
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-smoothing", help="yes/no", type=str)
@@ -9,6 +8,12 @@ parser.add_argument("-test_set", help="path to the test set", type=str)
 parser.add_argument("-test_set_predicted", help="path to write the predicted tags for test set", type=str)
 args = parser.parse_args()
 
+# Reads a txt-file and returns a list. This list contains lists, which each represents a paragraph.
+# Input(s):
+# - corpus is a path to the text-file to be read and converted to a list
+# - n is a natural number which represents the length of the sequences
+# Output(s):
+# - sentencelist is a list of lists which contains all the paragraphs of the inputted txt-file
 def convert_txt_to_sentencelist(corpus, n):
 	n-=1
 	sentencelist = []
@@ -38,6 +43,7 @@ def convert_txt_to_sentencelist(corpus, n):
 							sentence.append(word)
 			else:
 				sentence = ["START/START"] * n
+	writestatus(638073)
 	return sentencelist
 
 def get_frequencies_sequences(sentencelist, n):
@@ -80,7 +86,7 @@ def get_frequencies_sequences(sentencelist, n):
 				tag_dict[tag] += 1
 			else:
 				tag_dict[tag] = 1
-
+	writestatus(length, length)
 	return wordTag_dict, tagSeq_dict, tag_dict 
 
 def retrievePossibleTags(word, tag_dict, wordTag_dict):
@@ -106,10 +112,15 @@ def emissionProbability(word, tag, wordTag_dict, unknown_dict, smoothing):
 			countN1 += wordTag_dict[element]
 	return countN/countN1
 
-def stateTranstitionProbability(previousTag, tag, tagSeq_dict, tag_dict):
+def stateTranstitionProbability(previousTag, tag, tagSeq_dict, tag_dict, smoothing):
 	temp = previousTag + " " + tag
 	if not temp in tagSeq_dict:
-		return 0
+		if smoothing == "yes":
+			countN = goodTuringSmoothingUnseen(tagSeq_dict, len(tagSeq_dict))
+			countN1 = tag_dict[previousTag]
+			return countN / countN1
+		else:
+			return 0
 	countN = tagSeq_dict[temp]
 	countN1 = tag_dict[previousTag]
 	return countN/countN1
@@ -120,7 +131,7 @@ def highestCandidate(viterbi_dict, tag, word, tag_dict, wordTag_dict, tagSeq_dic
 	for previousTags in viterbi_dict:
 		previousTag = previousTags.split(" ")
 		eProb = emissionProbability(word, tag, wordTag_dict, unknown_dict, smoothing)
-		sTProb = stateTranstitionProbability(previousTag[-1], tag, tagSeq_dict, tag_dict)
+		sTProb = stateTranstitionProbability(previousTag[-1], tag, tagSeq_dict, tag_dict, smoothing)
 		probNode = eProb*sTProb*viterbi_dict[previousTags]
 		if(probNode >= maxProb):
 			maxProb = probNode
@@ -157,11 +168,10 @@ def getpercent(currentline, totallines):
     i = (currentline / totallines) * 100
     return i
 
-# Prints the status to stdout
+# Prints the status 
 def writestatus(currentline, totallines=638073):
     i = getpercent(currentline, totallines)
-    stdout.write("\r%s 	percent" % i)
-    stdout.flush()
+    print("{} %            ".format(i), end="\r")
 
 def filterTestSentence(sentenceList, limit):
 	newSentenceList = []
@@ -217,7 +227,7 @@ def evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_d
 				else:
 					textfile.write("\n")
 		accuracy = correct_tag_count / total_tag_count
-		print("Accuracy: {}".format(accuracy))
+		print("Accuracy = {} / {} = {}".format(correct_tag_count, total_tag_count, accuracy))
 		textfile.close()
 	
 # Function takes a dict and smooths it from one till k
@@ -301,27 +311,28 @@ if __name__ == "__main__":
 	test_set_predicted = args.test_set_predicted
 	n = 2
 
+	if smoothing and train_set and test_set and test_set_predicted:
+		print("Converting text to sentences: ")
+		sentencelist = convert_txt_to_sentencelist(train_set, n)
+		print("\nConverting text to sentences: Completed")
 
+		print("Converting sentences into dicts:")
+		wordTag_dict, tagSeq_dict, tag_dict  = get_frequencies_sequences(sentencelist, n)
+		print("\nConverting sentences into dicts: Completed")
 
-	print("Converting text to sentences: ")
-	sentencelist = convert_txt_to_sentencelist(train_set, n)
-	print("\nConverting text to sentences: Completed")
+		test_sentencelist = convert_txt_to_sentencelist(test_set, n)
 
-	print("Converting sentences into dicts:")
-	wordTag_dict, tagSeq_dict, tag_dict  = get_frequencies_sequences(sentencelist, n)
-	print("\nConverting sentences into dicts: Completed")
+		if smoothing == "yes":
+			# Smooth language model
+			tagSeq_dictTuringSmoothN = tagSeq_dict.copy()
+			tagSeq_dictTuringSmoothN = goodTuringSmoothingSeenTillK(tagSeq_dictTuringSmoothN, 4)
+			tag_dictTuringSmoothN1 = createSmoothedN1Dict(tagSeq_dictTuringSmoothN)
+			# Smooth lexical model
+			wordTag_dictTuringSmoothN = wordTag_dict.copy()
+			wordTag_dictTuringSmoothN, totalN_1 = smoothLexicalGoodTuring(wordTag_dictTuringSmoothN)
 
-	test_sentencelist = convert_txt_to_sentencelist(test_set, n)
-
-	if smoothing == "yes":
-		# Smooth language model
-		tagSeq_dictTuringSmoothN = tagSeq_dict.copy()
-		tagSeq_dictTuringSmoothN = goodTuringSmoothingSeenTillK(tagSeq_dictTuringSmoothN, 4)
-		tag_dictTuringSmoothN1 = createSmoothedN1Dict(tagSeq_dictTuringSmoothN)
-		# Smooth lexical model
-		wordTag_dictTuringSmoothN = wordTag_dict.copy()
-		wordTag_dictTuringSmoothN, totalN_1 = smoothLexicalGoodTuring(wordTag_dictTuringSmoothN)
-
-		evaluation(sentencelist, test_sentencelist, wordTag_dictTuringSmoothN, tagSeq_dictTuringSmoothN, tag_dict, test_set_predicted, smoothing)	
+			evaluation(sentencelist, test_sentencelist, wordTag_dictTuringSmoothN, tagSeq_dictTuringSmoothN, tag_dict, test_set_predicted, smoothing)	
+		else:
+			evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_dict, test_set_predicted, smoothing)	
 	else:
-		evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_dict, test_set_predicted, smoothing)	
+		parser.print_help()
