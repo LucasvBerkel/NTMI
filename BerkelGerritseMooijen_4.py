@@ -208,6 +208,12 @@ def calculateTag(wordTag_dict, tagSeq_dict, tag_dict, unknown_dict, sentence, sm
 		viterbi_dict = temp_dict
 	return viterbi_dict
 
+# Accepts a list of word-tag combinations, splits them apart and returns them
+# Input(s)
+# - sentence, a list of word-tag combinations
+# Output(s)
+# - wordSentence, a list of words which forms the sentence
+# - tagSentence, a list of the corresponding tag given the sentence
 def convertSentence(sentence):
 	wordSentence = []
 	tagSentence = []
@@ -217,15 +223,21 @@ def convertSentence(sentence):
 		tagSentence.append(parts[1])
 	return wordSentence, tagSentence
 
-def getpercent(currentline, totallines):
-    i = (currentline / totallines) * 100
-    return i
-
-# Prints the status 
+# Prints the current status of a progress
+# Input(s)
+# - currentline, a counter which will eventualy add up to the totallines
+# - totallines, total amount of steps in progress until convergence, default is length of trainingcorpus
+# Delivers no output(s) 
 def writestatus(currentline, totallines=638073):
-    i = getpercent(currentline, totallines)
+    i = (currentline / totallines) * 100
     print("{} %            ".format(i), end="\r")
 
+# Takes a list of sentences and filters it from sentences longer than the given limit
+# Input(s)
+# - sentencelist, the list of sentences of every length
+# - limit, a number for which every sentence longer than it will be deleted
+# Output(s)
+# - newSentenceList, the list of sentences shorter than the limit
 def filterTestSentence(sentenceList, limit):
 	newSentenceList = []
 	for sentence in sentenceList:
