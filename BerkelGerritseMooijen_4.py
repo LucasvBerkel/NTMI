@@ -46,6 +46,14 @@ def convert_txt_to_sentencelist(corpus, n):
 	writestatus(638073)
 	return sentencelist
 
+# Reads a list of lists (sentences) and counts the number of times a sequence of n words is contained in this list.
+# Input(s):
+# - sentencelist is a list of lists which contains all the paragraphs of the inputted txt-file
+# - n is a natural number which represents the length of the sequences
+# Output(s):
+# - wordTag_dict is a dict which contains words and their corrosponding tag
+# - tagSeq_dict is a dict which contains the tag bigrams
+# - tag_dict is a dict which contains all the tags in the sentencelist
 def get_frequencies_sequences(sentencelist, n):
 	wordTag_dict = {}
 	tagSeq_dict = {}
@@ -89,6 +97,12 @@ def get_frequencies_sequences(sentencelist, n):
 	writestatus(length, length)
 	return wordTag_dict, tagSeq_dict, tag_dict 
 
+# Obtains all the possible tags for a word
+# Input(s):
+# - word is a word in string form
+# - tag_dict is a dict which contains all the tags 
+# Output(s):
+# - tagList is a list of tags corrosponding to the inputted word
 def retrievePossibleTags(word, tag_dict, wordTag_dict):
 	tagList = []
 	for element in tag_dict:
@@ -97,6 +111,15 @@ def retrievePossibleTags(word, tag_dict, wordTag_dict):
 			tagList.append(element)
 	return tagList
 
+# Calculates the emission probability for a word and a tag
+# Input(s):
+# - word is a word in string form
+# - tag is a tag in string form
+# - wordTag_dict is a dict which contains words and their corrosponding tag
+# - unknown_dict is a dict which contains the emission probability for unknown words given a tag
+# - smoothing determines whether smoothing is used
+# Output(s):
+# - the emission probability
 def emissionProbability(word, tag, wordTag_dict, unknown_dict, smoothing):
 	temp = tag + " " + word
 	if not temp in wordTag_dict:
@@ -112,6 +135,13 @@ def emissionProbability(word, tag, wordTag_dict, unknown_dict, smoothing):
 			countN1 += wordTag_dict[element]
 	return countN/countN1
 
+# Calculates the state transition probability for a sequence of tags
+# Input(s):
+# - previousTag is the tag from the previous state
+# - tag is the tag from the current state
+# - tagSeq_dict is a dict which contains the tag bigrams
+# - tag_dict is a dict which contains all the tags in the sentencelist
+# - smoothing determines whether smoothing is used
 def stateTranstitionProbability(previousTag, tag, tagSeq_dict, tag_dict, smoothing):
 	temp = previousTag + " " + tag
 	if not temp in tagSeq_dict:
@@ -125,6 +155,9 @@ def stateTranstitionProbability(previousTag, tag, tagSeq_dict, tag_dict, smoothi
 	countN1 = tag_dict[previousTag]
 	return countN/countN1
 
+# Calculates and returns the tag and its probability with the highest probability
+# Input(s):
+# 
 def highestCandidate(viterbi_dict, tag, word, tag_dict, wordTag_dict, tagSeq_dict, unknown_dict, smoothing):
 	maxProb = 0
 	maxTag = ""
