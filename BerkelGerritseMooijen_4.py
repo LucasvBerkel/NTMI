@@ -89,6 +89,7 @@ def get_frequencies_sequences(sentencelist, n):
 	writestatus(length, length)
 	return wordTag_dict, tagSeq_dict, tag_dict 
 
+
 def retrievePossibleTags(word, tag_dict, wordTag_dict):
 	tagList = []
 	for element in tag_dict:
@@ -180,6 +181,12 @@ def filterTestSentence(sentenceList, limit):
 			newSentenceList.append(sentence)
 	return newSentenceList
 
+# Creates a dict only containing the word-tag combinations only of a given tag
+# Input(s)
+# - wordTag_dict, the dictionary containing the word and tag combinations and its frequency
+# - tag, the tag for which the dict has to be filtered
+# Output(s)
+# - cleanDict, the dictionary with only word-tag combinations of a certain tag
 def fixCleanDict(wordTag_dict, tag):
 	cleanDict = {}
 	for element in wordTag_dict:
@@ -188,6 +195,12 @@ def fixCleanDict(wordTag_dict, tag):
 			cleanDict[element] = wordTag_dict[element]
 	return cleanDict
 
+# Takes every tag and calculates the emission probability for unknown words if the dicts are smoothed
+# Input(s)
+# - wordTag_dict, the dictionary containing the word and tag combinations and its frequency
+# - tag_dict, the dictionary containing every tag and its frequency
+# Output(s)
+# - unknown_dict, the dictionary with every tag as key and its emission probability as value for unseen words
 def unknownEmissionProbabilityList(wordTag_dict, tag_dict):
 	tagList = list(tag_dict.keys())
 	unknown_dict = {}
@@ -199,6 +212,15 @@ def unknownEmissionProbabilityList(wordTag_dict, tag_dict):
 	return unknown_dict
 
 # Predicts the tags and writes them to a file.
+# Input(s):
+# - sentencelist, the list of sentences coming from the trainingcorpus
+# - test_sentencelist, the list of sentences coming from the testcorpus
+# - wordTag_dict, the dictionary containing the word and tag combinations and its frequency
+# - tagSeq_dict, the dictionary containing the tag after tag sequence and its frequency
+# - tag_dict, the dictionary containing every tag and its frequency
+# - test_set_predicted, the path to the txt file with the predicted POS
+# - smoothing, yes or no, according to the user if he/she wants to smooth the dicts
+# Delivers no output(s)
 def evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_dict, test_set_predicted, smoothing):
 	unknown_dict = {}
 	if smoothing == "yes":
