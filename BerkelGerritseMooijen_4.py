@@ -1,9 +1,7 @@
 import re
 import sys
 import argparse
-import re
 
-#hoi
 parser = argparse.ArgumentParser()
 parser.add_argument("-smoothing", help="yes/no", type=str)
 parser.add_argument("-train_set", help="path to the training set", type=str)
@@ -75,18 +73,15 @@ def get_frequencies_sequences(sentencelist, n):
 				word = ""
 				for offset in range(n):
 					if offset == 0:
+						if "\`\`" in sentence[word_index]:
+							print(sentence[word_index])
 						split = sentence[word_index].split("/")
-<<<<<<< HEAD
-						wordTag = split[0] + " " + split[0]
-						tagSeq = split[0]
-=======
 						if len(split)>2:
 							del split[1:-1]
 							split[0] = re.sub("\\\\", "", split[0])
 						tagSplit = split[1].split("|")
 						wordTag = tagSplit[0] + " " + split[0]
 						tagSeq = tagSplit[0]
->>>>>>> d7ea9b869824ea3fd0e97885b921518a7fb86d9d
 						word = split[0]
 						tag = tagSplit[0]
 					else:
@@ -99,7 +94,6 @@ def get_frequencies_sequences(sentencelist, n):
 				addToDict(tagSeq, tagSeq_dict)
 			addToDict(tag, tag_dict)
 	writestatus(length, length)
-	print(tag_dict)
 	return wordTag_dict, tagSeq_dict, tag_dict 
 
 def addToDict(key, input_dict):
@@ -319,12 +313,12 @@ def evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_d
 				if not (real_tags[x] == "START" or real_tags[x] == "STOP"):
 					if (real_tags[x] == predicted_tags[x]):
 						correct_tag_count += 1
-					total_tag_count += 1
 					textfile.write(sentence[x] + "/" + predicted_tags[x] + "\n")
 				elif real_tags[x] == "START":
 					textfile.write("======================================\n\n")
 				else:
 					textfile.write("\n")
+				total_tag_count += len(real_tags)
 		accuracy = correct_tag_count / total_tag_count
 		print("Accuracy = {} / {} = {}".format(correct_tag_count, total_tag_count, accuracy))
 		textfile.close()
@@ -429,16 +423,9 @@ if __name__ == "__main__":
 			# Smooth lexical model
 			wordTag_dictTuringSmoothN = wordTag_dict.copy()
 			wordTag_dictTuringSmoothN, totalN_1 = smoothLexicalGoodTuring(wordTag_dictTuringSmoothN)
+			evaluation(sentencelist, test_sentencelist, wordTag_dictTuringSmoothN, tagSeq_dictTuringSmoothN, tag_dictTuringSmoothN1s, test_set_predicted, smoothing)	
 
-			print(tag_dictTuringSmoothN1)
-			print(len(tag_dictTuringSmoothN1))
-			sys.exit()
-			evaluation(sentencelist, test_sentencelist, wordTag_dictTuringSmoothN, tagSeq_dictTuringSmoothN, tag_dict, test_set_predicted, smoothing)	
 		else:
-
-			print(tag_dict)
-			print(len(tag_dict))
-			sys.exit()
 			evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_dict, test_set_predicted, smoothing)	
 	else:
 		parser.print_help()
