@@ -1,4 +1,4 @@
-
+import re
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -72,7 +72,9 @@ def get_frequencies_sequences(sentencelist, n):
 				word = ""
 				for offset in range(n):
 					if offset == 0:
-						split = sentence[word_index].split("/")
+						presplit = re.sub("\\\/", " ", sentence[word_index])
+						split = presplit.split("/")
+						print(split)
 						wordTag = split[1] + " " + split[0]
 						tagSeq = split[1]
 						word = split[0]
@@ -294,7 +296,7 @@ def evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_d
 	with open(test_set_predicted, "w") as textfile:
 		correct_tag_count = 0
 		total_tag_count = 0
-		test_sentencelist = filterTestSentence(test_sentencelist, 17)
+		# test_sentencelist = filterTestSentence(test_sentencelist, 17)
 		length = len(test_sentencelist)
 		for sentence_counter, attemptedSentence in enumerate(test_sentencelist):
 			writestatus(sentence_counter, length)
@@ -303,7 +305,6 @@ def evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_d
 					
 			for element in viterbi_dict:
 				predicted_tags = element.split(" ")
-
 			for x in range(len(real_tags)):
 				if not (real_tags[x] == "START" or real_tags[x] == "STOP"):
 					if (real_tags[x] == predicted_tags[x]):
