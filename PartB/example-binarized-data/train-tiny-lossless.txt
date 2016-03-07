@@ -1,0 +1,1000 @@
+(ROOT (S (NP (NNP Ms.) (@NP->_NNP (NNP Haag))) (@S->_NP (VP (VBZ plays) (@VP->_VBZ (NP (NNP Elianti)))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Rolls-Royce) (@NP->_NNP (NNP Motor) (@NP->_NNP_NNP (NNPS Cars) (@NP->_NNP_NNP_NNPS (NNP Inc.))))) (@S->_NP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (PRP it)) (@S->_NP (VP (VBZ expects) (@VP->_VBZ (S (NP (PRP$ its) (@NP->_PRP$ (NNP U.S.) (@NP->_PRP$_NNP (NNS sales)))) (@S->_NP (VP (TO to) (@VP->_TO (VP (VB remain) (@VP->_VB (ADJP (JJ steady)) (@VP->_VB_ADJP (PP (IN at) (@PP->_IN (NP (QP (IN about) (@QP->_IN (CD 1,200))) (@NP->_QP (NNS cars))))) (@VP->_VB_ADJP_PP (PP (IN in) (@PP->_IN (NP (CD 1990))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN luxury) (@NP->_DT_NN (NN auto) (@NP->_DT_NN_NN (NN maker))))) (@S->_NP (NP (JJ last) (@NP->_JJ (NN year))) (@S->_NP_NP (VP (VBD sold) (@VP->_VBD (NP (CD 1,214) (@NP->_CD (NNS cars))) (@VP->_VBD_NP (PP (IN in) (@PP->_IN (NP (DT the) (@NP->_DT (NNP U.S.))))))))))))
+
+(ROOT (S (NP (NNP BELL) (@NP->_NNP (NNP INDUSTRIES) (@NP->_NNP_NNP (NNP Inc.)))) (@S->_NP (VP (VBD increased) (@VP->_VBD (NP (PRP$ its) (@NP->_PRP$ (NN quarterly))) (@VP->_VBD_NP (PP (TO to) (@PP->_TO (NP (CD 10) (@NP->_CD (NNS cents))))) (@VP->_VBD_NP_PP (PP (IN from) (@PP->_IN (NP (NP (CD seven) (@NP->_CD (NNS cents))) (@NP->_NP (NP (DT a) (@NP->_DT (NN share))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (JJ new) (@NP->_DT_JJ (NN rate)))) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB be) (@VP->_VB (ADJP (JJ payable) (@ADJP->_JJ (NP (NNP Feb.) (@NP->_NNP (CD 15))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT A) (@NP->_DT (NN record) (@NP->_DT_NN (NN date)))) (@S->_NP (VP (VBZ has) (@VP->_VBZ (RB n't) (@VP->_VBZ_RB (VP (VBN been) (@VP->_VBN (VP (VBN set))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (NNP Bell)) (@NP->_NP (, ,) (@NP->_NP_, (VP (VBN based) (@VP->_VBN (PP (IN in) (@PP->_IN (NP (NNP Los) (@NP->_NNP (NNP Angeles))))))) (@NP->_NP_,_VP (, ,))))) (@S->_NP (VP (VBZ makes) (@VP->_VBZ (CC and) (@VP->_VBZ_CC (VBZ distributes) (@VP->_VBZ_CC_VBZ (NP (UCP (JJ electronic) (@UCP->_JJ (, ,) (@UCP->_JJ_, (NN computer) (@UCP->_JJ_,_NN (CC and) (@UCP->_JJ_,_NN_CC (NN building)))))) (@NP->_UCP (NNS products))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (VBN proposed) (@NP->_DT_VBN (NNS changes)))) (@S->_NP (ADVP (RB also)) (@S->_NP_ADVP (VP (MD would) (@VP->_MD (VP (VB allow) (@VP->_VB (S (NP (NNS executives)) (@S->_NP (VP (TO to) (@VP->_TO (VP (VB report) (@VP->_VB (NP (NP (NNS exercises)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNS options)))))) (@VP->_VB_NP (ADVP (ADVP (RBR later)) (@ADVP->_ADVP (CC and) (@ADVP->_ADVP_CC (ADVP (RBR less) (@ADVP->_RBR (RB often))))))))))))))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (S (`` ``) (@S->_`` (ADVP (RB Apparently)) (@S->_``_ADVP (NP (DT the) (@NP->_DT (NN commission))) (@S->_``_ADVP_NP (VP (VBD did) (@VP->_VBD (RB not) (@VP->_VBD_RB (ADVP (RB really)) (@VP->_VBD_RB_ADVP (VP (VB believe) (@VP->_VB (PP (IN in) (@PP->_IN (NP (DT this) (@NP->_DT (NN ideal))))))))))) (@S->_``_ADVP_NP_VP (. .) (@S->_``_ADVP_NP_VP_. ('' ''))))))))
+
+(ROOT (S (CC But) (@S->_CC (NP (NP (QP (IN about) (@QP->_IN (CD 25))) (@NP->_QP (NN %))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NNS insiders))))))) (@S->_CC_NP (, ,) (@S->_CC_NP_, (PP (VBG according) (@PP->_VBG (PP (TO to) (@PP->_TO (NP (NNP SEC) (@NP->_NNP (NNS figures))))))) (@S->_CC_NP_,_PP (, ,) (@S->_CC_NP_,_PP_, (VP (VBP file) (@VP->_VBP (NP (PRP$ their) (@NP->_PRP$ (NNS reports))) (@VP->_VBP_NP (ADVP (RB late))))) (@S->_CC_NP_,_PP_,_VP (. .)))))))))
+
+(ROOT (S (S (NP (DT The) (@NP->_DT (NNP SEC))) (@S->_NP (VP (MD will) (@VP->_MD (ADVP (RB probably)) (@VP->_MD_ADVP (VP (VB vote) (@VP->_VB (PP (IN on) (@PP->_IN (NP (DT the) (@NP->_DT (NN proposal))))) (@VP->_VB_PP (NP (RB early) (@NP->_RB (JJ next) (@NP->_RB_JJ (NN year)))))))))))) (@S->_S (, ,) (@S->_S_, (NP (PRP he)) (@S->_S_,_NP (VP (VBD said)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NP (RB Not) (@NP->_RB (PDT all) (@NP->_RB_PDT (DT those)))) (@NP->_NP (SBAR (WHNP (WP who)) (@SBAR->_WHNP (S (VP (VBD wrote))))))) (@S->_NP (VP (VBP oppose) (@VP->_VBP (NP (DT the) (@NP->_DT (NNS changes))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (PP (VBG According) (@PP->_VBG (PP (TO to) (@PP->_TO (NP (DT some) (@NP->_DT (NNS estimates))))))) (@S->_PP (, ,) (@S->_PP_, (NP (DT the) (@NP->_DT (NN rule) (@NP->_DT_NN (NNS changes)))) (@S->_PP_,_NP (VP (MD would) (@VP->_MD (VP (VB cut) (@VP->_VB (NP (NN insider) (@NP->_NN (NNS filings))) (@VP->_VB_NP (PP (IN by) (@PP->_IN (NP (NP (JJR more)) (@NP->_NP (PP (IN than) (@PP->_IN (NP (DT a) (@NP->_DT (NN third)))))))))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (NNP SEC) (@NP->_DT_NNP (POS 's)))) (@NP->_NP (NNP Mr.) (@NP->_NP_NNP (NNP Lane)))) (@S->_NP (VP (ADVP (RB vehemently)) (@VP->_ADVP (VBD disputed) (@VP->_ADVP_VBD (NP (DT those) (@NP->_DT (NNS estimates)))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (S (NP (DT The) (@NP->_DT (VBN proposed) (@NP->_DT_VBN (NNS rules)))) (@S->_NP (ADVP (RB also)) (@S->_NP_ADVP (VP (MD would) (@VP->_MD (VP (VB be) (@VP->_VB (ADJP (JJR tougher) (@ADJP->_JJR (PP (IN on) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NNS insiders))) (@NP->_NP (VP (ADVP (RB still)) (@VP->_ADVP (JJ required) (@VP->_ADVP_JJ (S (VP (TO to) (@VP->_TO (VP (VB file) (@VP->_VB (NP (NNS reports))))))))))))))))))))))) (@S->_S (, ,) (@S->_S_, (NP (PRP he)) (@S->_S_,_NP (VP (VBD said)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (S (NP (NP (NNS Investors)) (@NP->_NP (SBAR (WHNP (WP who)) (@SBAR->_WHNP (S (VP (VBP want) (@VP->_VBP (S (VP (TO to) (@VP->_TO (VP (VB change) (@VP->_VB (NP (DT the) (@NP->_DT (JJ required) (@NP->_DT_JJ (NN timing)))))))))))))))) (@S->_NP (VP (MD should) (@VP->_MD (VP (VB write) (@VP->_VB (NP (NP (PRP$ their) (@NP->_PRP$ (NNS representatives))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NNP Congress)))))))))))) (@S->_S (, ,) (@S->_S_, (NP (PRP he)) (@S->_S_,_NP (VP (VBD added)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT Both) (@NP->_DT (NNS funds))) (@S->_NP (VP (VBP are) (@VP->_VBP (VP (VBN expected) (@VP->_VBN (S (VP (TO to) (@VP->_TO (VP (VB begin) (@VP->_VB (NP (NN operation)) (@VP->_VB_NP (PP (IN around) (@PP->_IN (NP (NNP March) (@NP->_NNP (CD 1))))) (@VP->_VB_NP_PP (, ,) (@VP->_VB_NP_PP_, (ADJP (JJ subject) (@ADJP->_JJ (PP (TO to) (@PP->_TO (NP (NNPS Securities) (@NP->_NNPS (CC and) (@NP->_NNPS_CC (NNP Exchange) (@NP->_NNPS_CC_NNP (NNP Commission) (@NP->_NNPS_CC_NNP_NNP (NN approval)))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (SBAR (IN For) (@SBAR->_IN (S (NP (PRP$ its) (@NP->_PRP$ (NNS employees))) (@S->_NP (VP (TO to) (@VP->_TO (VP (VB sign) (@VP->_VB (PRT (RP up)) (@VP->_VB_PRT (PP (IN for) (@PP->_IN (NP (DT the) (@NP->_DT (NNS options)))))))))))))) (@S->_SBAR (, ,) (@S->_SBAR_, (NP (DT a) (@NP->_DT (NN college))) (@S->_SBAR_,_NP (ADVP (RB also)) (@S->_SBAR_,_NP_ADVP (VP (MD must) (@VP->_MD (VP (VB approve) (@VP->_VB (NP (DT the) (@NP->_DT (NN plan))))))) (@S->_SBAR_,_NP_ADVP_VP (. .))))))))
+
+(ROOT (S (NP (QP (DT Some) (@QP->_DT (CD 4,300))) (@NP->_QP (NNS institutions))) (@S->_NP (VP (VBP are) (@VP->_VBP (NP (NP (NN part)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NN pension) (@NP->_DT_NN (NN fund)))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Richard) (@NP->_NNP (NNP Stoltzman))) (@S->_NP (VP (VBZ has) (@VP->_VBZ (VP (VBN taken) (@VP->_VBN (NP (DT a) (@NP->_DT (JJR gentler) (@NP->_DT_JJR (, ,) (@NP->_DT_JJR_, (ADJP (RBR more) (@ADJP->_RBR (JJ audience-friendly))) (@NP->_DT_JJR_,_ADJP (NN approach)))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (CC But) (@S->_CC (NP (PRP you)) (@S->_CC_NP (VP (MD ca) (@VP->_MD (RB n't) (@VP->_MD_RB (VP (VB dismiss) (@VP->_VB (NP (NP (NP (NNP Mr.) (@NP->_NNP (NNP Stoltzman) (@NP->_NNP_NNP (POS 's)))) (@NP->_NP (NN music))) (@NP->_NP (CC or) (@NP->_NP_CC (NP (PRP$ his) (@NP->_PRP$ (NNS motives)))))) (@VP->_VB_NP (PP (RB as) (@PP->_RB (ADJP (RB merely) (@ADJP->_RB (JJ commercial) (@ADJP->_RB_JJ (CC and) (@ADJP->_RB_JJ_CC (JJ lightweight))))))))))))) (@S->_CC_NP_VP (. .))))))
+
+(ROOT (S (S (NP (PRP He)) (@S->_NP (VP (VBZ believes) (@VP->_VBZ (PP (IN in) (@PP->_IN (SBAR (WHNP (WP what)) (@SBAR->_WHNP (S (NP (PRP he)) (@S->_NP (VP (VBZ plays)))))))))))) (@S->_S (, ,) (@S->_S_, (CC and) (@S->_S_,_CC (S (NP (PRP he)) (@S->_NP (VP (VBZ plays) (@VP->_VBZ (ADVP (RB superbly)))))) (@S->_S_,_CC_S (. .)))))))
+
+(ROOT (S (NP (NP (NNP Bach) (@NP->_NNP (POS 's))) (@NP->_NP (`` ``) (@NP->_NP_`` (NX (NN Air)) (@NP->_NP_``_NX ('' ''))))) (@S->_NP (VP (VBD followed)) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (WDT That)) (@S->_NP (VP (VBD went) (@VP->_VBD (PP (IN over) (@PP->_IN (NP (NP (DT the) (@NP->_DT (JJ permissible) (@NP->_DT_JJ (NN line)))) (@NP->_NP (PP (IN for) (@PP->_IN (NP (ADJP (JJ warm) (@ADJP->_JJ (CC and) (@ADJP->_JJ_CC (JJ fuzzy)))) (@NP->_ADJP (NNS feelings))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (SQ (VBD Was) (@SQ->_VBD (NP (DT this)) (@SQ->_VBD_NP (SBAR (WHADVP (WRB why)) (@SBAR->_WHADVP (S (NP (NP (DT some)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NN audience))))))) (@S->_NP (VP (VBD departed) (@VP->_VBD (PP (IN before) (@PP->_IN (CC or) (@PP->_IN_CC (IN during) (@PP->_IN_CC_IN (NP (DT the) (@NP->_DT (JJ second) (@NP->_DT_JJ (NN half)))))))))))))) (@SQ->_VBD_NP_SBAR (. ?))))))
+
+(ROOT (SQ (CC Or) (@SQ->_CC (VBD was) (@SQ->_CC_VBD (NP (PRP it)) (@SQ->_CC_VBD_NP (SBAR (IN because) (@SBAR->_IN (S (NP (NNP Ms.) (@NP->_NNP (NNP Collins))) (@S->_NP (VP (VBD had) (@VP->_VBD (VP (VBN gone)))))))) (@SQ->_CC_VBD_NP_SBAR (. ?)))))))
+
+(ROOT (S (-LRB- -LRB-) (@S->_-LRB- (NP (NP (NP (NNP Mr.) (@NP->_NNP (NNP Reich) (@NP->_NNP_NNP (POS 's)))) (@NP->_NP (JJ new) (@NP->_NP_JJ (`` ``) (@NP->_NP_JJ_`` (NX (JJ Different) (@NX->_JJ (NNS Trains))) (@NP->_NP_JJ_``_NX ('' '')))))) (@NP->_NP (PP (IN for) (@PP->_IN (NP (NN string) (@NP->_NN (NN quartet))))))) (@S->_-LRB-_NP (VP (VBZ uses) (@VP->_VBZ (NP (DT the) (@NP->_DT (NN technique))) (@VP->_VBZ_NP (ADVP (RB magisterially))))) (@S->_-LRB-_NP_VP (. .) (@S->_-LRB-_NP_VP_. (-RRB- -RRB-)))))))
+
+(ROOT (SQ (VBZ Is) (@SQ->_VBZ (NP (DT this)) (@SQ->_VBZ_NP (NP (NP (DT the) (@NP->_DT (NN future))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NN chamber) (@NP->_NN (NN music))))))) (@SQ->_VBZ_NP_NP (. ?))))))
+
+(ROOT (SBARQ (WHNP (WP What)) (@SBARQ->_WHNP (SQ (VP (VBZ 's) (@VP->_VBZ (ADJP (JJ next))))) (@SBARQ->_WHNP_SQ (. ?)))))
+
+(ROOT (FRAG (NP (NP (NNS Slides)) (@NP->_NP (SBAR (S (VP (TO to) (@VP->_TO (VP (VB illustrate) (@VP->_VB (NP (NNP Shostakovich) (@NP->_NNP (NNS quartets))))))))))) (@FRAG->_NP (. ?))))
+
+(ROOT (S (CC But) (@S->_CC (NP (PRP it)) (@S->_CC_NP (VP (VBD was) (@VP->_VBD (UCP (ADJP (RB neither) (@ADJP->_RB (JJ deep) (@ADJP->_RB_JJ (CC nor) (@ADJP->_RB_JJ_CC (JJ lasting))))) (@UCP->_ADJP (: :) (@UCP->_ADJP_: (NP (NP (JJ light) (@NP->_JJ (NN entertainment))) (@NP->_NP (SBAR (WHNP (WDT that)) (@SBAR->_WHNP (S (VP (VBD was) (@VP->_VBD (NP (NP (DT no) (@NP->_DT (NN substitute))) (@NP->_NP (PP (IN for) (@PP->_IN (NP (NP (DT an) (@NP->_DT (NN evening))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNP Brahms)))))))))))))))))))))) (@S->_CC_NP_VP (. .))))))
+
+(ROOT (S (NP (NNP Ms.) (@NP->_NNP (NNP Waleson))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (DT a) (@NP->_DT (JJ free-lance) (@NP->_DT_JJ (NN writer)))) (@NP->_NP (VP (VBN based) (@VP->_VBN (PP (IN in) (@PP->_IN (NP (NNP New) (@NP->_NNP (NNP York))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (PP (IN In) (@PP->_IN (NP (NN fact)))) (@S->_PP (, ,) (@S->_PP_, (NP (PRP he)) (@S->_PP_,_NP (VP (VBD liberated) (@VP->_VBD (NP (DT the) (@NP->_DT (NNP U.S.))) (@VP->_VBD_NP (PP (IN from) (@PP->_IN (NP (NP (NP (CD one)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NN world) (@NP->_DT_NN (VBZ 's)))) (@NP->_NP (ADJP (RBS most) (@ADJP->_RBS (JJ corrupt))) (@NP->_NP_ADJP (NNS organizations)))))))) (@NP->_NP (: --) (@NP->_NP_: (NP (NNP UNESCO)))))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT This)) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (DT the) (@NP->_DT (NNP U.N.) (@NP->_DT_NNP (NN group)))) (@NP->_NP (SBAR (WHNP (WDT that)) (@SBAR->_WHNP (S (VP (VBD managed) (@VP->_VBD (S (VP (TO to) (@VP->_TO (VP (VB traduce) (@VP->_VB (NP (NP (PRP$ its) (@NP->_PRP$ (JJ own) (@NP->_PRP$_JJ (NN charter)))) (@NP->_NP (PP (IN of) (@PP->_IN (S (VP (VBG promoting) (@VP->_VBG (NP (NN education) (@NP->_NN (, ,) (@NP->_NN_, (NN science) (@NP->_NN_,_NN (CC and) (@NP->_NN_,_NN_CC (NN culture))))))))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (ADVP (RB Ever) (@ADVP->_RB (IN since))) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (DT the) (@NP->_DT (VBG remaining) (@NP->_DT_VBG (NNS members)))) (@S->_ADVP_,_NP (VP (VBP have) (@VP->_VBP (VP (VBN been) (@VP->_VBN (ADJP (JJ desperate) (@ADJP->_JJ (SBAR (IN for) (@SBAR->_IN (S (NP (DT the) (@NP->_DT (NNP United) (@NP->_DT_NNP (NNPS States)))) (@S->_NP (VP (TO to) (@VP->_TO (VP (VB rejoin) (@VP->_VB (NP (DT this) (@NP->_DT (JJ dreadful) (@NP->_DT_JJ (NN group)))))))))))))))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (ADVP (RB Now)) (@S->_ADVP (NP (NNP UNESCO) (@NP->_NNP (NNS apologists))) (@S->_ADVP_NP (VP (VBP are) (@VP->_VBP (VP (VBG lobbying) (@VP->_VBG (NP (NNP President) (@NP->_NNP (NNP Bush))) (@VP->_VBG_NP (S (VP (TO to) (@VP->_TO (VP (VB renege) (@VP->_VB (PP (IN on) (@PP->_IN (NP (NP (NNP President) (@NP->_NNP (NNP Reagan) (@NP->_NNP_NNP (POS 's)))) (@NP->_NP (NN decision) (@NP->_NP_NN (S (VP (TO to) (@VP->_TO (VP (VB depart)))))))))))))))))))) (@S->_ADVP_NP_VP (. .))))))
+
+(ROOT (S (CC But) (@S->_CC (NP (PRP we)) (@S->_CC_NP (VP (MD can) (@VP->_MD (VP (VB think) (@VP->_VB (PP (IN of) (@PP->_IN (NP (NP (JJ many) (@NP->_JJ (NNS reasons))) (@NP->_NP (SBAR (S (VP (TO to) (@VP->_TO (VP (VB stay) (@VP->_VB (ADJP (RB out)) (@VP->_VB_ADJP (PP (IN for) (@PP->_IN (UCP (NP (DT the) (@NP->_DT (JJ foreseeable) (@NP->_DT_JJ (NN future)))) (@UCP->_NP (CC and) (@UCP->_NP_CC (ADVP (RB well) (@ADVP->_RB (IN beyond))))))))))))))))))))))) (@S->_CC_NP_VP (. .))))))
+
+(ROOT (S (NP (NNP UNESCO)) (@S->_NP (VP (ADVP (RB somehow)) (@VP->_ADVP (VBD converted) (@VP->_ADVP_VBD (NP (NP (DT the) (@NP->_DT (JJ founding) (@NP->_DT_JJ (NNP U.N.) (@NP->_DT_JJ_NNP (NNS ideals))))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (JJ individual) (@NP->_JJ (NNS rights) (@NP->_JJ_NNS (CC and) (@NP->_JJ_NNS_CC (NN liberty))))))))) (@VP->_ADVP_VBD_NP (PP (IN into) (@PP->_IN (`` ``) (@PP->_IN_`` (NP (NP (NNS peoples) (@NP->_NNS (POS '))) (@NP->_NP (NNS rights)))))))))) (@S->_NP_VP (. .) (@S->_NP_VP_. ('' ''))))))
+
+(ROOT (S (NP (NNP UNESCO)) (@S->_NP (VP (VBZ is) (@VP->_VBZ (ADVP (RB now)) (@VP->_VBZ_ADVP (VP (VBG holding) (@VP->_VBG (NP (PRP$ its) (@NP->_PRP$ (JJ biennial) (@NP->_PRP$_JJ (NNS meetings)))) (@VP->_VBG_NP (PP (IN in) (@PP->_IN (NP (NNP Paris)))) (@VP->_VBG_NP_PP (SBAR (S (VP (TO to) (@VP->_TO (VP (VB devise) (@VP->_VB (NP (PRP$ its) (@NP->_PRP$ (JJ next) (@NP->_PRP$_JJ (NNS projects))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP He)) (@S->_NP (VP (VBZ has) (@VP->_VBZ (RB n't) (@VP->_VBZ_RB (VP (VBN been) (@VP->_VBN (ADJP (JJ able) (@ADJP->_JJ (S (VP (TO to) (@VP->_TO (VP (VB replace) (@VP->_VB (NP (DT the) (@NP->_DT (NNP M'Bow) (@NP->_DT_NNP (NN cabal)))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (JJ Other) (@NP->_JJ (NNS countries))) (@NP->_NP (, ,) (@NP->_NP_, (PP (VBG including) (@PP->_VBG (NP (NNP West) (@NP->_NNP (NNP Germany))))) (@NP->_NP_,_PP (, ,))))) (@S->_NP (VP (MD may) (@VP->_MD (VP (VB have) (@VP->_VB (NP (NP (DT a) (@NP->_DT (JJ hard) (@NP->_DT_JJ (NN time)))) (@NP->_NP (S (VP (VBG justifying) (@VP->_VBG (NP (JJ continued) (@NP->_JJ (NN membership)))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP We)) (@S->_NP (VP (VBP see) (@VP->_VBP (NP (NP (DT an) (@NP->_DT (ADJP (RB even) (@ADJP->_RB (JJR stronger))) (@NP->_DT_ADJP (NN argument)))) (@NP->_NP (PP (IN against) (@PP->_IN (NP (NNP UNESCO)))) (@NP->_NP_PP (PP (IN than) (@PP->_IN (NP (NP (PRP$ its) (@NP->_PRP$ (JJ unsurprising) (@NP->_PRP$_JJ (NN failure)))) (@NP->_NP (PP (TO to) (@PP->_TO (NP (NN reform))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (NNS Babelists))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NNP United) (@NP->_DT_NNP (NNPS Nations)))))))) (@S->_NP (VP (VBP are) (@VP->_VBP (NP (NP (NNS experts)) (@NP->_NP (PP (IN at) (@PP->_IN (NP (NN obfuscation)))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP We)) (@S->_NP (VP (MD can) (@VP->_MD (VP (VB see) (@VP->_VB (NP (NP (NP (RB plenty)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (NNS reasons)) (@NP->_NP (SBAR (S (VP (TO to) (@VP->_TO (VP (VB stay) (@VP->_VB (ADVP (RB out)))))))))))))) (@NP->_NP (, ,) (@NP->_NP_, (CC and) (@NP->_NP_,_CC (NP (NP (NN none)) (@NP->_NP (SBAR (S (VP (TO to) (@VP->_TO (VP (VB rejoin) (@VP->_VB (NP (NNP UNESCO)))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNS researchers))) (@S->_NP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (PRP they)) (@S->_NP (VP (VBP have) (@VP->_VBP (VP (VBN isolated) (@VP->_VBN (NP (NP (DT a) (@NP->_DT (NN plant) (@NP->_DT_NN (NN gene)))) (@NP->_NP (SBAR (WHNP (WDT that)) (@SBAR->_WHNP (S (VP (VBZ prevents) (@VP->_VBZ (NP (NP (DT the) (@NP->_DT (NN production))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NN pollen)))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN gene))) (@S->_NP (ADVP (RB thus)) (@S->_NP_ADVP (VP (MD can) (@VP->_MD (VP (VB prevent) (@VP->_VB (NP (DT a) (@NP->_DT (NN plant))) (@VP->_VB_NP (PP (IN from) (@PP->_IN (S (VP (VBG fertilizing) (@VP->_VBG (NP (PRP itself)))))))))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (S (NP (PRP They)) (@S->_NP (VP (VBP sow) (@VP->_VBP (NP (NP (DT a) (@NP->_DT (NN row))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (JJ male-fertile) (@NP->_JJ (NNS plants))))))) (@VP->_VBP_NP (ADVP (RB nearby)) (@VP->_VBP_NP_ADVP (, ,) (@VP->_VBP_NP_ADVP_, (SBAR (WHNP (WDT which)) (@SBAR->_WHNP (S (ADVP (RB then)) (@S->_ADVP (VP (VBP pollinate) (@VP->_VBP (NP (DT the) (@NP->_DT (JJ male-sterile) (@NP->_DT_JJ (NNS plants))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (JJ vast) (@NP->_DT_JJ (NN majority)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NNP U.S.) (@NP->_DT_NNP (NN corn) (@NP->_DT_NNP_NN (NN crop))))))))) (@S->_NP (ADVP (RB now)) (@S->_NP_ADVP (VP (VBZ is) (@VP->_VBZ (VP (VBN grown) (@VP->_VBN (PP (IN from) (@PP->_IN (NP (NP (JJ hybrid) (@NP->_JJ (NNS seeds))) (@NP->_NP (VP (VBN produced) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (NN seed) (@NP->_NN (NNS companies))))))))))))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (S (NP (DT A) (@NP->_DT (JJ similar) (@NP->_DT_JJ (NN technique)))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (ADJP (RB almost) (@ADJP->_RB (JJ impossible) (@ADJP->_RB_JJ (SBAR (S (VP (TO to) (@VP->_TO (VP (VB apply) (@VP->_VB (PP (TO to) (@PP->_TO (NP (NP (JJ other) (@NP->_JJ (NNS crops))) (@NP->_NP (, ,) (@NP->_NP_, (PP (JJ such) (@PP->_JJ (IN as) (@PP->_JJ_IN (NP (NN cotton) (@NP->_NN (, ,) (@NP->_NN_, (NNS soybeans) (@NP->_NN_,_NNS (CC and) (@NP->_NN_,_NNS_CC (NN rice))))))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (NNS anthers))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (DT these) (@NP->_DT (NNS plants))))))) (@S->_NP (VP (VBP are) (@VP->_VBP (ADJP (JJ difficult) (@ADJP->_JJ (SBAR (S (VP (TO to) (@VP->_TO (VP (VB clip) (@VP->_VB (PRT (RP off)))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Mr.) (@NP->_NNP (NNP Leemans))) (@S->_NP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (DT this) (@NP->_DT (JJ genetic) (@NP->_DT_JJ (NN manipulation)))) (@S->_NP (VP (VBZ does) (@VP->_VBZ (RB n't) (@VP->_VBZ_RB (VP (VB hurt) (@VP->_VB (NP (NP (DT the) (@NP->_DT (NN growth))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT that) (@NP->_DT (NN plant))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP They)) (@S->_NP (VP (VBD attached) (@VP->_VBD (NP (NP (DT a) (@NP->_DT (JJ second) (@NP->_DT_JJ (NN gene)))) (@NP->_NP (, ,) (@NP->_NP_, (PP (IN for) (@PP->_IN (NP (NN herbicide) (@NP->_NN (NN resistance))))) (@NP->_NP_,_PP (, ,))))) (@VP->_VBD_NP (PP (TO to) (@PP->_TO (NP (DT the) (@NP->_DT (JJ pollen-inhibiting) (@NP->_DT_JJ (NN gene))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (`` ``) (@S->_`` (S (NP (EX There)) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (DT a) (@NP->_DT (JJ large) (@NP->_DT_JJ (NN market)))) (@NP->_NP (PP (IN out) (@PP->_IN (NP (RB there)))) (@NP->_NP_PP (ADJP (JJ hungry) (@ADJP->_JJ (PP (IN for) (@PP->_IN (NP (JJ hybrid) (@NP->_JJ (NNS seeds)))))))))))))) (@S->_``_S (, ,) (@S->_``_S_, ('' '') (@S->_``_S_,_'' (NP (PRP he)) (@S->_``_S_,_''_NP (VP (VBD said)) (@S->_``_S_,_''_NP_VP (. .)))))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN clash))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (DT a) (@NP->_DT (NN sign))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (DT a) (@NP->_DT (JJ new) (@NP->_DT_JJ (NN toughness) (@NP->_DT_JJ_NN (CC and) (@NP->_DT_JJ_NN_CC (NN divisiveness)))))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NP (NNP Japan) (@NP->_NNP (POS 's))) (@NP->_NP (JJ once-cozy) (@NP->_NP_JJ (JJ financial) (@NP->_NP_JJ_JJ (NNS circles))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (ADVP (RB Already)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (DT the) (@NP->_DT (NNS consequences))) (@S->_ADVP_,_NP (VP (VBP are) (@VP->_VBP (VP (VBG being) (@VP->_VBG (VP (VBN felt) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (NP (NP (JJ other) (@NP->_JJ (NNS players))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (DT the) (@NP->_DT (JJ financial) (@NP->_DT_JJ (NNS markets)))))))) (@NP->_NP (: --) (@NP->_NP_: (JJ even) (@NP->_NP_:_JJ (NP (NNS governments)))))))))))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (SBAR (WHNP (WP What)) (@SBAR->_WHNP (S (VP (VBD triggered) (@VP->_VBD (NP (DT the) (@NP->_DT (JJS latest) (@NP->_DT_JJS (NN clash))))))))) (@S->_SBAR (VP (VBD was) (@VP->_VBD (NP (NP (DT a) (@NP->_DT (NN skirmish))) (@NP->_NP (PP (IN over) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NN timing))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT a) (@NP->_DT (NNP New) (@NP->_DT_NNP (NNP Zealand) (@NP->_DT_NNP_NNP (NN government) (@NP->_DT_NNP_NNP_NN (NN bond) (@NP->_DT_NNP_NNP_NN_NN (NN issue))))))))))))))))) (@S->_SBAR_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN dispute))) (@S->_NP (VP (VBZ shows) (@VP->_VBZ (ADVP (RB clearly)) (@VP->_VBZ_ADVP (NP (NP (DT the) (@NP->_DT (JJ global) (@NP->_DT_JJ (NN power)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (NNP Japan) (@NP->_NNP (POS 's))) (@NP->_NP (JJ financial) (@NP->_NP_JJ (NNS titans))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (PP (RB Aside) (@PP->_RB (PP (IN from) (@PP->_IN (NP (NP (NNP Nomura) (@NP->_NNP (POS 's))) (@NP->_NP (JJ injured) (@NP->_NP_JJ (NN pride)))))))) (@S->_PP (, ,) (@S->_PP_, (NP (DT the) (@NP->_DT (JJS biggest) (@NP->_DT_JJS (NN victim)))) (@S->_PP_,_NP (ADVP (RB so) (@ADVP->_RB (RB far))) (@S->_PP_,_NP_ADVP (VP (VBZ has) (@VP->_VBZ (VP (VBN been) (@VP->_VBN (NP (DT the) (@NP->_DT (NNP New) (@NP->_DT_NNP (NNP Zealand) (@NP->_DT_NNP_NNP (NN government))))))))) (@S->_PP_,_NP_ADVP_VP (. .))))))))
+
+(ROOT (S (SBAR (IN With) (@SBAR->_IN (S (NP (NP (NNP Japan) (@NP->_NNP (POS 's))) (@NP->_NP (JJ cash-flush) (@NP->_NP_JJ (NNS banks)))) (@S->_NP (VP (VBN aligned) (@VP->_VBN (PP (IN against) (@PP->_IN (NP (PRP it)))))))))) (@S->_SBAR (, ,) (@S->_SBAR_, (ADVP (RB though)) (@S->_SBAR_,_ADVP (, ,) (@S->_SBAR_,_ADVP_, (S (VP (VBG raising) (@VP->_VBG (NP (NN money))))) (@S->_SBAR_,_ADVP_,_S (VP (MD may) (@VP->_MD (VP (VB be) (@VP->_VB (ADJP (JJ difficult)))))) (@S->_SBAR_,_ADVP_,_S_VP (. .)))))))))
+
+(ROOT (S (NP (NP (NP (NNP New) (@NP->_NNP (NNP Zealand) (@NP->_NNP_NNP (POS 's)))) (@NP->_NP (NN finance) (@NP->_NP_NN (NN minister)))) (@NP->_NP (, ,) (@NP->_NP_, (NP (NNP David) (@NP->_NNP (NNP Caygill))) (@NP->_NP_,_NP (, ,))))) (@S->_NP (VP (VBD lashed) (@VP->_VBD (ADVP (RB out)) (@VP->_VBD_ADVP (PP (IN at) (@PP->_IN (NP (JJ such) (@NP->_JJ (NNS suggestions)))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (`` ``) (@S->_`` (S (NP (PRP It)) (@S->_NP (VP (MD may) (@VP->_MD (ADVP (RB very) (@ADVP->_RB (RB well))) (@VP->_MD_ADVP (VP (VB be) (@VP->_VB (SBAR (WHNP (WP what)) (@SBAR->_WHNP (S (NP (DT the) (@NP->_DT (JJ Japanese) (@NP->_DT_JJ (NNS banks)))) (@S->_NP (VP (VBP want))))))))))))) (@S->_``_S (, ,) (@S->_``_S_, ('' '') (@S->_``_S_,_'' (NP (PRP he)) (@S->_``_S_,_''_NP (VP (VBD told) (@VP->_VBD (NP (NNP Radio) (@NP->_NNP (NNP New) (@NP->_NNP_NNP (NNP Zealand)))))) (@S->_``_S_,_''_NP_VP (. .)))))))))
+
+(ROOT (S (S (NP (DT Both) (@NP->_DT (NNS sides))) (@S->_NP (VP (VBP are) (@VP->_VBP (VP (ADVP (RB jealously)) (@VP->_ADVP (VBG guarding) (@VP->_ADVP_VBG (NP (PRP$ their) (@NP->_PRP$ (NN turf)))))))))) (@S->_S (, ,) (@S->_S_, (CC and) (@S->_S_,_CC (S (NP (NNS relations)) (@S->_NP (VP (VBP have) (@VP->_VBP (VP (VBN been) (@VP->_VBN (PP (IN at) (@PP->_IN (NP (DT a) (@NP->_DT (NN flashpoint))))) (@VP->_VBN_PP (PP (IN for) (@PP->_IN (NP (NNS months))))))))))) (@S->_S_,_CC_S (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNS banks))) (@S->_NP (VP (ADVP (RB badly)) (@VP->_ADVP (VBP want) (@VP->_ADVP_VBP (S (VP (TO to) (@VP->_TO (VP (VB break) (@VP->_VB (PP (IN into) (@PP->_IN (NP (NP (DT all) (@NP->_DT (NNS aspects))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NNS securities) (@NP->_DT_NNS (NN business)))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (CC And) (@S->_CC (NP (NP (PRP$ their) (@NP->_PRP$ (NNS suspicions))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT each) (@NP->_DT (JJ other))))))) (@S->_CC_NP (VP (VBP run) (@VP->_VBP (ADVP (RB deep)))) (@S->_CC_NP_VP (. .))))))
+
+(ROOT (S (PP (IN In) (@PP->_IN (NP (DT the) (@NP->_DT (JJ past) (@NP->_DT_JJ (NN year)))))) (@S->_PP (, ,) (@S->_PP_, (NP (DT both)) (@S->_PP_,_NP (VP (VBP have) (@VP->_VBP (VP (VBN tried) (@VP->_VBN (S (VP (TO to) (@VP->_TO (VP (VB stretch) (@VP->_VB (NP (NP (DT the) (@NP->_DT (NNS limits))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (PRP$ their) (@NP->_PRP$ (NNS businesses)))))))))))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNP New) (@NP->_DT_NNP (NNP Zealand) (@NP->_DT_NNP_NNP (NN bond) (@NP->_DT_NNP_NNP_NN (NN issue)))))) (@S->_NP (ADVP (RB simply)) (@S->_NP_ADVP (VP (VBZ has) (@VP->_VBZ (VP (VBN brought) (@VP->_VBN (S (NP (DT the) (@NP->_DT (CD two) (@NP->_DT_CD (NNS institutions)))) (@S->_NP (ADVP (RB face-to-face)))))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (S (NP (NP (NNP John) (@NP->_NNP (NN A.) (@NP->_NNP_NN (NNP Conlon) (@NP->_NNP_NN_NNP (NNP Jr.))))) (@NP->_NP (, ,) (@NP->_NP_, (NP (CD 45)) (@NP->_NP_,_NP (, ,))))) (@S->_NP (VP (VBD was) (@VP->_VBD (VP (VBN named) (@VP->_VBN (S (NP (DT a) (@NP->_DT (VBG managing) (@NP->_DT_VBG (NN director))))) (@VP->_VBN_S (PP (IN at) (@PP->_IN (NP (DT this) (@NP->_DT (JJ investment-banking) (@NP->_DT_JJ (NN company))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP He)) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB be) (@VP->_VB (PP (IN in) (@PP->_IN (NP (NP (NN charge)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (NP (NN research)) (@NP->_NP (, ,) (@NP->_NP_, (NP (NN equity) (@NP->_NN (NNS sales))) (@NP->_NP_,_NP (CC and) (@NP->_NP_,_NP_CC (NP (NN trading))))))) (@NP->_NP (, ,) (@NP->_NP_, (CC and) (@NP->_NP_,_CC (NP (NP (DT the) (@NP->_DT (NN syndicate) (@NP->_DT_NN (NN operation)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNP Rothschild)))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (SBAR (IN As) (@SBAR->_IN (S (NP (NNP Yogi) (@NP->_NNP (NNP Berra))) (@S->_NP (VP (MD might) (@VP->_MD (VP (VB say)))))))) (@S->_SBAR (, ,) (@S->_SBAR_, (NP (PRP it)) (@S->_SBAR_,_NP (VP (VBZ 's) (@VP->_VBZ (NP (NN deja) (@NP->_NN (NN vu))) (@VP->_VBZ_NP (ADVP (RB all) (@ADVP->_RB (RB over) (@ADVP->_RB_RB (RB again))))))) (@S->_SBAR_,_NP_VP (. .)))))))
+
+(ROOT (S (PP (IN In) (@PP->_IN (NP (DT the) (@NP->_DT (NN outfield))))) (@S->_PP (, ,) (@S->_PP_, (NP (NP (NNP Paul) (@NP->_NNP (NNP Blair))) (@NP->_NP (, ,) (@NP->_NP_, (NP (NP (DT the) (@NP->_DT (NNP Orioles) (@NP->_DT_NNP (POS ')))) (@NP->_NP (JJ eight-time) (@NP->_NP_JJ (NNP Gold) (@NP->_NP_JJ_NNP (NNP Glove) (@NP->_NP_JJ_NNP_NNP (NN winner)))))) (@NP->_NP_,_NP (, ,))))) (@S->_PP_,_NP (VP (ADVP (RB elegantly)) (@VP->_ADVP (VBZ shags) (@VP->_ADVP_VBZ (NP (DT a) (@NP->_DT (NN fly)))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (`` ``) (@S->_`` (FRAG (NP (JJ Old-time) (@NP->_JJ (NNS kiddies)))) (@S->_``_FRAG (, ,) (@S->_``_FRAG_, ('' '') (@S->_``_FRAG_,_'' (NP (PRP he)) (@S->_``_FRAG_,_''_NP (VP (VBZ says)) (@S->_``_FRAG_,_''_NP_VP (. .)))))))))
+
+(ROOT (FRAG (ADVP (RB Perhaps)) (@FRAG->_ADVP (. .))))
+
+(ROOT (S (PP (IN For) (@PP->_IN (NP (NP (NN everyone)) (@NP->_NP (VP (VBN involved)))))) (@S->_PP (, ,) (@S->_PP_, (NP (PRP it)) (@S->_PP_,_NP (VP (VBZ 's) (@VP->_VBZ (NP (NP (CD one) (@NP->_CD (JJR more) (@NP->_CD_JJR (NN swig)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (NP (DT that) (@NP->_DT (NN elixir))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NN youth)))))) (@NP->_NP (, ,) (@NP->_NP_, (NP (NN baseball))))))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (SBAR (IN Until) (@SBAR->_IN (S (NP (NP (DT the) (@NP->_DT (JJ baby-faced) (@NP->_DT_JJ (NNS heroes)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NN today)))))) (@S->_NP (VP (VBP reclaim) (@VP->_VBP (NP (DT these) (@NP->_DT (NNS ballparks))) (@VP->_VBP_NP (PP (IN for) (@PP->_IN (NP (NN spring) (@NP->_NN (NN training)))))))))))) (@S->_SBAR (, ,) (@S->_SBAR_, (NP (EX there)) (@S->_SBAR_,_NP (VP (VBZ is) (@VP->_VBZ (NP (QP (CD one) (@QP->_CD (JJR more)))))) (@S->_SBAR_,_NP_VP (. .)))))))
+
+(ROOT (FRAG (CC And) (@FRAG->_CC (RB not) (@FRAG->_CC_RB (ADVP (RB just)) (@FRAG->_CC_RB_ADVP (PP (IN for) (@PP->_IN (NP (DT the) (@NP->_DT (NNS players))))) (@FRAG->_CC_RB_ADVP_PP (. .)))))))
+
+(ROOT (S (ADVP (RB Early) (@ADVP->_RB (PP (IN in) (@PP->_IN (NP (DT the) (@NP->_DT (NN morning))))))) (@S->_ADVP (NP (NP (NNP Mr.) (@NP->_NNP (NNP Sider))) (@NP->_NP (, ,) (@NP->_NP_, (NP (DT an) (@NP->_DT (NN estate) (@NP->_DT_NN (NN lawyer)))) (@NP->_NP_,_NP (, ,))))) (@S->_ADVP_NP (VP (VBZ pores) (@VP->_VBZ (PP (IN over) (@PP->_IN (NP (JJ last) (@NP->_JJ (NNS wills) (@NP->_JJ_NNS (CC and) (@NP->_JJ_NNS_CC (NNS testaments))))))))) (@S->_ADVP_NP_VP (. .))))))
+
+(ROOT (S (NP (NN Midmorning)) (@S->_NP (, ,) (@S->_NP_, (NP (PRP he)) (@S->_NP_,_NP (VP (VP (VBZ dons) (@VP->_VBZ (NP (DT an) (@NP->_DT (JJ orange-and-blue) (@NP->_DT_JJ (NN uniform)))))) (@VP->_VP (CC and) (@VP->_VP_CC (VP (PRN (, ,) (@PRN->_, (PP (IN for) (@PP->_IN (NP (NN fun)))) (@PRN->_,_PP (, ,)))) (@VP->_PRN (MD may) (@VP->_PRN_MD (VP (VB field) (@VP->_VB (NP (NP (DT a) (@NP->_DT (NN bunt))) (@NP->_NP (PP (IN from) (@PP->_IN (NP (NNP Dave) (@NP->_NNP (NNP Kingman))))))))))))))) (@S->_NP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (PRP It)) (@S->_NP (VP (VBZ 's) (@VP->_VBZ (NP (NP (QP (CD one) (@QP->_CD (JJR more)))) (@NP->_NP (, ,) (@NP->_NP_, (ADVP (RB too)) (@NP->_NP_,_ADVP (, ,) (@NP->_NP_,_ADVP_, (PP (IN for) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NNS fans))) (@NP->_NP (SBAR (WHNP (WP who)) (@SBAR->_WHNP (S (VP (VBP dream) (@VP->_VBP (PP (IN of) (@PP->_IN (NP (NP (DT a) (@NP->_DT (NN season))) (@NP->_NP (SBAR (WHNP (WDT that)) (@SBAR->_WHNP (S (ADVP (RB never)) (@S->_ADVP (VP (VBZ ends)))))))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (SBAR (WHADVP (WRB When)) (@SBAR->_WHADVP (S (NP (PRP he)) (@S->_NP (VP (VBD sent) (@VP->_VBD (NP (NP (NNS letters)) (@NP->_NP (VP (VBG offering) (@VP->_VBG (NP (CD 1,250) (@NP->_CD (JJ retired) (@NP->_CD_JJ (JJ major) (@NP->_CD_JJ_JJ (NNS leaguers))))) (@VP->_VBG_NP (NP (NP (DT the) (@NP->_DT (NN chance))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT another) (@NP->_DT (NN season)))))))))))))))))) (@S->_SBAR (, ,) (@S->_SBAR_, (NP (CD 730)) (@S->_SBAR_,_NP (VP (VBD responded)) (@S->_SBAR_,_NP_VP (. .)))))))
+
+(ROOT (S (ADVP (RB Eventually)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (QP (IN about) (@QP->_IN (CD 250)))) (@S->_ADVP_,_NP (VP (VBD made) (@VP->_VBD (NP (NP (DT the) (@NP->_DT (NN trip))) (@NP->_NP (PP (TO to) (@PP->_TO (NP (NNP Florida)))))) (@VP->_VBD_NP (S (VP (TO to) (@VP->_TO (VP (VB compete) (@VP->_VB (PP (IN for) (@PP->_IN (NP (DT the) (@NP->_DT (JJ available) (@NP->_DT_JJ (NNS slots)))))))))))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (PP (IN For) (@PP->_IN (NP (DT some) (@NP->_DT (NNS players))))) (@S->_PP (, ,) (@S->_PP_, (NP (DT the) (@NP->_DT (NN lure))) (@S->_PP_,_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (NN money)) (@NP->_NP (: --) (@NP->_NP_: (NP (NP (QP (RB up) (@QP->_RB (TO to) (@QP->_RB_TO ($ $) (@QP->_RB_TO_$ (CD 15,000)))))) (@NP->_NP (NP (DT a) (@NP->_DT (NN month)))))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (`` ``) (@S->_`` (NP (PRP$ My) (@NP->_PRP$ (NN fastball))) (@S->_``_NP (VP (VBZ is) (@VP->_VBZ (ADJP (JJ good)))) (@S->_``_NP_VP (. .))))))
+
+(ROOT (SINV (FRAG (ADJP (RB Real) (@ADJP->_RB (JJ good)))) (@SINV->_FRAG (, ,) (@SINV->_FRAG_, ('' '') (@SINV->_FRAG_,_'' (VP (VBZ says)) (@SINV->_FRAG_,_''_VP (NP (JJ 39-year-old) (@NP->_JJ (NNP Pete) (@NP->_JJ_NNP (NNP Broberg)))) (@SINV->_FRAG_,_''_VP_NP (, ,) (@SINV->_FRAG_,_''_VP_NP_, (S (VP (VBG working) (@VP->_VBG (PP (IN in) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NN midday) (@NP->_DT_NN (NN heat)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NNPS Tropics) (@NP->_DT_NNPS (NN camp))))))))))))) (@SINV->_FRAG_,_''_VP_NP_,_S (. .))))))))))
+
+(ROOT (S (PP (IN For) (@PP->_IN (NP (DT a) (@NP->_DT (JJ long) (@NP->_DT_JJ (NN time)))))) (@S->_PP (, ,) (@S->_PP_, (NP (PRP he)) (@S->_PP_,_NP (VP (VBD ignored) (@VP->_VBD (NP (NN baseball)) (@VP->_VBD_NP (ADVP (RB altogether)) (@VP->_VBD_NP_ADVP (, ,) (@VP->_VBD_NP_ADVP_, (NP (RB even) (@NP->_RB (DT the) (@NP->_RB_DT (NNS sports) (@NP->_RB_DT_NNS (NNS pages)))))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (ADVP (RB Now)) (@S->_ADVP (NP (NP (NNP Mr.) (@NP->_NNP (NNP Broberg))) (@NP->_NP (, ,) (@NP->_NP_, (NP (DT a) (@NP->_DT (NN lawyer))) (@NP->_NP_,_NP (, ,))))) (@S->_ADVP_NP (VP (VBZ claims) (@VP->_VBZ (SBAR (S (NP (PRP he)) (@S->_NP (VP (MD 'd) (@VP->_MD (VP (VB play) (@VP->_VB (PP (IN for) (@PP->_IN (ADJP (RB free))))))))))))) (@S->_ADVP_NP_VP (. .))))))
+
+(ROOT (S (`` ``) (@S->_`` (S (NP (PRP You)) (@S->_NP (VP (MD ca) (@VP->_MD (RB n't) (@VP->_MD_RB (VP (VB give) (@VP->_VB (NP (PRP it)) (@VP->_VB_NP (PRT (RP up)) (@VP->_VB_NP_PRT (ADVP (IN that) (@ADVP->_IN (RB easily)))))))))))) (@S->_``_S (, ,) (@S->_``_S_, ('' '') (@S->_``_S_,_'' (NP (PRP he)) (@S->_``_S_,_''_NP (VP (VBZ says)) (@S->_``_S_,_''_NP_VP (. .)))))))))
+
+(ROOT (S (`` ``) (@S->_`` (NP (PRP I)) (@S->_``_NP (VP (VBD tried)) (@S->_``_NP_VP (. .) (@S->_``_NP_VP_. ('' '')))))))
+
+(ROOT (S (NP (PRP He)) (@S->_NP (VP (VP (VBD gave) (@VP->_VBD (PRT (RP up)) (@VP->_VBD_PRT (NP (CD seven) (@NP->_CD (NNS hits)))))) (@VP->_VP (, ,) (@VP->_VP_, (VP (VBD walked) (@VP->_VBD (NP (CD five)))) (@VP->_VP_,_VP (CC and) (@VP->_VP_,_VP_CC (VP (VBD did) (@VP->_VBD (RB n't) (@VP->_VBD_RB (VP (VB get) (@VP->_VB (NP (DT a) (@NP->_DT (NN decision))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NN Arm) (@NP->_NN (NNS troubles))) (@S->_NP (VP (VBD forced) (@VP->_VBD (NP (PRP him)) (@VP->_VBD_NP (ADVP (RB back)) (@VP->_VBD_NP_ADVP (PP (TO to) (@PP->_TO (NP (DT the) (@NP->_DT (NNS minors))))) (@VP->_VBD_NP_ADVP_PP (NP (DT the) (@NP->_DT (JJ next) (@NP->_DT_JJ (NN year))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP He)) (@S->_NP (VP (VBZ means) (@VP->_VBZ (NP (DT the) (@NP->_DT (NN rule) (@NP->_DT_NN (SBAR (IN that) (@SBAR->_IN (S (NP (DT a) (@NP->_DT (NN player))) (@S->_NP (VP (MD ca) (@VP->_MD (RB n't) (@VP->_MD_RB (VP (VB cut) (@VP->_VB (NP (PRP it)) (@VP->_VB_NP (PP (IN after) (@PP->_IN (NP (DT a) (@NP->_DT (JJ certain) (@NP->_DT_JJ (NN age))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT These) (@NP->_DT (NNS days))) (@S->_NP (NP (PRP he)) (@S->_NP_NP (VP (VBZ hustles) (@VP->_VBZ (PP (TO to) (@PP->_TO (NP (JJ house-painting) (@NP->_JJ (NNS jobs))))) (@VP->_VBZ_PP (PP (IN in) (@PP->_IN (NP (PRP$ his) (@NP->_PRP$ (NNP Chevy) (@NP->_PRP$_NNP (NN pickup)))))) (@VP->_VBZ_PP_PP (PP (IN before) (@PP->_IN (CC and) (@PP->_IN_CC (IN after) (@PP->_IN_CC_IN (S (VP (NN training) (@VP->_NN (PP (IN with) (@PP->_IN (NP (DT the) (@NP->_DT (NNPS Tropics)))))))))))))))) (@S->_NP_NP_VP (. .))))))
+
+(ROOT (S (NP (NP (DT Some)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NN game) (@NP->_DT_NN (POS 's)))) (@NP->_NP (VBG reigning) (@NP->_NP_VBG (NNS philosophers)))))))) (@S->_NP (VP (VBP dislike) (@VP->_VBP (NP (NP (DT the) (@NP->_DT (NN idea))) (@NP->_NP (PP (IN of) (@PP->_IN (S (NP (JJ middle-aged) (@NP->_JJ (NNS men))) (@S->_NP (VP (VBG attempting) (@VP->_VBG (NP (NP (DT a) (@NP->_DT (JJ young) (@NP->_DT_JJ (NN man) (@NP->_DT_JJ_NN (POS 's))))) (@NP->_NP (NN sport))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (`` ``) (@S->_`` (NP (PRP I)) (@S->_``_NP (VP (VBP feel) (@VP->_VBP (SBAR (S (NP (NNS people)) (@S->_NP (VP (MD should) (@VP->_MD (VP (VB be) (@VP->_VB (VP (VBN allowed) (@VP->_VBN (S (VP (TO to) (@VP->_TO (VP (VB remember) (@VP->_VB (NP (NNS players)) (@VP->_VB_NP (SBAR (IN as) (@SBAR->_IN (S (NP (PRP they)) (@S->_NP (VP (VBD were))))))))))))))))))))))) (@S->_``_NP_VP (. .) (@S->_``_NP_VP_. ('' '')))))))
+
+(ROOT (S (CC But) (@S->_CC (NP (DT the) (@NP->_DT (NNS ballplayers))) (@S->_CC_NP (VP (VBP disagree)) (@S->_CC_NP_VP (. .))))))
+
+(ROOT (S (NP (JJS Most)) (@S->_NP (VP (VBP are) (@VP->_VBP (ADJP (JJ trim)))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (S (NP (DT Some)) (@S->_NP (VP (VBP have) (@VP->_VBP (VP (VBN been) (@VP->_VBN (VP (VBG training) (@VP->_VBG (PP (IN for) (@PP->_IN (NP (NNS months)))))))))))) (@S->_S (: ;) (@S->_S_: (S (NP (NNS others)) (@S->_NP (ADVP (RB only) (@ADVP->_RB (RB recently))) (@S->_NP_ADVP (VP (VBD left) (@VP->_VBD (NP (JJ active) (@NP->_JJ (NN status)))))))) (@S->_S_:_S (. .))))))
+
+(ROOT (S (CC And) (@S->_CC (NP (EX there)) (@S->_CC_NP (VP (VBZ 's) (@VP->_VBZ (NP (NN pride)))) (@S->_CC_NP_VP (. .))))))
+
+(ROOT (SINV (`` ``) (@SINV->_`` (S (NP (PRP It)) (@S->_NP (VP (VBZ 's) (@VP->_VBZ (VP (VBG going) (@VP->_VBG (S (VP (TO to) (@VP->_TO (VP (VB be) (@VP->_VB (NP (DT a) (@NP->_DT (JJ tough) (@NP->_DT_JJ (NN league))))))))))))))) (@SINV->_``_S (, ,) (@SINV->_``_S_, ('' '') (@SINV->_``_S_,_'' (VP (VBZ promises)) (@SINV->_``_S_,_''_VP (NP (DT the) (@NP->_DT (JJ 47-year-old) (@NP->_DT_JJ (NNP Mr.) (@NP->_DT_JJ_NNP (NNP Campaneris))))) (@SINV->_``_S_,_''_VP_NP (. .)))))))))
+
+(ROOT (S (`` ``) (@S->_`` (NP (EX There)) (@S->_``_NP (VP (MD will) (@VP->_MD (VP (VB be) (@VP->_VB (NP (NP (DT a) (@NP->_DT (NN lot))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NN malice)))))))))) (@S->_``_NP_VP (. .) (@S->_``_NP_VP_. ('' '')))))))
+
+(ROOT (S (S (NP (NP (NNS Men)) (@NP->_NP (SBAR (WHNP (WP who)) (@SBAR->_WHNP (S (VP (VBP have) (@VP->_VBP (VP (VBN played) (@VP->_VBN (ADVP (RB hard)) (@VP->_VBN_ADVP (NP (DT all) (@NP->_DT (PRP$ their) (@NP->_DT_PRP$ (NNS lives)))))))))))))) (@S->_NP (VP (VBP are) (@VP->_VBP (RB n't) (@VP->_VBP_RB (ADJP (IN about) (@ADJP->_IN (S (VP (TO to) (@VP->_TO (VP (VB change) (@VP->_VB (NP (PRP$ their) (@NP->_PRP$ (NNS habits))))))))))))))) (@S->_S (, ,) (@S->_S_, (NP (PRP he)) (@S->_S_,_NP (VP (VBZ says)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (ADVP (RB Nonetheless)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (PRP one)) (@S->_ADVP_,_NP (VP (MD ca) (@VP->_MD (RB n't) (@VP->_MD_RB (VP (VB help) (@VP->_VB (S (VP (VB wonder) (@VP->_VB (SBAR (IN whether) (@SBAR->_IN (S (NP (DT the) (@NP->_DT (NN game))) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB be) (@VP->_VB (ADJP (NP (RB just) (@NP->_RB (DT a) (@NP->_RB_DT (JJ little) (@NP->_RB_DT_JJ (NN bit))))) (@ADJP->_NP (JJR slower))))))))))))))))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (RB So) (@S->_RB (NP (PRP he)) (@S->_RB_NP (VP (VBZ adjusts)) (@S->_RB_NP_VP (. .))))))
+
+(ROOT (S (NP (PRP He)) (@S->_NP (ADVP (RB no) (@ADVP->_RB (RBR longer))) (@S->_NP_ADVP (VP (VBZ crowds) (@VP->_VBZ (NP (DT the) (@NP->_DT (NN plate))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (S (NP (PRP He)) (@S->_NP (VP (VBZ 's) (@VP->_VBZ (RB not) (@VP->_VBZ_RB (VP (VBG thinking) (@VP->_VBG (PP (IN about) (@PP->_IN (NP (NN home) (@NP->_NN (NNS runs))))) (@VP->_VBG_PP (ADVP (RB anymore)) (@VP->_VBG_PP_ADVP (FRAG (, ,) (@FRAG->_, (NP (RB just) (@NP->_RB (NN base) (@NP->_RB_NN (NNS hits))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (SINV (S (VP (VB Expect) (@VP->_VB (NP (NP (`` ``) (@NP->_`` (JJ tricky) (@NP->_``_JJ ('' '') (@NP->_``_JJ_'' (NN stuff))))) (@NP->_NP (PP (IN from) (@PP->_IN (NP (NNS pitchers))))))))) (@SINV->_S (, ,) (@SINV->_S_, (VP (VBZ says)) (@SINV->_S_,_VP (NP (NP (NNP Mr.) (@NP->_NNP (NNP Weaver))) (@NP->_NP (, ,) (@NP->_NP_, (NP (DT the) (@NP->_DT (NN manager)))))) (@SINV->_S_,_VP_NP (. .)))))))
+
+(ROOT (SINV (S (VP (VB Expect) (@VP->_VB (NP (NP (NNS brushbacks)) (@NP->_NP (CC but) (@NP->_NP_CC (NP (DT no) (@NP->_DT (NNS beanballs))))))))) (@SINV->_S (, ,) (@SINV->_S_, (VP (VBZ says)) (@SINV->_S_,_VP (NP (NNP Mr.) (@NP->_NNP (NNP McEnaney))) (@SINV->_S_,_VP_NP (. .)))))))
+
+(ROOT (S (CC And) (@S->_CC (VP (VB expect) (@VP->_VB (NP (JJR slower) (@NP->_JJR (NNS fastballs))))) (@S->_CC_VP (. .)))))
+
+(ROOT (SINV (`` ``) (@SINV->_`` (S (NP (PRP I)) (@S->_NP (VP (VBP 'm) (@VP->_VBP (RB not) (@VP->_VBP_RB (ADJP (RB so) (@ADJP->_RB (JJ young))) (@VP->_VBP_RB_ADJP (ADVP (RB anymore)))))))) (@SINV->_``_S (, ,) (@SINV->_``_S_, ('' '') (@SINV->_``_S_,_'' (VP (VBZ concedes)) (@SINV->_``_S_,_''_VP (NP (DT the) (@NP->_DT (JJ cigar-chomping) (@NP->_DT_JJ (, ,) (@NP->_DT_JJ_, (JJ 48-year-old) (@NP->_DT_JJ_,_JJ (NNP Mr.) (@NP->_DT_JJ_,_JJ_NNP (NNP Tiant))))))) (@SINV->_``_S_,_''_VP_NP (. .)))))))))
+
+(ROOT (S (`` ``) (@S->_`` (S (S (NP (PRP I)) (@S->_NP (VP (MD wo) (@VP->_MD (RB n't) (@VP->_MD_RB (VP (VB be) (@VP->_VB (VP (VBG throwing) (@VP->_VBG (NP (CD 90) (@NP->_CD (NN mph)))))))))))) (@S->_S (, ,) (@S->_S_, (CC but) (@S->_S_,_CC (S (NP (PRP I)) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB throw) (@VP->_VB (NP (JJ 80-plus)))))))))))) (@S->_``_S (, ,) (@S->_``_S_, ('' '') (@S->_``_S_,_'' (NP (PRP he)) (@S->_``_S_,_''_NP (VP (VBZ says)) (@S->_``_S_,_''_NP_VP (. .)))))))))
+
+(ROOT (S (NP (PRP$ Its) (@NP->_PRP$ (JJ maximum) (@NP->_PRP$_JJ (NN velocity)))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (CD 72) (@NP->_CD (NN mph))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (CC But) (@S->_CC (NP (PRP he)) (@S->_CC_NP (VP (VBZ is) (@VP->_VBZ (RB n't) (@VP->_VBZ_RB (ADJP (JJ worried))))) (@S->_CC_NP_VP (. .))))))
+
+(ROOT (S (NP (PRP He)) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB compensate) (@VP->_VB (PP (IN with) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NN guile))) (@NP->_NP (VP (VBN learned) (@VP->_VBN (PP (IN from) (@PP->_IN (NP (NP (PRP$ his) (@NP->_PRP$ (NNS years))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (DT the) (@NP->_DT (NNS majors))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP He)) (@S->_NP (VP (VBZ has) (@VP->_VBZ (NP (JJ good) (@NP->_JJ (NN control))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP He)) (@S->_NP (VP (MD will) (@VP->_MD (VP (VP (VB keep) (@VP->_VB (NP (DT the) (@NP->_DT (NN ball))) (@VP->_VB_NP (PRT (RP down))))) (@VP->_VP (, ,) (@VP->_VP_, (VP (VB move) (@VP->_VB (NP (PRP it)) (@VP->_VB_NP (ADVP (RB around)))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (PP (IN After) (@PP->_IN (NP (DT all)))) (@S->_PP (PRN (, ,) (@PRN->_, (S (NP (PRP he)) (@S->_NP (VP (VBZ says)))) (@PRN->_,_S (, ,)))) (@S->_PP_PRN (`` ``) (@S->_PP_PRN_`` (S (ADVP (RB Even)) (@S->_ADVP (VP (TO to) (@VP->_TO (VP (VB make) (@VP->_VB (NP (VB love)))))))) (@S->_PP_PRN_``_S (, ,) (@S->_PP_PRN_``_S_, (NP (PRP you)) (@S->_PP_PRN_``_S_,_NP (VP (VBP need) (@VP->_VBP (NP (VB experience)))) (@S->_PP_PRN_``_S_,_NP_VP (. .))))))))))
+
+(ROOT (S (NP (NNS Terms)) (@S->_NP (VP (VBD were) (@VP->_VBD (RB n't) (@VP->_VBD_RB (VP (VBN disclosed))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Stewart) (@NP->_NNP (SYM &) (@NP->_NNP_SYM (NNP Stevenson) (@NP->_NNP_SYM_NNP (NNPS Services) (@NP->_NNP_SYM_NNP_NNPS (NNP Inc.)))))) (@S->_NP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (PRP it)) (@S->_NP (VP (VBD received) (@VP->_VBD (NP (NP (CD two) (@NP->_CD (NNS contracts))) (@NP->_NP (VP (VBG totaling) (@VP->_VBG (NP ($ $) (@NP->_$ (QP (CD 19) (@QP->_CD (CD million))))))) (@NP->_NP_VP (SBAR (S (VP (TO to) (@VP->_TO (VP (VB build) (@VP->_VB (NP (JJ gas-turbine) (@NP->_JJ (NNS generators))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Stewart) (@NP->_NNP (CC &) (@NP->_NNP_CC (NNP Stevenson)))) (@S->_NP (VP (VBZ makes) (@VP->_VBZ (NP (NP (NN equipment)) (@NP->_NP (VP (VBN powered) (@VP->_VBN (PP (IN with) (@PP->_IN (NP (NN diesel) (@NP->_NN (CC and) (@NP->_NN_CC (NN gas) (@NP->_NN_CC_NN (NNS turbines))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Liberty) (@NP->_NNP (NNP National))) (@S->_NP (VP (VBD exchanged) (@VP->_VBD (NP (NP (QP (IN about) (@QP->_IN (CD 78.64))) (@NP->_QP (NNS shares))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (PRP$ its) (@NP->_PRP$ (JJ common) (@NP->_PRP$_JJ (NN stock)))))))) (@VP->_VBD_NP (PP (IN for) (@PP->_IN (NP (NP (DT each)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (NP (NNP Florence) (@NP->_NNP (NNP Deposit) (@NP->_NNP_NNP (POS 's)))) (@NP->_NP (CD 5,600) (@NP->_NP_CD (NNS shares)))) (@NP->_NP (ADJP (JJ outstanding))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (NNP Liberty) (@NP->_NNP (NNP National))) (@NP->_NP (, ,) (@NP->_NP_, (NP (DT a) (@NP->_DT (NN bank) (@NP->_DT_NN (VBG holding) (@NP->_DT_NN_VBG (NN company))))) (@NP->_NP_,_NP (, ,))))) (@S->_NP (VP (VBZ has) (@VP->_VBZ (NP (NP (NNS assets)) (@NP->_NP (VP (VBG exceeding) (@VP->_VBG (NP (QP ($ $) (@QP->_$ (CD 3) (@QP->_$_CD (CD billion))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (NP (NP (NNP Tuesday)) (@NP->_NP (, ,) (@NP->_NP_, (NP (NNP October) (@NP->_NNP (CD 31) (@NP->_NNP_CD (, ,) (@NP->_NNP_CD_, (CD 1989)))))))))
+
+(ROOT (NP (NP (JJ PRIME) (@NP->_JJ (NN RATE))) (@NP->_NP (: :) (@NP->_NP_: (NP (QP (CD 10) (@QP->_CD (CD 1\/2))) (@NP->_QP (NN %))) (@NP->_NP_:_NP (. .))))))
+
+(ROOT (NP (NP (DT The) (@NP->_DT (JJ base) (@NP->_DT_JJ (NN rate)))) (@NP->_NP (PP (IN on) (@PP->_IN (NP (JJ corporate) (@NP->_JJ (NNS loans))))) (@NP->_NP_PP (PP (IN at) (@PP->_IN (NP (JJ large) (@NP->_JJ (NNP U.S.) (@NP->_JJ_NNP (NN money) (@NP->_JJ_NNP_NN (NN center) (@NP->_JJ_NNP_NN_NN (JJ commercial) (@NP->_JJ_NNP_NN_NN_JJ (NNS banks))))))))) (@NP->_NP_PP_PP (. .))))))
+
+(ROOT (S (NP (NNS Reserves)) (@S->_NP (VP (VBD traded) (@VP->_VBD (PP (IN among) (@PP->_IN (NP (JJ commercial) (@NP->_JJ (NNS banks))))) (@VP->_VBD_PP (PP (IN for) (@PP->_IN (NP (JJ overnight) (@NP->_JJ (NN use))))) (@VP->_VBD_PP_PP (PP (IN in) (@PP->_IN (NP (NP (NNS amounts)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (QP ($ $) (@QP->_$ (CD 1) (@QP->_$_CD (CD million)))) (@NP->_QP (QP (CC or) (@QP->_CC (JJR more))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (NP (NP (NN Source)) (@NP->_NP (: :) (@NP->_NP_: (NP (NNP Fulton) (@NP->_NNP (NNP Prebon) (@NP->_NNP_NNP (PRN (-LRB- -LRB-) (@PRN->_-LRB- (NNP U.S.A) (@PRN->_-LRB-_NNP (. .) (@PRN->_-LRB-_NNP_. (-RRB- -RRB-))))) (@NP->_NNP_NNP_PRN (NNP Inc))))) (@NP->_NP_:_NP (. .))))))
+
+(ROOT (NP (NP (NN DISCOUNT) (@NP->_NN (NN RATE))) (@NP->_NP (: :) (@NP->_NP_: (NP (CD 7) (@NP->_CD (NN %))) (@NP->_NP_:_NP (. .))))))
+
+(ROOT (NP (NP (DT The) (@NP->_DT (NN charge))) (@NP->_NP (PP (IN on) (@PP->_IN (NP (NNS loans)))) (@NP->_NP_PP (PP (TO to) (@PP->_TO (NP (NN depository) (@NP->_NN (NNS institutions))))) (@NP->_NP_PP_PP (PP (IN by) (@PP->_IN (NP (DT the) (@NP->_DT (NNP New) (@NP->_DT_NNP (NNP York) (@NP->_DT_NNP_NNP (NNP Federal) (@NP->_DT_NNP_NNP_NNP (NNP Reserve) (@NP->_DT_NNP_NNP_NNP_NNP (NNP Bank))))))))) (@NP->_NP_PP_PP_PP (. .)))))))
+
+(ROOT (NP (NP (JJ CALL) (@NP->_JJ (NN MONEY))) (@NP->_NP (: :) (@NP->_NP_: (NP (NP (QP (CD 9) (@QP->_CD (CD 3\/4))) (@NP->_QP (NN %))) (@NP->_NP (TO to) (@NP->_NP_TO (NP (CD 10) (@NP->_CD (NN %)))))) (@NP->_NP_:_NP (. .))))))
+
+(ROOT (NP (NP (DT The) (@NP->_DT (NN charge))) (@NP->_NP (PP (IN on) (@PP->_IN (NP (NNS loans)))) (@NP->_NP_PP (PP (TO to) (@PP->_TO (NP (NNS brokers)))) (@NP->_NP_PP_PP (PP (IN on) (@PP->_IN (NP (NN stock) (@NP->_NN (NN exchange) (@NP->_NN_NN (NN collateral)))))) (@NP->_NP_PP_PP_PP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (JJ minimum) (@NP->_DT_JJ (NN unit)))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP ($ $) (@NP->_$ (CD 100,000))))) (@S->_NP_VP (. .)))))
+
+(ROOT (NP (NP (JJ Negotiable) (@NP->_JJ (, ,) (@NP->_JJ_, (JJ bank-backed) (@NP->_JJ_,_JJ (NN business) (@NP->_JJ_,_JJ_NN (NN credit) (@NP->_JJ_,_JJ_NN_NN (NNS instruments))))))) (@NP->_NP (VP (ADVP (RB typically)) (@VP->_ADVP (VBG financing) (@VP->_ADVP_VBG (NP (DT an) (@NP->_DT (NN import) (@NP->_DT_NN (NN order))))))) (@NP->_NP_VP (. .)))))
+
+(ROOT (S (S (NP (DT These) (@NP->_DT (NN rate) (@NP->_DT_NN (NNS indications)))) (@S->_NP (VP (VBP are) (@VP->_VBP (RB n't) (@VP->_VBP_RB (ADJP (RB directly) (@ADJP->_RB (JJ comparable)))))))) (@S->_S (: ;) (@S->_S_: (S (NP (JJ lending) (@NP->_JJ (NNS practices))) (@S->_NP (VP (VBP vary) (@VP->_VBP (ADVP (RB widely)) (@VP->_VBP_ADVP (PP (IN by) (@PP->_IN (NP (NN location))))))))) (@S->_S_:_S (. .))))))
+
+(ROOT (NP (NP (NP (CD 9.78) (@NP->_CD (NN %))) (@NP->_NP (, ,) (@NP->_NP_, (NP (JJ standard) (@NP->_JJ (JJ conventional) (@NP->_JJ_JJ (JJ fixed-rate) (@NP->_JJ_JJ_JJ (NNS mortgages)))))))) (@NP->_NP (: ;) (@NP->_NP_: (NP (NP (CD 7.875) (@NP->_CD (NN %))) (@NP->_NP (, ,) (@NP->_NP_, (NP (ADJP (CD 2) (@ADJP->_CD (NN %))) (@NP->_ADJP (ADJP (NN rate) (@ADJP->_NN (VBD capped))) (@NP->_ADJP_ADJP (JJ one-year) (@NP->_ADJP_ADJP_JJ (JJ adjustable) (@NP->_ADJP_ADJP_JJ_JJ (NN rate) (@NP->_ADJP_ADJP_JJ_JJ_NN (NNS mortgages)))))))))) (@NP->_NP_:_NP (. .))))))
+
+(ROOT (NP (NP (NN Source)) (@NP->_NP (: :) (@NP->_NP_: (NP (NNP Telerate) (@NP->_NNP (NNPS Systems) (@NP->_NNP_NNPS (NNP Inc)))) (@NP->_NP_:_NP (. .))))))
+
+(ROOT (NP (NP (NN Source)) (@NP->_NP (: :) (@NP->_NP_: (NP (NNP Telerate) (@NP->_NNP (NNPS Systems) (@NP->_NNP_NNPS (NNP Inc)))) (@NP->_NP_:_NP (. .))))))
+
+(ROOT (NP (NP (NNP MERRILL) (@NP->_NNP (NNP LYNCH) (@NP->_NNP_NNP (NNP READY) (@NP->_NNP_NNP_NNP (NNPS ASSETS) (@NP->_NNP_NNP_NNP_NNPS (NNP TRUST)))))) (@NP->_NP (: :) (@NP->_NP_: (NP (CD 8.63) (@NP->_CD (NN %))) (@NP->_NP_:_NP (. .))))))
+
+(ROOT (NP (NP (NP (VBN Annualized) (@NP->_VBN (JJ average) (@NP->_VBN_JJ (NN rate)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NN return)))) (@NP->_NP_PP (PP (IN after) (@PP->_IN (NP (NP (NNS expenses)) (@NP->_NP (PP (IN for) (@PP->_IN (NP (DT the) (@NP->_DT (JJ past) (@NP->_DT_JJ (CD 30) (@NP->_DT_JJ_CD (NNS days)))))))))))))) (@NP->_NP (: ;) (@NP->_NP_: (NP (NP (RB not) (@NP->_RB (DT a) (@NP->_RB_DT (NN forecast)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (JJ future) (@NP->_JJ (NNS returns))))))) (@NP->_NP_:_NP (. .))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNP August) (@NP->_DT_NNP (NNP GDP)))) (@S->_NP (VP (VBD was) (@VP->_VBD (ADVP (RB up) (@ADVP->_RB (NP (CD 2.4) (@NP->_CD (NN %))) (@ADVP->_RB_NP (PP (IN from) (@PP->_IN (NP (PRP$ its) (@NP->_PRP$ (JJ year-earlier) (@NP->_PRP$_JJ (NN level))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP GDP)) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (DT the) (@NP->_DT (JJ total) (@NP->_DT_JJ (NN value)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (NP (DT a) (@NP->_DT (NN nation) (@NP->_DT_NN (POS 's)))) (@NP->_NP (NN output))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNS goods) (@NP->_NNS (CC and) (@NP->_NNS_CC (NNS services)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNPS Statistics) (@NP->_NNPS (NNP Canada))) (@S->_NP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (NP (NN service-industry) (@NP->_NN (NN output))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NNP August)))))) (@S->_NP (VP (VBD rose) (@VP->_VBD (NP (CD 0.4) (@NP->_CD (NN %))) (@VP->_VBD_NP (PP (IN from) (@PP->_IN (NP (NNP July)))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (NN Output)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (JJ goods-producing) (@NP->_JJ (NNS industries))))))) (@S->_NP (VP (VBD increased) (@VP->_VBD (NP (CD 0.1) (@NP->_CD (NN %))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP It)) (@S->_NP (ADVP (RB also)) (@S->_NP_ADVP (VP (VBD reported) (@VP->_VBD (NP (NP (DT a) (@NP->_DT (ADJP (CD 2.6) (@ADJP->_CD (NN %))) (@NP->_DT_ADJP (NN decline)))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (PRP$ its) (@NP->_PRP$ (NNS raw-materials) (@NP->_PRP$_NNS (NN price) (@NP->_PRP$_NNS_NN (NN index))))))) (@NP->_NP_PP (PP (IN for) (@PP->_IN (NP (NNP September))))))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (S (NP (NNP Columbia) (@NP->_NNP (NNPS Pictures))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (VP (VBG being) (@VP->_VBG (VP (VBN acquired) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (NP (NNP Sony) (@NP->_NNP (NNP Corp.))) (@NP->_NP (, ,) (@NP->_NP_, (SBAR (WHNP (WDT which)) (@SBAR->_WHNP (S (VP (VBZ is) (@VP->_VBZ (VP (VBN based) (@VP->_VBN (PP (IN in) (@PP->_IN (NP (NNP Japan)))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNS Seats)) (@S->_NP (ADVP (RB currently)) (@S->_NP_ADVP (VP (VBP are) (@VP->_VBP (VP (VBN quoted) (@VP->_VBN (PP (IN at) (@PP->_IN (NP (NP (NP ($ $) (@NP->_$ (CD 400,000))) (@NP->_NP (VP (NN bid)))) (@NP->_NP (, ,) (@NP->_NP_, (NP (NP ($ $) (@NP->_$ (CD 425,000))) (@NP->_NP (VP (VBN asked))))))))))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (NN record) (@NP->_DT_NN (NN price)))) (@NP->_NP (PP (IN for) (@PP->_IN (NP (NP (DT a) (@NP->_DT (JJ full) (@NP->_DT_JJ (NN membership)))) (@NP->_NP (PP (IN on) (@PP->_IN (NP (DT the) (@NP->_DT (NN exchange))))))))))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP ($ $) (@NP->_$ (CD 550,000))) (@VP->_VBZ_NP (, ,) (@VP->_VBZ_NP_, (VP (VBN set) (@VP->_VBN (NP (NNP March) (@NP->_NNP (CD 9))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (JJ golden) (@NP->_DT_JJ (NN share)))) (@S->_NP (VP (VP (VBZ restricts) (@VP->_VBZ (NP (DT any) (@NP->_DT (JJ individual) (@NP->_DT_JJ (NN holding)))) (@VP->_VBZ_NP (PP (TO to) (@PP->_TO (NP (CD 15) (@NP->_CD (NN %)))))))) (@VP->_VP (CC and) (@VP->_VP_CC (VP (VBZ expires) (@VP->_VBZ (PP (IN at) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NN end))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (CD 1990))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT Both) (@NP->_DT (NP (NNP General) (@NP->_NNP (NNPS Motors) (@NP->_NNP_NNPS (NNP Corp.)))) (@NP->_DT_NP (CC and) (@NP->_DT_NP_CC (NP (NNP Ford) (@NP->_NNP (NNP Motor) (@NP->_NNP_NNP (NNP Co.)))))))) (@S->_NP (VP (VBP have) (@VP->_VBP (VP (VBN been) (@VP->_VBN (VP (VBG trying) (@VP->_VBG (S (VP (TO to) (@VP->_TO (VP (VB amass) (@VP->_VB (NP (NP (CD 15) (@NP->_CD (JJ %) (@NP->_CD_JJ (NNS stakes)))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NNP Jaguar))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (`` ``) (@S->_`` (NP (PRP I)) (@S->_``_NP (VP (VBP am) (@VP->_VBP (ADJP (JJ sure) (@ADJP->_JJ (SBAR (S (NP (PRP they)) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB be) (@VP->_VB (VP (VBG going) (@VP->_VBG (PP (IN for) (@PP->_IN (NP (DT a) (@NP->_DT (JJ full) (@NP->_DT_JJ (NN bid))))))))))))))))))) (@S->_``_NP_VP (. .) (@S->_``_NP_VP_. ('' '')))))))
+
+(ROOT (S (NP (JJ Many) (@NP->_JJ (NNS investors))) (@S->_NP (ADVP (RB certainly)) (@S->_NP_ADVP (VP (VBP believe) (@VP->_VBP (SBAR (S (NP (DT a) (@NP->_DT (JJ bidding) (@NP->_DT_JJ (NN war)))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (ADJP (JJ imminent))))))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (S (NP (NNP Jaguar) (@NP->_NNP (NNS shares))) (@S->_NP (VP (VBD skyrocketed) (@VP->_VBD (NP (NN yesterday)) (@VP->_VBD_NP (PP (IN after) (@PP->_IN (NP (NP (NNP Mr.) (@NP->_NNP (NNP Ridley) (@NP->_NNP_NNP (POS 's)))) (@NP->_NP (NN announcement))))) (@VP->_VBD_NP_PP (, ,) (@VP->_VBD_NP_PP_, (PP (VBG following) (@PP->_VBG (NP (NP (PRP$ their) (@NP->_PRP$ (JJ temporary) (@NP->_PRP$_JJ (NN suspension)))) (@NP->_NP (PP (IN on) (@PP->_IN (NP (NP (NNP London) (@NP->_NNP (POS 's))) (@NP->_NP (NNP Stock) (@NP->_NP_NNP (NNP Exchange))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (JJ Such) (@NP->_JJ (DT a) (@NP->_JJ_DT (NN proposal)))) (@S->_NP (VP (VBZ values) (@VP->_VBZ (NP (NNP Jaguar)) (@VP->_VBZ_NP (PP (IN at) (@PP->_IN (NP (NP (QP (JJR more) (@QP->_JJR (IN than) (@QP->_JJR_IN (# #) (@QP->_JJR_IN_# (CD 1.6) (@QP->_JJR_IN_#_CD (CD billion))))))) (@NP->_NP (PRN (-LRB- -LRB-) (@PRN->_-LRB- (NP (QP ($ $) (@QP->_$ (CD 2.53) (@QP->_$_CD (CD billion))))) (@PRN->_-LRB-_NP (-RRB- -RRB-))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (NN Speculation)) (@NP->_NP (PP (IN about) (@PP->_IN (NP (DT a) (@NP->_DT (NN takeover) (@NP->_DT_NN (NN fight)))))))) (@S->_NP (VP (VBZ has) (@VP->_VBZ (VP (VBN sent) (@VP->_VBN (S (NP (NNP Jaguar) (@NP->_NNP (NNS shares))) (@S->_NP (VP (VBG soaring)))) (@VP->_VBN_S (PP (IN in) (@PP->_IN (NP (DT the) (@NP->_DT (JJ past) (@NP->_DT_JJ (CD six) (@NP->_DT_JJ_CD (NNS weeks)))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (JJ Such) (@NP->_JJ (DT a) (@NP->_JJ_DT (NN countermove)))) (@S->_NP (VP (MD could) (@VP->_MD (VP (VB end) (@VP->_VB (NP (NP (NP (NNP Jaguar) (@NP->_NNP (POS 's))) (@NP->_NP (NNS hopes))) (@NP->_NP (PP (IN for) (@PP->_IN (S (VP (VBG remaining) (@VP->_VBG (ADJP (JJ independent) (@ADJP->_JJ (CC and) (@ADJP->_JJ_CC (JJ British-owned))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (CC But) (@S->_CC (NP (PRP it)) (@S->_CC_NP (VP (VBZ is) (@VP->_VBZ (RB n't) (@VP->_VBZ_RB (ADJP (JJ clear)) (@VP->_VBZ_RB_ADJP (SBAR (WHADVP (WRB how) (@WHADVP->_WRB (JJ long))) (@SBAR->_WHADVP (S (NP (NNP GM)) (@S->_NP (VP (MD would) (@VP->_MD (VP (VB be) (@VP->_VB (ADJP (JJ willing) (@ADJP->_JJ (S (VP (TO to) (@VP->_TO (VP (VB fight) (@VP->_VB (NP (NNP Ford)) (@VP->_VB_NP (PP (IN for) (@PP->_IN (NP (NNP Jaguar)))))))))))))))))))))))) (@S->_CC_NP_VP (. .))))))
+
+(ROOT (S (NP (NP (NNS People)) (@NP->_NP (ADJP (RB close) (@ADJP->_RB (PP (TO to) (@PP->_TO (NP (DT the) (@NP->_DT (JJ GM-Jaguar) (@NP->_DT_JJ (NNS talks)))))))))) (@S->_NP (VP (VBD agreed) (@VP->_VBD (SBAR (IN that) (@SBAR->_IN (S (NP (NNP Ford)) (@S->_NP (ADVP (RB now)) (@S->_NP_ADVP (VP (MD may) (@VP->_MD (VP (VB be) (@VP->_VB (ADJP (JJ able) (@ADJP->_JJ (S (VP (TO to) (@VP->_TO (VP (VB shut) (@VP->_VB (PRT (RP out)) (@VP->_VB_PRT (NP (NNP General) (@NP->_NNP (NNPS Motors)))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (ADVP (RB Indeed)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (DT the) (@NP->_DT (NN government))) (@S->_ADVP_,_NP (VP (VBZ is) (@VP->_VBZ (VP (VBG taking) (@VP->_VBG (NP (DT a) (@NP->_DT (JJ calculated) (@NP->_DT_JJ (NN risk)))))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (JJ British) (@NP->_DT_JJ (NN government)))) (@S->_NP (VP (VBD retained) (@VP->_VBD (NP (DT the) (@NP->_DT (JJ single) (@NP->_DT_JJ (JJ golden) (@NP->_DT_JJ_JJ (NN share))))) (@VP->_VBD_NP (PP (IN after) (@PP->_IN (S (VP (VBG selling) (@VP->_VBG (NP (NP (PRP$ its) (@NP->_PRP$ (NN stake))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NNP Jaguar)))))) (@VP->_VBG_NP (FRAG (PP (IN in)))))))))))))))
+
+(ROOT (S (NP (NNP Mr.) (@NP->_NNP (NNP Ridley))) (@S->_NP (VP (VBD hinted) (@VP->_VBD (PP (IN at) (@PP->_IN (NP (DT this) (@NP->_DT (NN motive))))) (@VP->_VBD_PP (PP (IN in) (@PP->_IN (S (VP (VBG answering) (@VP->_VBG (NP (NP (NNS questions)) (@NP->_NP (PP (IN from) (@PP->_IN (NP (NP (NNS members)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNP Parliament)))))))))) (@VP->_VBG_NP (PP (IN after) (@PP->_IN (NP (PRP$ his) (@NP->_PRP$ (NN announcement)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (NNP Bradley) (@NP->_NNP (NN A.) (@NP->_NNP_NN (NNP Stertz)))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NNP Detroit)))))) (@S->_NP (VP (VBD contributed) (@VP->_VBD (PP (TO to) (@PP->_TO (NP (DT this) (@NP->_DT (NN article))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Dow)) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB own) (@VP->_VB (NP (NP (CD 60) (@NP->_CD (NN %))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NN venture))))))) (@VP->_VB_NP (, ,) (@VP->_VB_NP_, (PP (IN with) (@PP->_IN (S (NP (NNP Eli) (@NP->_NNP (NNP Lilly))) (@S->_NP (VP (VBG holding) (@VP->_VBG (NP (DT the) (@NP->_DT (NN rest))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN venture))) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB be) (@VP->_VB (VP (VBN based) (@VP->_VBN (PP (IN in) (@PP->_IN (NP (NNP Indianapolis)))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Mr.) (@NP->_NNP (NNP Tomash))) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB remain) (@VP->_VB (PP (IN as) (@PP->_IN (NP (DT a) (@NP->_DT (NN director) (@NP->_DT_NN (NN emeritus)))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN company))) (@S->_NP (VP (VBD had) (@VP->_VBD (NP (NP (DT no) (@NP->_DT (NN comment))) (@NP->_NP (PP (IN on) (@PP->_IN (SBAR (IN whether) (@SBAR->_IN (S (NP (DT a) (@NP->_DT (NN replacement))) (@S->_NP (VP (MD would) (@VP->_MD (VP (VB be) (@VP->_VB (VP (VBN named)))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP SFE) (@NP->_NNP (NNPS Technologies))) (@S->_NP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (NNP William) (@NP->_NNP (NNP P.) (@NP->_NNP_NNP (NNP Kuehn)))) (@S->_NP (VP (VBD was) (@VP->_VBD (VP (VBN elected) (@VP->_VBN (S (NP (NP (NP (NN chairman)) (@NP->_NP (CC and) (@NP->_NP_CC (NP (JJ chief) (@NP->_JJ (JJ executive) (@NP->_JJ_JJ (NN officer))))))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT this) (@NP->_DT (JJ troubled) (@NP->_DT_JJ (NN electronics) (@NP->_DT_JJ_NN (NNS parts) (@NP->_DT_JJ_NN_NNS (NN maker)))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (JJ 45-year-old) (@NP->_DT_JJ (NNP Mr.) (@NP->_DT_JJ_NNP (NNP Kuehn))))) (@NP->_NP (, ,) (@NP->_NP_, (SBAR (WHNP (WP who)) (@SBAR->_WHNP (S (VP (VBZ has) (@VP->_VBZ (NP (NP (DT a) (@NP->_DT (NN background))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NN crisis) (@NP->_NN (NN management)))))))))))) (@NP->_NP_,_SBAR (, ,))))) (@S->_NP (VP (VBZ succeeds) (@VP->_VBZ (NP (NP (NNP Alan) (@NP->_NNP (NNP D.) (@NP->_NNP_NNP (NNP Rubendall)))) (@NP->_NP (, ,) (@NP->_NP_, (NP (CD 45))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (`` ``) (@S->_`` (S (NP (PRP He)) (@S->_NP (VP (VBZ is) (@VP->_VBZ (VP (VBG going) (@VP->_VBG (S (VP (TO to) (@VP->_TO (VP (VB pursue) (@VP->_VB (NP (JJ other) (@NP->_JJ (NNS interests)))))))))))))) (@S->_``_S (, ,) (@S->_``_S_, ('' '') (@S->_``_S_,_'' (NP (NNP Mr.) (@NP->_NNP (NNP Jahn))) (@S->_``_S_,_''_NP (VP (VBD said)) (@S->_``_S_,_''_NP_VP (. .)))))))))
+
+(ROOT (S (NP (NNP Mr.) (@NP->_NNP (NNP Rubendall))) (@S->_NP (VP (MD could) (@VP->_MD (RB n't) (@VP->_MD_RB (VP (VB be) (@VP->_VB (VP (VBN reached))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Mr.) (@NP->_NNP (NNP Kuehn))) (@S->_NP (PRN (, ,) (@PRN->_, (S (NP (DT the) (@NP->_DT (NN company))) (@S->_NP (VP (VBD said)))) (@PRN->_,_S (, ,)))) (@S->_NP_PRN (VP (MD will) (@VP->_MD (VP (VB retain) (@VP->_VB (NP (NP (DT the) (@NP->_DT (NN rest))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (JJ current) (@NP->_DT_JJ (NN management) (@NP->_DT_JJ_NN (NN team))))))))))))) (@S->_NP_PRN_VP (. .))))))
+
+(ROOT (S (PP (IN In) (@PP->_IN (NP (JJ national) (@NP->_JJ (JJ over-the-counter) (@NP->_JJ_JJ (NN trading)))))) (@S->_PP (, ,) (@S->_PP_, (NP (NNP SFE) (@NP->_NNP (NNPS Technologies) (@NP->_NNP_NNPS (NNS shares)))) (@S->_PP_,_NP (VP (VBD closed) (@VP->_VBD (NP (NN yesterday)) (@VP->_VBD_NP (PP (IN at) (@PP->_IN (NP (NP (CD 31.25) (@NP->_CD (NNS cents))) (@NP->_NP (NP (DT a) (@NP->_DT (NN share))))))) (@VP->_VBD_NP_PP (, ,) (@VP->_VBD_NP_PP_, (ADVP (RB up) (@ADVP->_RB (NP (CD 6.25) (@NP->_CD (NNS cents)))))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NNP Tokyo) (@NP->_NNP (NNS stocks))) (@S->_NP (VP (VBD rebounded) (@VP->_VBD (NP (NNP Tuesday)) (@VP->_VBD_NP (PP (IN from) (@PP->_IN (NP (CD two) (@NP->_CD (JJ consecutive) (@NP->_CD_JJ (JJ daily) (@NP->_CD_JJ_JJ (NNS losses))))))) (@VP->_VBD_NP_PP (PP (IN in) (@PP->_IN (NP (ADJP (RB relatively) (@ADJP->_RB (JJ active))) (@NP->_ADJP (NNS dealings))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP London) (@NP->_NNP (NNS shares))) (@S->_NP (ADVP (RB also)) (@S->_NP_ADVP (VP (VBD rose) (@VP->_VBD (, ,) (@VP->_VBD_, (SBAR (IN while) (@SBAR->_IN (S (NP (NP (NN trading)) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NP (NNP Frankfurt)) (@NP->_NP (, ,) (@NP->_NP_, (NP (NNP West) (@NP->_NNP (NNP Germany))) (@NP->_NP_,_NP (, ,))))))))) (@S->_NP (VP (VBD ended) (@VP->_VBD (ADVP (RBR higher))))))))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (S (PP (IN In) (@PP->_IN (NP (NNP Tokyo)))) (@S->_PP (, ,) (@S->_PP_, (NP (NP (DT the) (@NP->_DT (NNP Nikkei) (@NP->_DT_NNP (NN index)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (CD 225) (@NP->_CD (VBN selected) (@NP->_CD_VBN (NNS issues)))))))) (@S->_PP_,_NP (VP (VBD was) (@VP->_VBD (ADVP (RB up) (@ADVP->_RB (NP (CD 132.00) (@NP->_CD (NNS points))))) (@VP->_VBD_ADVP (PP (TO to) (@PP->_TO (NP (CD 35549.44))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN index))) (@S->_NP (VP (VBD fell) (@VP->_VBD (NP (CD 109.85)) (@VP->_VBD_NP (NP (NNP Monday))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (NN Volume)) (@NP->_NP (PP (IN on) (@PP->_IN (NP (DT the) (@NP->_DT (JJ First) (@NP->_DT_JJ (NN Section)))))))) (@S->_NP (VP (VBD was) (@VP->_VBD (VP (VBN estimated) (@VP->_VBN (PP (IN at) (@PP->_IN (NP (QP (CD 900) (@QP->_CD (CD million))) (@NP->_QP (NNS shares))))) (@VP->_VBN_PP (, ,) (@VP->_VBN_PP_, (ADVP (RB up) (@ADVP->_RB (PP (IN from) (@PP->_IN (NP (NP (QP (CD 582) (@QP->_CD (CD million))) (@NP->_QP (NNS shares))) (@NP->_NP (NP (NNP Monday)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (VBG Advancing) (@NP->_VBG (NNS issues))) (@S->_NP (VP (VBD outnumbered) (@VP->_VBD (NP (NNS decliners)) (@VP->_VBD_NP (ADVP (CD 542) (@ADVP->_CD (TO to) (@ADVP->_CD_TO (CD 362)))) (@VP->_VBD_NP_ADVP (, ,) (@VP->_VBD_NP_ADVP_, (SBAR (IN while) (@SBAR->_IN (S (NP (CD 208) (@NP->_CD (NNS issues))) (@S->_NP (VP (VBD were) (@VP->_VBD (ADJP (JJ unchanged))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (JJ Small-lot) (@NP->_JJ (NN buying))) (@NP->_NP (VP (VBN targeted) (@VP->_VBN (PP (IN at) (@PP->_IN (NP (JJ incentive-backed) (@NP->_JJ (NNS issues))))))))) (@S->_NP (VP (VBN pushed) (@VP->_VBN (ADVP (RP up)) (@VP->_VBN_ADVP (NP (DT the) (@NP->_DT (NNP Nikkei)))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (CC But) (@S->_CC (NP (JJ other) (@NP->_JJ (NNS sectors))) (@S->_CC_NP (VP (VP (VBD failed) (@VP->_VBD (S (VP (TO to) (@VP->_TO (VP (VB attract) (@VP->_VB (NP (NN investor) (@NP->_NN (NN interest)))))))))) (@VP->_VP (CC and) (@VP->_VP_CC (VP (VBD remained) (@VP->_VBD (ADJP (JJ sluggish)))) (@VP->_VP_CC_VP (, ,) (@VP->_VP_CC_VP_, (S (VP (VBG making) (@VP->_VBG (S (NP (JJ overall) (@NP->_JJ (NN trading))) (@S->_NP (VP (VB appear) (@VP->_VB (ADJP (JJ mixed)))))))))))))) (@S->_CC_NP_VP (. .))))))
+
+(ROOT (S (NP (NP (NNS Individuals) (@NP->_NNS (CC and) (@NP->_NNS_CC (NNS corporations)))) (@NP->_NP (, ,) (@NP->_NP_, (CONJP (RB as) (@CONJP->_RB (RB well) (@CONJP->_RB_RB (IN as)))) (@NP->_NP_,_CONJP (NP (NP (NNS dealers)) (@NP->_NP (VP (VBG trading) (@VP->_VBG (PP (IN for) (@PP->_IN (NP (PRP$ their) (@NP->_PRP$ (JJ own) (@NP->_PRP$_JJ (NN account)))))))))) (@NP->_NP_,_CONJP_NP (, ,)))))) (@S->_NP (VP (ADVP (RB actively)) (@VP->_ADVP (VBD bought) (@VP->_ADVP_VBD (NP (NNP Tuesday))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (JJ Second) (@NP->_JJ (NN Section) (@NP->_JJ_NN (NN volume)))) (@S->_NP (VP (VBD was) (@VP->_VBD (VP (VBN estimated) (@VP->_VBN (PP (IN at) (@PP->_IN (NP (QP (CD 14) (@QP->_CD (CD million))) (@NP->_QP (NNS shares))))) (@VP->_VBN_PP (, ,) (@VP->_VBN_PP_, (S (ADJP (JJ unchanged) (@ADJP->_JJ (PP (IN from) (@PP->_IN (NP (NNP Monday))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (JJ Institutional) (@NP->_JJ (NNS investors))) (@S->_NP (ADVP (RB mostly)) (@S->_NP_ADVP (VP (VBD remained) (@VP->_VBD (PP (IN on) (@PP->_IN (NP (DT the) (@NP->_DT (NNS sidelines))))) (@VP->_VBD_PP (NP (NNP Tuesday))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (S (NP (NP (DT A) (@NP->_DT (NN fund) (@NP->_DT_NN (NN manager)))) (@NP->_NP (PP (IN at) (@PP->_IN (NP (DT a) (@NP->_DT (NN life-insurance) (@NP->_DT_NN (NN company)))))))) (@S->_NP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (CD three) (@NP->_CD (NNS factors))) (@S->_NP (VP (VBP make) (@VP->_VBP (S (NP (PRP it)) (@S->_NP (ADJP (JJ difficult)) (@S->_NP_ADJP (S (VP (TO to) (@VP->_TO (VP (VB read) (@VP->_VB (NP (NN market) (@NP->_NN (NN direction)))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (ADVP (LS Second)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (DT the) (@NP->_DT (NN dollar))) (@S->_ADVP_,_NP (VP (VBZ is) (@VP->_VBZ (VP (VBG showing) (@VP->_VBG (NP (JJ persistent) (@NP->_JJ (NN strength))) (@VP->_VBG_NP (PP (IN despite) (@PP->_IN (NP (NP (DT a) (@NP->_DT (NN slowdown))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (DT the) (@NP->_DT (NNP U.S.) (@NP->_DT_NNP (NN economy)))))) (@NP->_NP_PP (VP (VBN shown) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (JJ economic) (@NP->_JJ (NNS indicators))))))))))))))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (ADVP (LS Third)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (NN oil) (@NP->_NN (NNS prices))) (@S->_ADVP_,_NP (VP (VBP have) (@VP->_VBP (RB n't) (@VP->_VBP_RB (VP (VBN declined) (@VP->_VBN (SBAR (IN although) (@SBAR->_IN (S (NP (NN supply)) (@S->_NP (VP (VBZ has) (@VP->_VBZ (VP (VBN been) (@VP->_VBN (VP (VBG increasing))))))))))))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NNP Mitsubishi) (@NP->_NNP (NNP Estate))) (@S->_NP (VP (VBD ended) (@VP->_VBD (NP (DT the) (@NP->_DT (NN day))) (@VP->_VBD_NP (PP (IN at) (@PP->_IN (NP (CD 2680)))) (@VP->_VBD_NP_PP (, ,) (@VP->_VBD_NP_PP_, (ADVP (RB up) (@ADVP->_RB (NP (CD 150))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (S (NP (DT The) (@NP->_DT (NNS gains))) (@S->_NP (ADVP (RB also)) (@S->_NP_ADVP (VP (VBD sparked) (@VP->_VBD (NP (NP (NN buying) (@NP->_NN (NN interest))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (JJ other) (@NP->_JJ (NN real-estate) (@NP->_JJ_NN (NNS companies))))))))))))) (@S->_S (, ,) (@S->_S_, (NP (NNS traders)) (@S->_S_,_NP (VP (VBD said)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NNP Sumitomo) (@NP->_NNP (NNP Realty) (@NP->_NNP_NNP (CC &) (@NP->_NNP_NNP_CC (NNP Development))))) (@S->_NP (VP (VBD rose) (@VP->_VBD (NP (CD 40)) (@VP->_VBD_NP (PP (TO to) (@PP->_TO (NP (CD 2170))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Heiwa) (@NP->_NNP (NNP Real) (@NP->_NNP_NNP (NNP Estate)))) (@S->_NP (VP (VBD gained) (@VP->_VBD (NP (CD 40)) (@VP->_VBD_NP (PP (TO to) (@PP->_TO (NP (CD 2210))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (S (NP (NN Investor) (@NP->_NN (NN focus))) (@S->_NP (VP (VBD shifted) (@VP->_VBD (ADVP (RB quickly)))))) (@S->_S (, ,) (@S->_S_, (NP (NNS traders)) (@S->_S_,_NP (VP (VBD said)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NP (JJ Many)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NN morning-session) (@NP->_DT_NN (NNS winners)))))))) (@S->_NP (VP (VBD turned) (@VP->_VBD (PRT (RP out)) (@VP->_VBD_PRT (S (VP (TO to) (@VP->_TO (VP (VB be) (@VP->_VB (NP (NNS losers))))))) (@VP->_VBD_PRT_S (PP (IN by) (@PP->_IN (NP (NN afternoon)))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (NN balance))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (JJ short) (@NP->_JJ (NNS positions))) (@NP->_NP (ADJP (JJ outstanding)))))))) (@S->_NP (VP (VBD fell) (@VP->_VBD (NP (QP (CD 159.7) (@QP->_CD (CD billion))) (@NP->_QP (NNS yen))) (@VP->_VBD_NP (, ,) (@VP->_VBD_NP_, (PP (TO to) (@PP->_TO (NP (QP (CD 779.8) (@QP->_CD (CD billion))) (@NP->_QP (NNS yen))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (CC But) (@S->_CC (NP (NN trading)) (@S->_CC_NP (VP (VBD was) (@VP->_VBD (ADJP (RB very) (@ADJP->_RB (JJ sketchy))) (@VP->_VBD_ADJP (, ,) (@VP->_VBD_ADJP_, (SBAR (IN as) (@SBAR->_IN (S (NP (NN investment) (@NP->_NN (NN decision) (@NP->_NN_NN (NNS makers)))) (@S->_NP (VP (VBP remain) (@VP->_VBP (ADJP (JJ wary)) (@VP->_VBP_ADJP (PP (IN from) (@PP->_IN (NP (NP (NNS gyrations) (@NP->_NNS (CC and) (@NP->_NNS_CC (NNS upsets)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (JJ recent) (@NP->_JJ (NNS weeks)))))))))))))))))))) (@S->_CC_NP_VP (. .))))))
+
+(ROOT (SINV (`` ``) (@SINV->_`` (S (NP (NN Volume)) (@S->_NP (VP (VBZ has) (@VP->_VBZ (VP (VBN been) (@VP->_VBN (ADJP (JJ appalling)))))))) (@SINV->_``_S (, ,) (@SINV->_``_S_, ('' '') (@SINV->_``_S_,_'' (VP (VBD said)) (@SINV->_``_S_,_''_VP (NP (NP (DT a) (@NP->_DT (NN dealer))) (@NP->_NP (PP (IN at) (@PP->_IN (NP (DT a) (@NP->_DT (JJ British) (@NP->_DT_JJ (NN brokerage) (@NP->_DT_JJ_NN (NN concern))))))))) (@SINV->_``_S_,_''_VP_NP (. .)))))))))
+
+(ROOT (S (NP (DT No) (@NP->_DT (NN one))) (@S->_NP (VP (VBZ wants) (@VP->_VBZ (S (NP (NN stock)) (@S->_NP (PP (IN on) (@PP->_IN (NP (PRP$ their) (@NP->_PRP$ (NNS books))))))))) (@S->_NP_VP (. .) (@S->_NP_VP_. ('' ''))))))
+
+(ROOT (S (PP (IN At) (@PP->_IN (NP (DT the) (@NP->_DT (NN close))))) (@S->_PP (, ,) (@S->_PP_, (NP (DT the) (@NP->_DT (JJR narrower) (@NP->_DT_JJR (JJ 30-share) (@NP->_DT_JJR_JJ (NN index))))) (@S->_PP_,_NP (VP (VBD was) (@VP->_VBD (ADVP (RB up) (@ADVP->_RB (NP (CD 19.7) (@NP->_CD (NNS points))))) (@VP->_VBD_ADVP (PP (TO to) (@PP->_TO (NP (CD 1721.4))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NN Volume)) (@S->_NP (VP (VBD totaled) (@VP->_VBD (NP (DT a) (@NP->_DT (JJ modest) (@NP->_DT_JJ (QP (CD 334.5) (@QP->_CD (CD million))) (@NP->_DT_JJ_QP (NNS shares))))) (@VP->_VBD_NP (, ,) (@VP->_VBD_NP_, (ADVP (RB up) (@ADVP->_RB (PP (IN from) (@PP->_IN (NP (NP (QP (CD 257.8) (@QP->_CD (CD million))) (@NP->_QP (NNS shares))) (@NP->_NP (NP (NNP Monday)))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (JJ golden) (@NP->_DT_JJ (NN share)))) (@S->_NP (VP (VBD was) (@VP->_VBD (VP (VBN scheduled) (@VP->_VBN (S (VP (TO to) (@VP->_TO (VP (VB expire) (@VP->_VB (PP (IN at) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NN beginning))) (@NP->_NP (FRAG (PP (IN of)))))))))))))))))))
+
+(ROOT (S (NP (NNP Jaguar) (@NP->_NNP (NNS shares))) (@S->_NP (VP (VBD closed) (@VP->_VBD (PP (IN at) (@PP->_IN (NP (CD 869) (@NP->_CD (NN pence))))) (@VP->_VBD_PP (, ,) (@VP->_VBD_PP_, (ADVP (RB up) (@ADVP->_RB (NP (CD 122) (@NP->_CD (NN pence))))) (@VP->_VBD_PP_,_ADVP (, ,) (@VP->_VBD_PP_,_ADVP_, (PP (IN on) (@PP->_IN (NP (NP (JJ hefty) (@NP->_JJ (NN turnover))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (QP (CD 9.7) (@QP->_CD (CD million))) (@NP->_QP (NNS shares))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNP DAX) (@NP->_DT_NNP (NN index)))) (@S->_NP (VP (VBD closed) (@VP->_VBD (PP (IN at) (@PP->_IN (NP (CD 1472.76)))) (@VP->_VBD_PP (, ,) (@VP->_VBD_PP_, (ADVP (RB up) (@ADVP->_RB (PP (IN from) (@PP->_IN (NP (CD 1466.29)))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (PP (IN Despite) (@PP->_IN (NP (DT the) (@NP->_DT (JJ modest) (@NP->_DT_JJ (NNS gains)))))) (@S->_PP (, ,) (@S->_PP_, (NP (NNS traders)) (@S->_PP_,_NP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (DT the) (@NP->_DT (NN market))) (@S->_NP (VP (VBZ remains) (@VP->_VBZ (ADJP (JJ dull)) (@VP->_VBZ_ADJP (, ,) (@VP->_VBZ_ADJP_, (PP (IN with) (@PP->_IN (S (NP (NNS investors)) (@S->_NP (VP (VBG remaining) (@VP->_VBG (ADVP (RB cautiously)) (@VP->_VBG_ADVP (PP (IN on) (@PP->_IN (NP (DT the) (@NP->_DT (NNS sidelines))))))))))))))))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (S (ADVP (RB Additionally)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (DT the) (@NP->_DT (NAC (NN end) (@NAC->_NN (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NN month))))))) (@NP->_DT_NAC (NN position-squaring)))) (@S->_ADVP_,_NP (VP (MD might) (@VP->_MD (VP (VB have) (@VP->_VB (ADVP (RB also)) (@VP->_VB_ADVP (VP (VBN played) (@VP->_VBN (NP (DT a) (@NP->_DT (JJ minor) (@NP->_DT_JJ (NN role))))))))))))))) (@S->_S (, ,) (@S->_S_, (NP (NNS traders)) (@S->_S_,_NP (VP (VBD said)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (ADVP (RB Elsewhere)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (NN share) (@NP->_NN (NNS prices))) (@S->_ADVP_,_NP (VP (VBD closed) (@VP->_VBD (ADVP (RBR higher)) (@VP->_VBD_ADVP (PP (IN in) (@PP->_IN (NP (NNP Amsterdam) (@NP->_NNP (, ,) (@NP->_NNP_, (NNP Brussels) (@NP->_NNP_,_NNP (, ,) (@NP->_NNP_,_NNP_, (NNP Milan) (@NP->_NNP_,_NNP_,_NNP (CC and) (@NP->_NNP_,_NNP_,_NNP_CC (NNP Paris))))))))))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NNS Prices)) (@S->_NP (VP (VP (VBD were) (@VP->_VBD (ADJP (JJ mixed)) (@VP->_VBD_ADJP (PP (IN in) (@PP->_IN (NP (NNP Zurich))))))) (@VP->_VP (CC and) (@VP->_VP_CC (VP (ADJP (JJR lower)) (@VP->_ADJP (PP (IN in) (@PP->_IN (NP (NNP Stockholm))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Taipei)) (@S->_NP (VP (VBD was) (@VP->_VBD (VP (VBN closed) (@VP->_VBN (PP (IN for) (@PP->_IN (NP (DT a) (@NP->_DT (NN holiday))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (S (VP (TO To) (@VP->_TO (VP (VB make) (@VP->_VB (S (NP (PRP them)) (@S->_NP (ADJP (RB directly) (@ADJP->_RB (JJ comparable)))))))))) (@S->_S (, ,) (@S->_S_, (NP (DT each) (@NP->_DT (NN index))) (@S->_S_,_NP (VP (VBZ is) (@VP->_VBZ (VP (VBN based) (@VP->_VBN (PP (IN on) (@PP->_IN (S (NP (NP (DT the) (@NP->_DT (NN close))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (CD 1969)))))) (@S->_NP (VP (VBG equaling) (@VP->_VBG (NP (CD 100)))))))))))) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN percentage) (@NP->_DT_NN (NN change)))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (PP (IN since) (@PP->_IN (NP (NN year-end)))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN index))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (VP (VBN based) (@VP->_VBN (PP (IN on) (@PP->_IN (S (NP (CD 1980)) (@S->_NP (VP (VBG equaling) (@VP->_VBG (NP (CD 100)))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT A) (@NP->_DT (NN breakdown))) (@S->_NP (VP (VBD showed) (@VP->_VBD (SBAR (IN that) (@SBAR->_IN (S (NP (NN food) (@NP->_NN (NNS prices))) (@S->_NP (VP (VBD were) (@VP->_VBD (NP (NP (DT the) (@NP->_DT (ADJP (RBS most) (@ADJP->_RBS (JJ active))) (@NP->_DT_ADJP (NN part)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NN growth)))))))) (@S->_NP_VP (PP (IN with) (@PP->_IN (NP (NP (DT a) (@NP->_DT (NN rise))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (CD 0.6) (@NP->_CD (NN %)))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT An) (@NP->_DT (NN official))) (@S->_NP (VP (VBD linked) (@VP->_VBD (NP (DT the) (@NP->_DT (NN gain))) (@VP->_VBD_NP (PP (ADVP (RB essentially)) (@PP->_ADVP (TO to) (@PP->_ADVP_TO (NP (NP (JJR higher) (@NP->_JJR (NNS prices))) (@NP->_NP (PP (IN for) (@PP->_IN (NP (NN beef) (@NP->_NN (CC and) (@NP->_NN_CC (NN pork)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN index))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (VP (VBN intended) (@VP->_VBN (S (VP (TO to) (@VP->_TO (VP (VB measure) (@VP->_VB (NP (JJ future) (@NP->_JJ (JJ economic) (@NP->_JJ_JJ (NN performance))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (JJ South) (@NP->_DT_JJ (JJ Korean) (@NP->_DT_JJ_JJ (NN government))))) (@S->_NP (VP (VBD had) (@VP->_VBD (VP (VBN been) (@VP->_VBN (VP (VBG projecting) (@VP->_VBG (NP (NP (DT a) (@NP->_DT (ADJP (CD 5) (@ADJP->_CD (NN %))) (@NP->_DT_ADJP (NN consumer) (@NP->_DT_ADJP_NN (NN price) (@NP->_DT_ADJP_NN_NN (NN increase)))))) (@NP->_NP (PP (IN for) (@PP->_IN (NP (DT the) (@NP->_DT (JJ entire) (@NP->_DT_JJ (NN year)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Mr.) (@NP->_NNP (NNP Brissette))) (@S->_NP (VP (VP (MD will) (@VP->_MD (VP (VB remain) (@VP->_VB (NP (DT a) (@NP->_DT (NNP Canonie) (@NP->_DT_NNP (NN board) (@NP->_DT_NNP_NN (NN member))))))))) (@VP->_VP (CC and) (@VP->_VP_CC (VP (MD will) (@VP->_MD (VP (VB be) (@VP->_VB (NP (NP (DT a) (@NP->_DT (NN consultant))) (@NP->_NP (PP (TO to) (@PP->_TO (NP (DT the) (@NP->_DT (NN company)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (NNS Yields)) (@NP->_NP (PP (IN on) (@PP->_IN (NP (NP (JJ savings-type) (@NP->_JJ (NNS certificates))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NN deposit)))))))))) (@S->_NP (VP (VBD dropped) (@VP->_VBD (ADVP (RB slightly)) (@VP->_VBD_ADVP (PP (IN in) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NN week))) (@NP->_NP (VP (VBN ended) (@VP->_VBN (NP (NN yesterday))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (SINV (`` ``) (@SINV->_`` (S (NP (DT This) (@NP->_DT (NN week))) (@S->_NP (VP (VBD was) (@VP->_VBD (ADJP (JJ uneventful)) (@VP->_VBD_ADJP (PP (IN for) (@PP->_IN (NP (DT the) (@NP->_DT (NN CD) (@NP->_DT_NN (NN market))))))))))) (@SINV->_``_S (, ,) (@SINV->_``_S_, ('' '') (@SINV->_``_S_,_'' (VP (VBD said)) (@SINV->_``_S_,_''_VP (NP (NP (NNP Norberto) (@NP->_NNP (NNP Mehl))) (@NP->_NP (, ,) (@NP->_NP_, (NP (NP (NN chairman)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNP Banxquote))))))))) (@SINV->_``_S_,_''_VP_NP (. .)))))))))
+
+(ROOT (S (S (NP (NP (NNS Banks)) (@NP->_NP (SBAR (WHNP (WDT that)) (@SBAR->_WHNP (S (VP (VBD adjusted) (@VP->_VBD (NP (NP (NNS payouts)) (@NP->_NP (PP (IN on) (@PP->_IN (NP (NNS CDs)))))) (@VP->_VBD_NP (PP (IN in) (@PP->_IN (NP (DT the) (@NP->_DT (ADJP (RBS most) (@ADJP->_RBS (JJ recent))) (@NP->_DT_ADJP (NN week)))))))))))))) (@S->_NP (VP (VBD made) (@VP->_VBD (NP (RB only) (@NP->_RB (JJ fractional) (@NP->_RB_JJ (NNS moves)))))))) (@S->_S (, ,) (@S->_S_, (NP (PRP he)) (@S->_S_,_NP (VP (VBD said)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN CD) (@NP->_DT_NN (NN trend)))) (@S->_NP (VP (VBZ runs) (@VP->_VBZ (S (ADVP (RB counter) (@ADVP->_RB (PP (TO to) (@PP->_TO (NP (NP (DT the) (@NP->_DT (NN direction))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (JJ short-term) (@NP->_JJ (NN interest) (@NP->_JJ_NN (NNS rates)))))) (@NP->_NP_PP (PP (IN at) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NNP Treasury) (@NP->_DT_NNP (NN bill) (@NP->_DT_NNP_NN (NN auction))))) (@NP->_NP (NP (NNP Monday)))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (JJ average) (@NP->_DT_JJ (JJ six-month) (@NP->_DT_JJ_JJ (NN bill))))) (@S->_NP (VP (VBD was) (@VP->_VBD (VP (VBN sold) (@VP->_VBN (PP (IN with) (@PP->_IN (NP (NP (DT a) (@NP->_DT (NN yield))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (CD 8.04) (@NP->_CD (NN %))) (@NP->_NP (, ,) (@NP->_NP_, (ADVP (RB up) (@ADVP->_RB (PP (IN from) (@PP->_IN (NP (CD 7.90) (@NP->_CD (NN %)))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (JJ average) (@NP->_DT_JJ (JJ three-month) (@NP->_DT_JJ_JJ (NN issue))))) (@S->_NP (VP (VBD rose) (@VP->_VBD (PP (TO to) (@PP->_TO (NP (CD 8.05) (@NP->_CD (NN %))))) (@VP->_VBD_PP (PP (IN from) (@PP->_IN (NP (CD 7.77) (@NP->_CD (NN %)))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (CC But) (@S->_CC (SBAR (WHADVP (WRB when)) (@SBAR->_WHADVP (S (NP (NN market) (@NP->_NN (NN interest) (@NP->_NN_NN (NNS rates)))) (@S->_NP (VP (VBP move) (@VP->_VBP (ADVP (RB up)) (@VP->_VBP_ADVP (ADVP (RB rapidly))))))))) (@S->_CC_SBAR (, ,) (@S->_CC_SBAR_, (NP (NP (NNS increases)) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NN bank) (@NP->_NN (NN CD) (@NP->_NN_NN (NNS yields)))))))) (@S->_CC_SBAR_,_NP (ADVP (RB sometimes)) (@S->_CC_SBAR_,_NP_ADVP (VP (VBP lag)) (@S->_CC_SBAR_,_NP_ADVP_VP (. .)))))))))
+
+(ROOT (S (PP (IN For) (@PP->_IN (NP (JJR longer-term) (@NP->_JJR (NNS CDs))))) (@S->_PP (, ,) (@S->_PP_, (NP (NNS yields)) (@S->_PP_,_NP (VP (VBD were) (@VP->_VBD (ADVP (RP up)))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (ADVP (RB However)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (NP (NNS CDs)) (@NP->_NP (VP (VBD sold) (@VP->_VBD (PP (IN through) (@PP->_IN (NP (JJ major) (@NP->_JJ (JJ broker-dealer) (@NP->_JJ_JJ (NNS networks)))))))))) (@S->_ADVP_,_NP (VP (VBD were) (@VP->_VBD (ADVP (RP up)) (@VP->_VBD_ADVP (ADVP (RB slightly)) (@VP->_VBD_ADVP_ADVP (PP (RB almost) (@PP->_RB (IN across) (@PP->_RB_IN (NP (DT the) (@NP->_DT (NN board)))))))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (JJ average) (@NP->_DT_JJ (JJ six-month) (@NP->_DT_JJ_JJ (NN CD))))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (DT that) (@NP->_DT (NN category))))))) (@S->_NP (VP (VBD added) (@VP->_VBD (NP (CD 0.05) (@NP->_CD (NN percentage) (@NP->_CD_NN (NN point)))) (@VP->_VBD_NP (PP (TO to) (@PP->_TO (NP (CD 8.35) (@NP->_CD (NN %))))) (@VP->_VBD_NP_PP (, ,) (@VP->_VBD_NP_PP_, (PP (IN for) (@PP->_IN (NP (NN example))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Mr.) (@NP->_NNP (NNP Mehl))) (@S->_NP (VP (VBD attributed) (@VP->_VBD (NP (DT the) (@NP->_DT (NN rise))) (@VP->_VBD_NP (PP (ADVP (RB specifically)) (@PP->_ADVP (TO to) (@PP->_ADVP_TO (NP (DT the) (@NP->_DT (NNP Treasury) (@NP->_DT_NNP (NN bill) (@NP->_DT_NNP_NN (NN increase))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP It)) (@S->_NP (VP (VBZ is) (@VP->_VBZ (VP (VBN offered) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NN flagship) (@NP->_DT_NN (NNS banks)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (NNP New) (@NP->_NNP (NNP York) (@NP->_NNP_NNP (POS 's)))) (@NP->_NP (NNPS Manufacturers) (@NP->_NP_NNPS (NNP Hanover) (@NP->_NP_NNPS_NNP (NNP Corp.))))))))))) (@VP->_VBN_PP (PP (IN in) (@PP->_IN (NP (NP (DT the) (@NP->_DT (JJ one-year) (@NP->_DT_JJ (NN maturity)))) (@NP->_NP (ADVP (RB only))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (ADVP (NP (QP (RB Just) (@QP->_RB (CD two))) (@NP->_QP (NNS weeks))) (@ADVP->_NP (RB ago))) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (NP (NP (NNP BankAmerica) (@NP->_NNP (POS 's))) (@NP->_NP (NNS yields))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NP (JJ many)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT those) (@NP->_DT (NNS maturities))))))))))) (@S->_ADVP_,_NP (VP (VBD was) (@VP->_VBD (NP (CD 8.61) (@NP->_CD (NN %))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (ADVP (RB Still)) (@S->_ADVP (, ,) (@S->_ADVP_, (PP (IN on) (@PP->_IN (NP (NN average)))) (@S->_ADVP_,_PP (, ,) (@S->_ADVP_,_PP_, (NP (DT the) (@NP->_DT (JJ major) (@NP->_DT_JJ (NNP California) (@NP->_DT_JJ_NNP (NNS banks))))) (@S->_ADVP_,_PP_,_NP (VP (VBP have) (@VP->_VBP (NP (NP (DT the) (@NP->_DT (JJS highest) (@NP->_DT_JJS (NNS yields)))) (@NP->_NP (PP (IN on) (@PP->_IN (NP (NNS CDs)))))) (@VP->_VBP_NP (, ,) (@VP->_VBP_NP_, (PP (VBG according) (@PP->_VBG (PP (TO to) (@PP->_TO (NP (NNP Banxquote)))))))))) (@S->_ADVP_,_PP_,_NP_VP (. .)))))))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (JJ average) (@NP->_DT_JJ (NN yield)))) (@NP->_NP (ADVP (RB there)) (@NP->_NP_ADVP (PP (IN on) (@PP->_IN (NP (JJ six-month) (@NP->_JJ (NNS issues)))))))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (CD 8.32) (@NP->_CD (NN %))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (NN man))) (@NP->_NP (PP (IN with) (@PP->_IN (NP (DT the) (@NP->_DT (NN clipboard))))))) (@S->_NP (VP (VBD represented) (@VP->_VBD (NP (DT a) (@NP->_DT (JJ halfhearted) (@NP->_DT_JJ (NN attempt) (@NP->_DT_JJ_NN (S (VP (TO to) (@VP->_TO (VP (VB introduce) (@VP->_VB (NP (NP (DT a) (@NP->_DT (NN bit))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (FW les) (@NP->_FW (FW sportif))))))) (@VP->_VB_NP (PP (IN into) (@PP->_IN (NP (PRP$ our) (@NP->_PRP$ (NN itinerary))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (ADVP (RB Back) (@ADVP->_RB (PP (IN in) (@PP->_IN (NP (DT the) (@NP->_DT (NNP U.S.A.))))))) (@S->_ADVP (NP (NP (DT this) (@NP->_DT (NN kind))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (JJ chi-chi) (@NP->_JJ (JJ airborne) (@NP->_JJ_JJ (NN activity)))))))) (@S->_ADVP_NP (VP (VBZ wins) (@VP->_VBZ (NP (ADJP (RB heartwarmingly) (@ADJP->_RB (JJ covetous))) (@NP->_ADJP (NNS responses))))) (@S->_ADVP_NP_VP (. .))))))
+
+(ROOT (FRAG (SBAR (IN As) (@SBAR->_IN (IN in) (@SBAR->_IN_IN (: :) (@SBAR->_IN_IN_: (`` ``) (@SBAR->_IN_IN_:_`` (SQ (NP (PRP You)) (@SQ->_NP (VP (VBD went) (@VP->_VBD (NP (VBG ballooning)))) (@SQ->_NP_VP (. ?) (@SQ->_NP_VP_. (. ?) (@SQ->_NP_VP_._. (. !) (@SQ->_NP_VP_._._. (. !))))))))))))))
+
+(ROOT (FRAG (PP (IN In) (@PP->_IN (NP (NNP France)) (@PP->_IN_NP (. ?) (@PP->_IN_NP_. (. ?) (@PP->_IN_NP_._. (. !) (@PP->_IN_NP_._._. (. !) (@PP->_IN_NP_._._._. ('' ''))))))))))
+
+(ROOT (S (NP (NNPS Americans)) (@S->_NP (PRN (S (NP (PRP it)) (@S->_NP (VP (VBZ seems))))) (@S->_NP_PRN (VP (VBP have) (@VP->_VBP (VP (VP (VBN followed) (@VP->_VBN (NP (NP (NNP Malcolm) (@NP->_NNP (NNP Forbes) (@NP->_NNP_NNP (POS 's)))) (@NP->_NP (JJ hot-air) (@NP->_NP_JJ (NN lead)))))) (@VP->_VP (CC and) (@VP->_VP_CC (VP (VBN taken) (@VP->_VBN (PP (TO to) (@PP->_TO (NP (NN ballooning)))) (@VP->_VBN_PP (PP (IN in) (@PP->_IN (NP (DT a) (@NP->_DT (JJ heady) (@NP->_DT_JJ (NN way)))))))))))))) (@S->_NP_PRN_VP (. .))))))
+
+(ROOT (S (-LRB- -LRB-) (@S->_-LRB- (NP (DT The) (@NP->_DT (NN condom) (@NP->_DT_NN (NN balloon)))) (@S->_-LRB-_NP (VP (VBD was) (@VP->_VBD (VP (VBN denied) (@VP->_VBN (NP (JJ official) (@NP->_JJ (NN entry) (@NP->_JJ_NN (NN status)))))))) (@S->_-LRB-_NP_VP (NP (DT this) (@NP->_DT (NN year))) (@S->_-LRB-_NP_VP_NP (. .) (@S->_-LRB-_NP_VP_NP_. (-RRB- -RRB-))))))))
+
+(ROOT (S (S (VP (VBG Feeling) (@VP->_VBG (NP (NP (DT the) (@NP->_DT (NNS naggings))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT a) (@NP->_DT (NN culture) (@NP->_DT_NN (NN imperative))))))))))) (@S->_S (, ,) (@S->_S_, (NP (PRP I)) (@S->_S_,_NP (VP (ADVP (RB promptly)) (@VP->_ADVP (VBD signed) (@VP->_ADVP_VBD (PRT (RB up))))) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (PRN (-LRB- -LRB-) (@PRN->_-LRB- (ADVP (ADVP (RB So) (@ADVP->_RB (RB long))) (@ADVP->_ADVP (SBAR (IN as) (@SBAR->_IN (S (NP (PRP you)) (@S->_NP (VP (VBP do) (@VP->_VBP (RB n't) (@VP->_VBP_RB (VP (VB look) (@VP->_VB (ADVP (RB down))))))))))) (@ADVP->_ADVP_SBAR (. .)))) (@PRN->_-LRB-_ADVP (-RRB- -RRB-)))))
+
+(ROOT (S (NP (PRP They)) (@S->_NP (VP (MD will) (@VP->_MD (ADVP (RB also)) (@VP->_MD_ADVP (VP (VB tell) (@VP->_VB (NP (PRP you)) (@VP->_VB_NP (SBAR (RB that) (@SBAR->_RB (S (SBAR (RB even) (@SBAR->_RB (IN if) (@SBAR->_RB_IN (S (NP (PRP you)) (@S->_NP (VP (VBP hate) (@VP->_VBP (NP (NNS heights))))))))) (@S->_SBAR (, ,) (@S->_SBAR_, (NP (PRP you)) (@S->_SBAR_,_NP (VP (MD can) (@VP->_MD (ADVP (RB still)) (@VP->_MD_ADVP (VP (VB balloon))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (-LRB- -LRB-) (@S->_-LRB- (NP (PRP I)) (@S->_-LRB-_NP (ADVP (RB still)) (@S->_-LRB-_NP_ADVP (VP (VB say) (@VP->_VB (S (VP (VBP do) (@VP->_VBP (RB n't) (@VP->_VBP_RB (VP (VB look) (@VP->_VB (ADVP (RB down)))))))))) (@S->_-LRB-_NP_ADVP_VP (. .)))))))
+
+(ROOT (FRAG (PP (IN At) (@PP->_IN (ADJP (JJS least)))) (@FRAG->_PP (RB not) (@FRAG->_PP_RB (SBAR (WHADVP (WRB when)) (@SBAR->_WHADVP (S (NP (PRP you)) (@S->_NP (VP (VBP are) (@VP->_VBP (VP (VBG ascending)))))))) (@FRAG->_PP_RB_SBAR (. .) (@FRAG->_PP_RB_SBAR_. (-RRB- -RRB-)))))))
+
+(ROOT (S (NP (PRP I)) (@S->_NP (VP (VBP 'm) (@VP->_VBP (RB not) (@VP->_VBP_RB (VP (VBG referring) (@VP->_VBG (PP (TO to) (@PP->_TO (NP (NP (DT the) (@NP->_DT (JJ traditional) (@NP->_DT_JJ (NN champagne) (@NP->_DT_JJ_NN (NN drenching))))) (@NP->_NP (PP (IN during) (@PP->_IN (NP (DT the) (@NP->_DT (JJ back-on-terra-firma) (@NP->_DT_JJ (NN toast))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP I)) (@S->_NP (VP (VBP 'm) (@VP->_VBP (VP (VBG talking) (@VP->_VBG (PP (IN about) (@PP->_IN (S (VP (NN landing) (@VP->_NN (PP (IN in) (@PP->_IN (NP (DT a) (@NP->_DT (NN canal)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (FRAG (PP (IN In) (@PP->_IN (NP (DT a) (@NP->_DT (JJ porous) (@NP->_DT_JJ (NN wicker) (@NP->_DT_JJ_NN (NN basket))))))) (@FRAG->_PP (. .))))
+
+(ROOT (FRAG (PP (IN With) (@PP->_IN (NP (NP (DT a) (@NP->_DT (NN pilot))) (@NP->_NP (SBAR (WHNP (WP who)) (@SBAR->_WHNP (S (VP (VBZ speaks) (@VP->_VBZ (NP (DT no) (@NP->_DT (NNP English)))))))))))) (@FRAG->_PP (. .))))
+
+(ROOT (PRN (-LRB- -LRB-) (@PRN->_-LRB- (S (NP (NN Balloon) (@NP->_NN (NNS flights))) (@S->_NP (ADVP (RB almost) (@ADVP->_RB (RB always))) (@S->_NP_ADVP (VP (VBP occur) (@VP->_VBP (PP (IN at) (@PP->_IN (NP (NP (NN dawn) (@NP->_NN (CC or) (@NP->_NN_CC (NN dusk)))) (@NP->_NP (, ,) (@NP->_NP_, (SBAR (WHADVP (WRB when)) (@SBAR->_WHADVP (S (NP (DT the) (@NP->_DT (NNS winds))) (@S->_NP (VP (VBP are) (@VP->_VBP (ADJP (JJS lightest))))))))))))))) (@S->_NP_ADVP_VP (. .))))) (@PRN->_-LRB-_S (-RRB- -RRB-)))))
+
+(ROOT (FRAG (NP (DT No) (@NP->_DT (NN wonder))) (@FRAG->_NP (. .))))
+
+(ROOT (S (NP (PRP We)) (@S->_NP (VP (VBD were) (@VP->_VBD (VP (VBG coming) (@VP->_VBG (ADVP (RB down)) (@VP->_VBG_ADVP (PP (ADVP (RB straight)) (@PP->_ADVP (IN into) (@PP->_ADVP_IN (NP (PRP$ their) (@NP->_PRP$ (NN canal))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (PRN (S (VP (VB See)))) (@S->_PRN (, ,) (@S->_PRN_, (NP (NP (DT the) (@NP->_DT (JJ other) (@NP->_DT_JJ (NN rule)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NN thumb)))) (@NP->_NP_PP (PP (IN about) (@PP->_IN (NP (NN ballooning))))))) (@S->_PRN_,_NP (VP (VBZ is) (@VP->_VBZ (SBAR (IN that) (@SBAR->_IN (S (NP (PRP you)) (@S->_NP (VP (MD ca) (@VP->_MD (RB n't) (@VP->_MD_RB (VP (VB steer))))))))))) (@S->_PRN_,_NP_VP (. .)))))))
+
+(ROOT (SINV (CC And) (@SINV->_CC (ADVP (RB neither)) (@SINV->_CC_ADVP (MD can) (@SINV->_CC_ADVP_MD (NP (PRP$ your) (@NP->_PRP$ (NN pilot))) (@SINV->_CC_ADVP_MD_NP (. .)))))))
+
+(ROOT (SBAR (WHNP (WDT Which)) (@SBAR->_WHNP (S (VP (VBZ makes) (@VP->_VBZ (S (NP (DT the) (@NP->_DT (NN chase) (@NP->_DT_NN (NN car)))) (@S->_NP (ADJP (JJ necessary))))))) (@SBAR->_WHNP_S (. .)))))
+
+(ROOT (S (S (NP (JJS Most) (@NP->_JJS (NNS balloonists))) (@S->_NP (ADVP (RB seldom)) (@S->_NP_ADVP (VP (VB go) (@VP->_VB (ADVP (ADVP (RBR higher)) (@ADVP->_ADVP (PP (IN than) (@PP->_IN (NP (CD 2,000) (@NP->_CD (NNS feet)))))))))))) (@S->_S (CC and) (@S->_S_CC (S (NP (JJS most)) (@S->_NP (VP (VBP average) (@VP->_VBP (NP (NP (DT a) (@NP->_DT (JJ leisurely) (@NP->_DT_JJ (JJ 5-10) (@NP->_DT_JJ_JJ (NNS miles))))) (@NP->_NP (NP (DT an) (@NP->_DT (NN hour))))))))) (@S->_S_CC_S (. .))))))
+
+(ROOT (S (SBAR (WHADVP (WRB When)) (@SBAR->_WHADVP (S (NP (DT the) (@NP->_DT (NN balloon))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (VP (VBG cruising) (@VP->_VBG (ADVP (RB along)) (@VP->_VBG_ADVP (PP (IN at) (@PP->_IN (NP (DT a) (@NP->_DT (JJ steady) (@NP->_DT_JJ (NN altitude))))))))))))))) (@S->_SBAR (NP (EX there)) (@S->_SBAR_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (JJ little) (@NP->_JJ (NN sense))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NN motion)))))))) (@S->_SBAR_NP_VP (. .))))))
+
+(ROOT (SINV (`` ``) (@SINV->_`` (NP (VB Attention)) (@SINV->_``_NP (, ,) (@SINV->_``_NP_, ('' '') (@SINV->_``_NP_,_'' (VP (VBD yelled)) (@SINV->_``_NP_,_''_VP (NP (PRP$ our) (@NP->_PRP$ (NN pilot))) (@SINV->_``_NP_,_''_VP_NP (SBAR (IN as) (@SBAR->_IN (S (NP (PRP$ our) (@NP->_PRP$ (NN basket))) (@S->_NP (VP (VBD plunged) (@VP->_VBD (PP (IN into) (@PP->_IN (NP (DT the) (@NP->_DT (NN canal))))))))))) (@SINV->_``_NP_,_''_VP_NP_SBAR (. .))))))))))
+
+(ROOT (S (NP (PRP We)) (@S->_NP (VP (VBD scuttled) (@VP->_VBD (ADVP (RB along)) (@VP->_VBD_ADVP (PP (IN for) (@PP->_IN (NP (DT a) (@NP->_DT (JJ few) (@NP->_DT_JJ (NNS feet)))))) (@VP->_VBD_ADVP_PP (SBAR (IN before) (@SBAR->_IN (S (NP (PRP he)) (@S->_NP (VP (VBD plunged) (@VP->_VBD (NP (PRP us)) (@VP->_VBD_NP (PP (IN into) (@PP->_IN (NP (DT the) (@NP->_DT (NN drink))))) (@VP->_VBD_NP_PP (ADVP (RB again)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP I)) (@S->_NP (VP (VBD looked) (@VP->_VBD (PP (IN at) (@PP->_IN (NP (PRP$ my) (@NP->_PRP$ (NN watch))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (FRAG (NP (NP (RB Barely) (@NP->_RB (NN half-an-hour))) (@NP->_NP (ADVP (RB aloft)))) (@FRAG->_NP (. .))))
+
+(ROOT (UCP (NP (NP (DT A) (@NP->_DT (JJ whole) (@NP->_DT_JJ (NN morning)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NN ballooning)))))) (@UCP->_NP (CC and) (@UCP->_NP_CC (S (NP (PRP I)) (@S->_NP (VP (VBD had) (@VP->_VBD (VP (VBN been) (@VP->_VBN (ADVP (IN off) (@ADVP->_IN (NP (DT the) (@NP->_DT (NN ground))))) (@VP->_VBN_ADVP (NP (QP (RB barely) (@QP->_RB (CD 30))) (@NP->_QP (NNS minutes)))))))))) (@UCP->_NP_CC_S (. .))))))
+
+(ROOT (S (ADVP (RB Still)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (PRP I)) (@S->_ADVP_,_NP (VP (VBD figured) (@VP->_VBD (SBAR (S (NP (NP (NP (DT the) (@NP->_DT (NN event) (@NP->_DT_NN (POS 's)))) (@NP->_NP (NN envy-quotient))) (@NP->_NP (ADVP (RB back) (@ADVP->_RB (PP (IN in) (@PP->_IN (NP (DT the) (@NP->_DT (NN U.S.A.))))))))) (@S->_NP (VP (VBD was) (@VP->_VBD (ADJP (RB near) (@ADJP->_RB (JJ peerless)))))))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NP (PRP$ My) (@NP->_PRP$ (JJ American) (@NP->_PRP$_JJ (NN companion)))) (@NP->_NP (CC and) (@NP->_NP_CC (NP (PRP I))))) (@S->_NP (VP (VBD were) (@VP->_VBD (VP (VBN left) (@VP->_VBN (S (VP (TO to) (@VP->_TO (VP (VB ride) (@VP->_VB (ADVP (RB alfresco)) (@VP->_VB_ADVP (PP (IN in) (@PP->_IN (NP (DT the) (@NP->_DT (NN wicker) (@NP->_DT_NN (NN basket)))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Ms.) (@NP->_NNP (NNP de) (@NP->_NNP_NNP (NNP Vries)))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (DT a) (@NP->_DT (JJ free-lance) (@NP->_DT_JJ (NN writer)))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT A) (@NP->_DT (NNP Fed) (@NP->_DT_NNP (NN spokesman)))) (@S->_NP (VP (VBD denied) (@VP->_VBD (NP (NP (NNP Mr.) (@NP->_NNP (NNP LaFalce) (@NP->_NNP_NNP (POS 's)))) (@NP->_NP (NN statement))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Mr.) (@NP->_NNP (NNP Johnson))) (@S->_NP (ADVP (RB also)) (@S->_NP_ADVP (VP (VBD said) (@VP->_VBD (SBAR (IN that) (@SBAR->_IN (`` ``) (@SBAR->_IN_`` (S (PP (IN in) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NN scheme))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNS things)))))))) (@S->_PP (, ,) (@S->_PP_, (NP (DT these) (@NP->_DT (NNS things))) (@S->_PP_,_NP (VP (VBP are) (@VP->_VBP (ADJP (JJ minor))))))))))))) (@S->_NP_ADVP_VP (. .) (@S->_NP_ADVP_VP_. ('' '')))))))
+
+(ROOT (S (`` ``) (@S->_`` (S (NP (DT The) (@NP->_DT (NN solution))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (JJR stronger) (@NP->_JJR (JJ domestic) (@NP->_JJR_JJ (NN growth)))) (@NP->_NP (PRN (-LRB- -LCB-) (@PRN->_-LRB- (PP (IN in) (@PP->_IN (NP (NNP Germany)))) (@PRN->_-LRB-_PP (-RRB- -RCB-)))))))))) (@S->_``_S (, ,) (@S->_``_S_, ('' '') (@S->_``_S_,_'' (NP (PRP he)) (@S->_``_S_,_''_NP (VP (VBD said)) (@S->_``_S_,_''_NP_VP (. .)))))))))
+
+(ROOT (S (S (NP (NP (NNP Germany) (@NP->_NNP (POS 's))) (@NP->_NP (NN trade) (@NP->_NP_NN (NN surplus)))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (PP (PP (ADVP (RB largely)) (@PP->_ADVP (IN with) (@PP->_ADVP_IN (NP (JJ other) (@NP->_JJ (JJ European) (@NP->_JJ_JJ (NNS countries))))))) (@PP->_PP (CONJP (RB rather) (@CONJP->_RB (IN than))) (@PP->_PP_CONJP (PP (IN with) (@PP->_IN (NP (DT the) (@NP->_DT (NNP U.S.)))))))))))) (@S->_S (, ,) (@S->_S_, (NP (NNP Mr.) (@NP->_NNP (NNP Mulford))) (@S->_S_,_NP (VP (VBD acknowledged)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN board))) (@S->_NP (VP (VBN increased) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (CD one)))) (@VP->_VBN_PP (PP (TO to) (@PP->_TO (NP (CD 26) (@NP->_CD (NNS members)))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (PP (IN In) (@PP->_IN (NP (DT the) (@NP->_DT (NN past) (@NP->_DT_NN (NN year)))))) (@S->_PP (, ,) (@S->_PP_, (NP (CD one) (@NP->_CD (JJ inside) (@NP->_CD_JJ (NN director)))) (@S->_PP_,_NP (VP (VBD resigned) (@VP->_VBD (, ,) (@VP->_VBD_, (SBAR (IN while) (@SBAR->_IN (S (NP (CD three) (@NP->_CD (NNS others))) (@S->_NP (VP (VBD retired))))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NNP Mr.) (@NP->_NNP (NNP Bush))) (@S->_NP (VP (VBZ has) (@VP->_VBZ (VP (VBN called) (@VP->_VBN (PP (IN for) (@PP->_IN (NP (NP (DT an) (@NP->_DT (NN agreement))) (@NP->_NP (PP (IN by) (@PP->_IN (NP (NP (JJ next) (@NP->_JJ (NNP September))) (@NP->_NP (PP (IN at) (@PP->_IN (NP (DT the) (@NP->_DT (JJS latest))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (CD Five)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (DT the) (@NP->_DT (CD six) (@NP->_DT_CD (NNS categories)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNS weapons)))) (@NP->_NP_PP (PP (IN under) (@PP->_IN (NP (NN negotiation))))))))))) (@S->_NP (VP (VBP have) (@VP->_VBP (RB n't) (@VP->_VBP_RB (ADVP (RB even)) (@VP->_VBP_RB_ADVP (VP (VBN been) (@VP->_VBN (VP (VBN defined)))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNS Tanks)) (@S->_NP (ADVP (RB currently)) (@S->_NP_ADVP (VP (VBP are) (@VP->_VBP (VP (VBN defined) (@VP->_VBN (PP (IN as) (@PP->_IN (NP (NP (JJ armored) (@NP->_JJ (NNS vehicles))) (@NP->_NP (VP (VBG weighing) (@VP->_VBG (NP (CD 25) (@NP->_CD (NNS tons) (@NP->_CD_NNS (QP (CC or) (@QP->_CC (JJR more)))))))) (@NP->_NP_VP (SBAR (WHNP (IN that)) (@SBAR->_WHNP (S (VP (VB carry) (@VP->_VB (NP (JJ large) (@NP->_JJ (NNS guns))))))))))))))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNPS Soviets))) (@S->_NP (VP (VBD complicated) (@VP->_VBD (NP (DT the) (@NP->_DT (NN issue))) (@VP->_VBD_NP (PP (IN by) (@PP->_IN (S (VP (VBG offering) (@VP->_VBG (S (VP (TO to) (@VP->_TO (VP (VB include) (@VP->_VB (NP (NP (JJ light) (@NP->_JJ (NNS tanks))) (@NP->_NP (, ,) (@NP->_NP_, (SBAR (WHNP (WDT which)) (@SBAR->_WHNP (S (VP (VBP are) (@VP->_VBP (ADJP (ADJP (RB as) (@ADJP->_RB (JJ light))) (@ADJP->_ADJP (PP (IN as) (@PP->_IN (NP (CD 10) (@NP->_CD (NNS tons)))))))))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (CC But) (@S->_CC (NP (DT the) (@NP->_DT (NN issue))) (@S->_CC_NP (VP (VBZ is) (@VP->_VBZ (ADJP (ADJP (JJR stickier)) (@ADJP->_ADJP (SBAR (IN than) (@SBAR->_IN (S (NP (PRP it)) (@S->_NP (VP (VBZ seems)))))))))) (@S->_CC_NP_VP (. .))))))
+
+(ROOT (S (NP (NNP France) (@NP->_NNP (, ,) (@NP->_NNP_, (NNP Britain) (@NP->_NNP_,_NNP (CC and) (@NP->_NNP_,_NNP_CC (NNP Italy)))))) (@S->_NP (DT all) (@S->_NP_DT (VP (VBP have) (@VP->_VBP (NP (NP (JJ light) (@NP->_JJ (NNS tanks))) (@NP->_NP (SBAR (S (NP (PRP they)) (@S->_NP (VP (MD would) (@VP->_MD (VP (VB like) (@VP->_VB (S (VP (TO to) (@VP->_TO (VP (VB keep) (@VP->_VB (ADVP (IN out) (@ADVP->_IN (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NNS talks))))))))))))))))))))))) (@S->_NP_DT_VP (. .))))))
+
+(ROOT (S (S (VP (VBG Defining) (@VP->_VBG (NP (NN combat) (@NP->_NN (NN aircraft)))))) (@S->_S (VP (VBZ is) (@VP->_VBZ (ADJP (RB even) (@ADJP->_RB (JJR tougher))))) (@S->_S_VP (. .)))))
+
+(ROOT (S (NP (NNP NATO)) (@S->_NP (VP (VBZ has) (@VP->_VBZ (RB n't) (@VP->_VBZ_RB (VP (VBN budged) (@VP->_VBN (PP (IN from) (@PP->_IN (NP (PRP$ its) (@NP->_PRP$ (NN insistence) (@NP->_PRP$_NN (SBAR (IN that) (@SBAR->_IN (S (NP (DT any) (@NP->_DT (JJ gun-carrying) (@NP->_DT_JJ (NN plane)))) (@S->_NP (VP (VBZ has) (@VP->_VBZ (NP (JJ offensive) (@NP->_JJ (NN capability))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NN Accounting) (@NP->_NN (NNS problems))) (@S->_NP (VP (VBP raise) (@VP->_VBP (NP (JJR more) (@NP->_JJR (JJ knotty) (@NP->_JJR_JJ (NNS issues)))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (JJ Other) (@NP->_JJ (NNS nations))) (@S->_NP (VP (VBP are) (@VP->_VBP (RB n't) (@VP->_VBP_RB (ADJP (JJ sure) (@ADJP->_JJ (SBAR (WHNP (WHADJP (WRB how) (@WHADJP->_WRB (JJ many))) (@WHNP->_WHADJP (NNS weapons))) (@SBAR->_WHNP (S (NP (PRP they)) (@S->_NP (VP (VBP have) (@VP->_VBP (PP (IN in) (@PP->_IN (NP (PRP$ their) (@NP->_PRP$ (JJ own) (@NP->_PRP$_JJ (NNS arsenals))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP I)) (@S->_NP (VP (VBP worry) (@VP->_VBP (ADVP (RBR more)) (@VP->_VBP_ADVP (PP (IN about) (@PP->_IN (S (NP (NNS things)) (@S->_NP (VP (VBG becoming) (@VP->_VBG (ADJP (RB so) (@ADJP->_RB (JJ unraveled))) (@VP->_VBG_ADJP (PP (IN on) (@PP->_IN (NP (DT the) (@NP->_DT (JJ other) (@NP->_DT_JJ (NN side)))))) (@VP->_VBG_ADJP_PP (SBAR (IN that) (@SBAR->_IN (S (NP (PRP they)) (@S->_NP (VP (MD might) (@VP->_MD (VP (VB become) (@VP->_VB (ADJP (JJ unable) (@ADJP->_JJ (S (VP (TO to) (@VP->_TO (VP (VB negotiate)))))))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (NN value))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NNS jets))) (@NP->_NP (, ,) (@NP->_NP_, (PP (VBG including) (@PP->_VBG (NP (NNS spares)))) (@NP->_NP_,_PP (, ,))))))))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (PP (IN in) (@PP->_IN (NP (NP (NN excess)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (QP ($ $) (@QP->_$ (CD 250) (@QP->_$_CD (CD million))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (CD Four)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NNS planes))))))) (@S->_NP (VP (VBD were) (@VP->_VBD (VP (VBN purchased) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (NNP International) (@NP->_NNP (NNP Lease))))) (@VP->_VBN_PP (PP (IN from) (@PP->_IN (NP (NNP Singapore) (@NP->_NNP (NNPS Airlines))))) (@VP->_VBN_PP_PP (PP (IN in) (@PP->_IN (NP (DT a) (@NP->_DT (ADJP (RB previously) (@ADJP->_RB (JJ announced))) (@NP->_DT_ADJP (NN transaction)))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (S (NP (DT The) (@NP->_DT (NN figure))) (@S->_NP (VP (VBZ excludes) (@VP->_VBZ (NP (NP (DT a) (@NP->_DT (NN record) (@NP->_DT_NN (NN number)))) (@NP->_NP (VP (VBN employed) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (JJ extraordinary) (@NP->_JJ (NN government) (@NP->_JJ_NN (NN work) (@NP->_JJ_NN_NN (NNS programs))))))))))))))) (@S->_S (, ,) (@S->_S_, (NP (DT the) (@NP->_DT (NNP Labor) (@NP->_DT_NNP (NNP Directorate)))) (@S->_S_,_NP (VP (VBD announced) (@VP->_VBD (NP (NNP Tuesday)))) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (NN number))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (NNS people)) (@NP->_NP (VP (VBN registered) (@VP->_VBN (PP (IN as) (@PP->_IN (ADJP (JJ jobless)))) (@VP->_VBN_PP (PP (IN at) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NN end))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNP October))))))))))))))))) (@S->_NP (VP (VBD declined) (@VP->_VBD (PP (IN by) (@PP->_IN (NP (CD 900)))) (@VP->_VBD_PP (PP (IN from) (@PP->_IN (NP (NNP September)))) (@VP->_VBD_PP_PP (PP (TO to) (@PP->_TO (NP (CD 78,600)))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (S (NP (NP (DT Those)) (@NP->_NP (VP (VBN employed) (@VP->_VBN (PP (IN in) (@PP->_IN (NP (JJ state-funded) (@NP->_JJ (JJ special) (@NP->_JJ_JJ (NNS programs)))))))))) (@S->_NP (VP (VBN increased) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (CD 7,400)))) (@VP->_VBN_PP (PP (TO to) (@PP->_TO (NP (CD 65,200)))) (@VP->_VBN_PP_PP (PP (IN in) (@PP->_IN (NP (DT the) (@NP->_DT (JJ same) (@NP->_DT_JJ (NN period)))))))))) (@S->_NP_VP (, ,)))) (@S->_S (NP (DT the) (@NP->_DT (NNP Directorate))) (@S->_S_NP (VP (VBD said)) (@S->_S_NP_VP (. .))))))
+
+(ROOT (S (PP (IN In) (@PP->_IN (NP (NNP October) (@NP->_NNP (CD 1988))))) (@S->_PP (, ,) (@S->_PP_, (NP (EX there)) (@S->_PP_,_NP (VP (VBD were) (@VP->_VBD (NP (NP (CD 40,800) (@NP->_CD (JJR fewer))) (@NP->_NP (VP (VBN employed) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (NN government) (@NP->_NN (NNS programs))))))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN venture))) (@S->_NP (VP (MD would) (@VP->_MD (VP (VB be) (@VP->_VB (NP (NP (DT the) (@NP->_DT (JJS latest))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NP (NP (NNP Coke) (@NP->_NNP (POS 's))) (@NP->_NP (JJ rapid) (@NP->_NP_JJ (NN expansion)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (JJ overseas) (@NP->_JJ (NN investment))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT That)) (@S->_NP (VP (VBZ 's) (@VP->_VBZ (SBAR (IN because) (@SBAR->_IN (S (SBAR (WHADVP (WRB when)) (@SBAR->_WHADVP (S (NP (NNP Coke)) (@S->_NP (VP (VBZ looks) (@VP->_VBZ (PP (TO to) (@PP->_TO (NP (DT the) (@NP->_DT (NNP Pacific) (@NP->_DT_NNP (NN area)))))))))))) (@S->_SBAR (, ,) (@S->_SBAR_, (NP (PRP it)) (@S->_SBAR_,_NP (VP (VBZ sees) (@VP->_VBZ (NP (DT an) (@NP->_DT (ADJP (JJ economic) (@ADJP->_JJ (CC and) (@ADJP->_JJ_CC (JJ demographic)))) (@NP->_DT_ADJP (NN gold) (@NP->_DT_ADJP_NN (NN mine))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (PP (IN In) (@PP->_IN (NP (DT the) (@NP->_DT (NN past))))) (@S->_PP (, ,) (@S->_PP_, (ADVP (RB however)) (@S->_PP_,_ADVP (, ,) (@S->_PP_,_ADVP_, (NP (NNP Coke)) (@S->_PP_,_ADVP_,_NP (VP (VBZ has) (@VP->_VBZ (ADVP (RB typically)) (@VP->_VBZ_ADVP (VP (VBN taken) (@VP->_VBN (NP (NP (DT a) (@NP->_DT (NN minority) (@NP->_DT_NN (NN stake)))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (JJ such) (@NP->_JJ (NNS ventures)))))))))))) (@S->_PP_,_ADVP_,_NP_VP (. .)))))))))
+
+(ROOT (S (NP (NNP Coke)) (@S->_NP (VP (VBZ has) (@VP->_VBZ (VP (VBN tended) (@VP->_VBN (S (VP (TO to) (@VP->_TO (VP (VB increase) (@VP->_VB (NP (PRP$ its) (@NP->_PRP$ (NN control))) (@VP->_VB_NP (SBAR (WHADVP (WRB when)) (@SBAR->_WHADVP (S (NP (NNS results)) (@S->_NP (VP (VBD were) (@VP->_VBD (ADJP (JJ sluggish)) (@VP->_VBD_ADJP (PP (IN in) (@PP->_IN (NP (DT a) (@NP->_DT (VBN given) (@NP->_DT_VBN (NN country))))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (PP (IN In) (@PP->_IN (NP (NNP Singapore)))) (@S->_PP (, ,) (@S->_PP_, (NP (JJ per-capita) (@NP->_JJ (NN consumption))) (@S->_PP_,_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (QP (IN about) (@QP->_IN (NN one-third))) (@NP->_QP (IN that))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NNP U.S.))))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NNP Coke)) (@S->_NP (VP (MD could) (@VP->_MD (VP (VB be) (@VP->_VB (ADJP (JJ interested) (@ADJP->_JJ (PP (IN in) (@PP->_IN (S (VP (ADVP (RBR more) (@ADVP->_RBR (RB quickly))) (@VP->_ADVP (VBG developing) (@VP->_ADVP_VBG (NP (NP (DT some)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (DT the) (@NP->_DT (JJ untapped) (@NP->_DT_JJ (NN potential)))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (DT those) (@NP->_DT (NNS markets))))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT A) (@NP->_DT (NNP Coke) (@NP->_DT_NNP (NN spokesman)))) (@S->_NP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (PRP he)) (@S->_NP (VP (MD could) (@VP->_MD (RB n't) (@VP->_MD_RB (VP (VB say) (@VP->_VB (SBAR (IN whether) (@SBAR->_IN (S (NP (DT that)) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (DT the) (@NP->_DT (NN direction))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NNS talks))))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP American) (@NP->_NNP (NNPS Brands))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (DT a) (@NP->_DT (NN consumer) (@NP->_DT_NN (NNS products) (@NP->_DT_NN_NNS (NN company))))) (@NP->_NP (PP (IN with) (@PP->_IN (NP (NP (NN core) (@NP->_NN (NNS businesses))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NP (NN tobacco)) (@NP->_NP (, ,) (@NP->_NP_, (NP (JJ distilled) (@NP->_JJ (NNS spirits))) (@NP->_NP_,_NP (CC and) (@NP->_NP_,_NP_CC (NP (NN life) (@NP->_NN (NN insurance)))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (PP (IN As) (@PP->_IN (PP (IN of) (@PP->_IN (NP (NNP Sept.) (@NP->_NNP (CD 30))))))) (@S->_PP (, ,) (@S->_PP_, (NP (NNP American) (@NP->_NNP (NNPS Brands))) (@S->_PP_,_NP (VP (VBD had) (@VP->_VBD (NP (NP (QP (CD 95.2) (@QP->_CD (CD million))) (@NP->_QP (NNS shares))) (@NP->_NP (ADJP (JJ outstanding)))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNP Aga) (@NP->_DT_NNP (NNP Khan)))) (@S->_NP (VP (VBZ owns) (@VP->_VBZ (NP (NP (CD 10) (@NP->_CD (NN %))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (NNP Ifint) (@NP->_NNP (POS 's))) (@NP->_NP (NN capital))))))) (@VP->_VBZ_NP (, ,) (@VP->_VBZ_NP_, (SBAR (IN while) (@SBAR->_IN (S (NP (NNP IFI)) (@S->_NP (VP (VBZ owns) (@VP->_VBZ (NP (CD 23) (@NP->_CD (NN %))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP IFI)) (@S->_NP (ADVP (RB also)) (@S->_NP_ADVP (VP (VBZ has) (@VP->_VBZ (NP (NP (JJ nonvoting) (@NP->_JJ (JJ preferred) (@NP->_JJ_JJ (NNS shares)))) (@NP->_NP (, ,) (@NP->_NP_, (SBAR (WHNP (WDT which)) (@SBAR->_WHNP (S (VP (VBP are) (@VP->_VBP (VP (VBN quoted) (@VP->_VBN (PP (IN on) (@PP->_IN (NP (DT the) (@NP->_DT (NNP Milan) (@NP->_DT_NNP (NN stock) (@NP->_DT_NNP_NN (NN exchange))))))))))))))))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (NP (NNP Saul) (@NP->_NNP (NNP Resnick))))
+
+(ROOT (NP (NNP Vice) (@NP->_NNP (NNP President))))
+
+(ROOT (NP (NNP Public) (@NP->_NNP (NNPS Affairs))))
+
+(ROOT (NP (NNP Conrail)))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN agreement))) (@S->_NP (VP (VBD ended) (@VP->_VBD (NP (NP (DT a) (@NP->_DT (JJ long) (@NP->_DT_JJ (NN impasse)))) (@NP->_NP (PP (IN between) (@PP->_IN (NP (NP (DT the) (@NP->_DT (JJ congressional) (@NP->_DT_JJ (NNS leaders)))) (@NP->_NP (CC and) (@NP->_NP_CC (NP (DT the) (@NP->_DT (NNP White) (@NP->_DT_NNP (NNP House))))))))) (@NP->_NP_PP (PP (IN over) (@PP->_IN (NP (DT the) (@NP->_DT (NN wage) (@NP->_DT_NN (NN issue))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN compromise))) (@S->_NP (VP (VBD was) (@VP->_VBD (NP (NP (DT a) (@NP->_DT (ADJP (RB somewhat) (@ADJP->_RB (JJ softened))) (@NP->_DT_ADJP (NN version)))) (@NP->_NP (PP (IN of) (@PP->_IN (SBAR (WHNP (WP what)) (@SBAR->_WHNP (S (NP (DT the) (@NP->_DT (NNP White) (@NP->_DT_NNP (NNP House)))) (@S->_NP (VP (VBD had) (@VP->_VBD (VP (VBN said) (@VP->_VBN (SBAR (S (NP (PRP it)) (@S->_NP (VP (MD would) (@VP->_MD (VP (VB accept))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNPS Democrats)) (@S->_NP (VP (VBD had) (@VP->_VBD (VP (VBN been) (@VP->_VBN (VP (VBG negotiating) (@VP->_VBG (PP (IN with) (@PP->_IN (NP (DT some) (@NP->_DT (JJ Republican) (@NP->_DT_JJ (JJ congressional) (@NP->_DT_JJ_JJ (NNS leaders))))))) (@VP->_VBG_PP (PP (IN on) (@PP->_IN (NP (DT a) (@NP->_DT (NN compromise))))) (@VP->_VBG_PP_PP (ADVP (RB lately)))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNPS Republicans)) (@S->_NP (VP (VBP have) (@VP->_VBP (VP (VBN been) (@VP->_VBN (VP (VBG imploring) (@VP->_VBG (NP (DT the) (@NP->_DT (NNP White) (@NP->_DT_NNP (NNP House)))) (@VP->_VBG_NP (S (VP (TO to) (@VP->_TO (VP (VB compromise) (@VP->_VB (PP (IN on) (@PP->_IN (NP (DT the) (@NP->_DT (NN wage) (@NP->_DT_NN (NN issue)))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNP Senate))) (@S->_NP (VP (MD will) (@VP->_MD (ADVP (RB probably)) (@VP->_MD_ADVP (VP (VB vote) (@VP->_VB (ADVP (NP (RB not) (@NP->_RB (RB long))) (@ADVP->_NP (RB afterward)))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT Some) (@NP->_DT (NNPS Democrats))) (@S->_NP (VP (VBD thought) (@VP->_VBD (SBAR (S (NP (PRP they)) (@S->_NP (VP (MD might) (@VP->_MD (VP (VB have) (@VP->_VB (VP (VBN compromised) (@VP->_VBN (ADVP (RB too) (@ADVP->_RB (RB much)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Gerald) (@NP->_NNP (NNP F.) (@NP->_NNP_NNP (NNP Seib)))) (@S->_NP (VP (VBD contributed) (@VP->_VBD (PP (TO to) (@PP->_TO (NP (DT this) (@NP->_DT (NN article))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Houston) (@NP->_NNP (NNP Lighting))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (DT a) (@NP->_DT (NN unit))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (NNP Houston) (@NP->_NNP (NNPS Industries) (@NP->_NNP_NNPS (NNP Inc.)))) (@NP->_NP (, ,) (@NP->_NP_, (NP (NP (DT a) (@NP->_DT (NN utility) (@NP->_DT_NN (VBG holding) (@NP->_DT_NN_VBG (NN company))))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NNP Houston))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (NNP Mr.) (@NP->_NNP (NNP Smith))) (@NP->_NP (, ,) (@NP->_NP_, (NP (CD 39)) (@NP->_NP_,_NP (, ,))))) (@S->_NP (VP (VBZ retains) (@VP->_VBZ (NP (NP (DT the) (@NP->_DT (NN title))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (JJ chief) (@NP->_JJ (JJ financial) (@NP->_JJ_JJ (NN officer)))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Armstrong) (@NP->_NNP (NNP World) (@NP->_NNP_NNP (NNPS Industries) (@NP->_NNP_NNP_NNPS (NNP Inc.))))) (@S->_NP (VP (VBD agreed) (@VP->_VBD (PP (IN in) (@PP->_IN (NP (NN principle)))) (@VP->_VBD_PP (S (VP (TO to) (@VP->_TO (VP (VB sell) (@VP->_VB (NP (PRP$ its) (@NP->_PRP$ (NN carpet) (@NP->_PRP$_NN (NNS operations)))) (@VP->_VB_NP (PP (TO to) (@PP->_TO (NP (NNP Shaw) (@NP->_NNP (NNPS Industries) (@NP->_NNP_NNPS (NNP Inc))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (S (NP (DT The) (@NP->_DT (NN price))) (@S->_NP (VP (VBD was) (@VP->_VBD (RB n't) (@VP->_VBD_RB (VP (VBN disclosed))))))) (@S->_S (IN but) (@S->_S_IN (S (NP (CD one) (@NP->_CD (NN analyst))) (@S->_NP (VP (VBD estimated) (@VP->_VBD (SBAR (IN that) (@SBAR->_IN (S (NP (PRP it)) (@S->_NP (VP (VBD was) (@VP->_VBD (NP (QP ($ $) (@QP->_$ (CD 150) (@QP->_$_CD (CD million))))))))))))))) (@S->_S_IN_S (. .))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN company))) (@S->_NP (VP (VBZ has) (@VP->_VBZ (VP (VBN been) (@VP->_VBN (VP (VBG manufacturing) (@VP->_VBG (NP (NN carpet)) (@VP->_VBG_NP (PP (IN since) (@PP->_IN (NP (CD 1967))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (ADVP (RB Recently)) (@S->_ADVP (NP (PRP it)) (@S->_ADVP_NP (VP (VBD upgraded) (@VP->_VBD (NP (PRP$ its) (@NP->_PRP$ (NNS plants))) (@VP->_VBD_NP (SBAR (IN so) (@SBAR->_IN (IN that) (@SBAR->_IN_IN (S (NP (PRP it)) (@S->_NP (VP (MD could) (@VP->_MD (VP (VB make) (@VP->_VB (NP (NP (JJ stain-resistant) (@NP->_JJ (NNS products))) (@NP->_NP (PP (IN with) (@PP->_IN (NP (ADJP (JJR higher) (@ADJP->_JJR (JJ quality))) (@NP->_ADJP (NNS dyes))))))))))))))))))) (@S->_ADVP_NP_VP (. .))))))
+
+(ROOT (S (NP (NP (NP (NNP Armstrong) (@NP->_NNP (POS 's))) (@NP->_NP (NNS shares))) (@NP->_NP (, ,) (@NP->_NP_, (VP (ADVP (RB also)) (@VP->_ADVP (VBN listed) (@VP->_ADVP_VBN (PP (IN on) (@PP->_IN (NP (DT the) (@NP->_DT (NNP Big) (@NP->_DT_NNP (NNP Board))))))))) (@NP->_NP_,_VP (, ,))))) (@S->_NP (VP (VBD closed) (@VP->_VBD (PP (IN at) (@PP->_IN (NP ($ $) (@NP->_$ (CD 39.125))))) (@VP->_VBD_PP (, ,) (@VP->_VBD_PP_, (ADVP (RB up) (@ADVP->_RB (NP (CD 12.5) (@NP->_CD (NNS cents))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (PP (IN In) (@PP->_IN (NP (DT the) (@NP->_DT (JJ year-ago) (@NP->_DT_JJ (NN quarter)))))) (@S->_PP (, ,) (@S->_PP_, (NP (NNS earnings)) (@S->_PP_,_NP (VP (VBD were) (@VP->_VBD (NP (NP (QP ($ $) (@QP->_$ (CD 42.9) (@QP->_$_CD (CD million))))) (@NP->_NP (, ,) (@NP->_NP_, (CC or) (@NP->_NP_,_CC (NP (NP (CD 93) (@NP->_CD (NNS cents))) (@NP->_NP (NP (DT a) (@NP->_DT (NN share))))))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN price))) (@S->_NP (VP (VBD was) (@VP->_VBD (RB n't) (@VP->_VBD_RB (VP (VBN disclosed))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (ADVP (RB However)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (PRP it)) (@S->_ADVP_,_NP (VP (VBZ does) (@VP->_VBZ (RB n't) (@VP->_VBZ_RB (VP (VB give) (@VP->_VB (NP (NP (RB much)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (DT a) (@NP->_DT (NN clue))) (@NP->_NP (PP (IN as) (@PP->_IN (PP (TO to) (@PP->_TO (SBAR (IN whether) (@SBAR->_IN (S (NP (DT a) (@NP->_DT (NN recession))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (PP (IN on) (@PP->_IN (NP (DT the) (@NP->_DT (NN horizon)))))))))))))))))))))))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNS declines))) (@S->_NP (VP (VBD were) (@VP->_VBD (VP (ADVP (RB particularly)) (@VP->_ADVP (VBN pronounced) (@VP->_ADVP_VBN (PP (PP (IN in) (@PP->_IN (NP (DT the) (@NP->_DT (NNP Northeast))))) (@PP->_PP (CC and) (@PP->_PP_CC (PP (IN in) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NNP South))) (@NP->_NP (, ,) (@NP->_NP_, (SBAR (WHADVP (WRB where)) (@SBAR->_WHADVP (S (NP (NNP Hurricane) (@NP->_NNP (NNP Hugo))) (@S->_NP (VP (VBD was) (@VP->_VBD (NP (DT a) (@NP->_DT (NN factor)))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN department))) (@S->_NP (ADVP (RB also)) (@S->_NP_ADVP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (PRP it)) (@S->_NP (VP (VBZ takes) (@VP->_VBZ (NP (CD four) (@NP->_CD (NNS months))) (@VP->_VBZ_NP (S (VP (TO to) (@VP->_TO (VP (VB establish) (@VP->_VB (NP (DT a) (@NP->_DT (NN trend)))))))))))))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (S (NP (DT This) (@NP->_DT (NN measure))) (@S->_NP (VP (VBD had) (@VP->_VBD (VP (VBN dropped) (@VP->_VBN (ADVP (RB sharply)) (@VP->_VBN_ADVP (PP (IN in) (@PP->_IN (NP (NNP August))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (JJ Several) (@NP->_JJ (NNS components))) (@NP->_NP (SBAR (WHNP (WDT that)) (@SBAR->_WHNP (S (VP (VBP track) (@VP->_VBP (NP (NP (DT the) (@NP->_DT (NN health))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (DT the) (@NP->_DT (VBG manufacturing) (@NP->_DT_VBG (NN sector)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NN economy)))))))))))))))))) (@S->_NP (VP (VBD turned) (@VP->_VBD (ADVP (RB down)) (@VP->_VBD_ADVP (PP (IN in) (@PP->_IN (NP (NNP September))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN remainder))) (@S->_NP (VP (VBP expect) (@VP->_VBP (S (NP (DT a) (@NP->_DT (NN downturn))) (@S->_NP (VP (TO to) (@VP->_TO (VP (VB begin) (@VP->_VB (FRAG (PP (ADVP (RB sometime)) (@PP->_ADVP (IN in)))))))))))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (JJ other) (@NP->_DT_JJ (CD 40) (@NP->_DT_JJ_CD (NN %))))) (@S->_NP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (DT the) (@NP->_DT (NNP Fed))) (@S->_NP (VP (MD ought) (@VP->_MD (S (VP (TO to) (@VP->_TO (VP (VP (VB worry) (@VP->_VB (ADVP (RBR less)) (@VP->_VB_ADVP (PP (IN about) (@PP->_IN (NP (NN inflation))))))) (@VP->_VP (CC and) (@VP->_VP_CC (VP (VB bring) (@VP->_VB (NP (NN interest) (@NP->_NN (NNS rates))) (@VP->_VB_NP (ADVP (RP down)))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PDT All) (@NP->_PDT (DT the) (@NP->_PDT_DT (NNS figures)))) (@S->_NP (VP (VBP are) (@VP->_VBP (VP (VBN adjusted) (@VP->_VBN (S (VP (TO to) (@VP->_TO (VP (VB remove) (@VP->_VB (NP (JJ usual) (@NP->_JJ (JJ seasonal) (@NP->_JJ_JJ (NNS patterns))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (ADVP (RB Here)) (@S->_ADVP (VP (VBP are)) (@S->_ADVP_VP (NP (NP (DT the) (@NP->_DT (JJ net) (@NP->_DT_JJ (NNS contributions)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NNS components))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (NP (DT the) (@NP->_DT (NNP Commerce) (@NP->_DT_NNP (NNP Department) (@NP->_DT_NNP_NNP (POS 's))))) (@NP->_NP (NN index))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (VBG leading) (@NP->_VBG (NNS indicators))))))))))))))) (@S->_ADVP_VP_NP (. .))))))
+
+(ROOT (S (NP (NP (NNP September)) (@NP->_NP (, ,) (@NP->_NP_, (CC and) (@NP->_NP_,_CC (NP (NP (DT the) (@NP->_DT (NN change))) (@NP->_NP (PP (IN from) (@PP->_IN (NP (NNP August)))))) (@NP->_NP_,_CC_NP (, ,)))))) (@S->_NP (VP (VBP are) (@VP->_VBP (: :) (@VP->_VBP_: (PP (IN from) (@PP->_IN (NP (NP (CD 1.11)) (@NP->_NP (PP (IN in) (@PP->_IN (NP (DT the) (@NP->_DT (JJ previous) (@NP->_DT_JJ (NN month))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN charge))) (@S->_NP (VP (VBD resulted) (@VP->_VBD (PP (IN from) (@PP->_IN (NP (NP (DT a) (@NP->_DT (NN settlement))) (@NP->_NP (VP (VBN approved) (@VP->_VBN (NP (NN yesterday)) (@VP->_VBN_NP (PP (IN by) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NNP Massachusetts) (@NP->_DT_NNP (NNP Department)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNP Public) (@NP->_NNP (NNPS Utilities)))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Pilgrim)) (@S->_NP (VP (VBD had) (@VP->_VBD (VP (VBN been) (@VP->_VBN (ADJP (JJ closed)) (@VP->_VBN_ADJP (PP (IN for) (@PP->_IN (NP (CD 32) (@NP->_CD (NNS months)))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (NNS Bids)) (@NP->_NP (VP (VBG totaling) (@VP->_VBG (NP (QP ($ $) (@QP->_$ (CD 515) (@QP->_$_CD (CD million))))))))) (@S->_NP (VP (VBD were) (@VP->_VBD (VP (VBN submitted)))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (JJ Accepted) (@NP->_JJ (NNS bids))) (@S->_NP (VP (VBD ranged) (@VP->_VBD (PP (PP (IN from) (@PP->_IN (NP (CD 8.38) (@NP->_CD (NN %))))) (@PP->_PP (PP (TO to) (@PP->_TO (NP (CD 8.395) (@NP->_CD (NN %))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (NNS Bids)) (@NP->_NP (VP (VBG totaling) (@VP->_VBG (NP (QP ($ $) (@QP->_$ (CD 475) (@QP->_$_CD (CD million))))))))) (@S->_NP (VP (VBD were) (@VP->_VBD (VP (VBN submitted)))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (JJ Accepted) (@NP->_JJ (NNS bids))) (@S->_NP (VP (VBD ranged) (@VP->_VBD (PP (PP (IN from) (@PP->_IN (NP (CD 8) (@NP->_CD (NN %))))) (@PP->_PP (PP (TO to) (@PP->_TO (NP (CD 8.019) (@NP->_CD (NN %))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN bank) (@NP->_DT_NN (NN holding) (@NP->_DT_NN_NN (NN company))))) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB auction) (@VP->_VB (NP (NP (QP (DT another) (@QP->_DT ($ $) (@QP->_DT_$ (CD 50) (@QP->_DT_$_CD (CD million)))))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (DT each) (@NP->_DT (NN maturity))))))) (@VP->_VB_NP (NP (IN next) (@NP->_IN (NNP Tuesday)))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (S (NP (NP (DT An) (@NP->_DT (JJ imaginative) (@NP->_DT_JJ (NN novelist)))) (@NP->_NP (VP (VBG writing) (@VP->_VBG (NP (NP (DT a) (@NP->_DT (NN thriller))) (@NP->_NP (PP (IN about) (@PP->_IN (NP (JJ amateur) (@NP->_JJ (NN spy-chasing))))))))))) (@S->_NP (VP (MD might) (@VP->_MD (VP (VB invent) (@VP->_VB (NP (DT a) (@NP->_DT (NNP Clifford) (@NP->_DT_NNP (NNP Stoll)))))))))) (@S->_S (, ,) (@S->_S_, (CC but) (@S->_S_,_CC (S (NP (PRP it)) (@S->_NP (VP (VBZ 's) (@VP->_VBZ (ADJP (JJ unlikely)))))) (@S->_S_,_CC_S (. .)))))))
+
+(ROOT (S (NP (PRP It)) (@S->_NP (VP (VBZ 's) (@VP->_VBZ (ADVP (RB also)) (@VP->_VBZ_ADVP (ADJP (JJ unnecessary))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP They)) (@S->_NP (VP (VBD promised) (@VP->_VBD (NP (NP (RB yet) (@NP->_RB (JJR more))) (@NP->_NP (PP (IN for) (@PP->_IN (NP (ADJP (RB really) (@ADJP->_RB (JJ good))) (@NP->_ADJP (NN stuff))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Mr.) (@NP->_NNP (NNP Stoll))) (@S->_NP (VP (VBD suspected) (@VP->_VBD (SBAR (S (NP (DT the) (@NP->_DT (NN intruder))) (@S->_NP (VP (VBD was) (@VP->_VBD (NP (NP (CD one)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (DT those) (@NP->_DT (JJ precocious) (@NP->_DT_JJ (NNS students)))) (@NP->_NP (SBAR (WHNP (WP who)) (@SBAR->_WHNP (S (VP (VBZ has) (@VP->_VBZ (NP (NP (NN fun)) (@NP->_NP (S (VP (VBG breaking) (@VP->_VBG (PP (IN into) (@PP->_IN (NP (NNS computers))))))))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (S (VP (VBG Finding) (@VP->_VBG (NP (PRP him))))) (@S->_S (VP (VBD became) (@VP->_VBD (NP (DT an) (@NP->_DT (NN obsession))) (@VP->_VBD_NP (PP (IN for) (@PP->_IN (NP (NNP Mr.) (@NP->_NNP (NNP Stoll)))))))) (@S->_S_VP (. .)))))
+
+(ROOT (S (NP (DT Some) (@NP->_DT (NNS nights))) (@S->_NP (NP (PRP he)) (@S->_NP_NP (VP (VBD slept) (@VP->_VBD (PP (IN under) (@PP->_IN (NP (PRP$ his) (@NP->_PRP$ (NN desk))))))) (@S->_NP_NP_VP (. .))))))
+
+(ROOT (S (NP (PRP$ His) (@NP->_PRP$ (NN boss))) (@S->_NP (VP (VBD complained) (@VP->_VBD (PP (IN about) (@PP->_IN (NP (NP (NN neglect)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (JJ other) (@NP->_JJ (NNS chores))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (NNP White) (@NP->_DT_NNP (NNPS Sands) (@NP->_DT_NNP_NNPS (NN missile) (@NP->_DT_NNP_NNPS_NN (NN range)))))) (@NP->_NP (CC and) (@NP->_NP_CC (NP (NNP CIA) (@NP->_NNP (NN contractor) (@NP->_NNP_NN (NNP Mitre) (@NP->_NNP_NN_NNP (NNP Inc.)))))))) (@S->_NP (VP (VBD were) (@VP->_VBD (PP (IN among) (@PP->_IN (NP (DT the) (@NP->_DT (NNS targets))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNP CIA))) (@S->_NP (VP (VBD told) (@VP->_VBD (NP (PRP him)) (@VP->_VBD_NP (SBAR (S (NP (PRP it)) (@S->_NP (VP (VBZ does) (@VP->_VBZ (RB not) (@VP->_VBZ_RB (VP (VB do) (@VP->_VB (NP (JJ domestic) (@NP->_JJ (NN counterespionage)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP One)) (@S->_NP (VP (VP (VBZ learns) (@VP->_VBZ (NP (DT a) (@NP->_DT (NN lot))) (@VP->_VBZ_NP (PP (IN from) (@PP->_IN (NP (DT this) (@NP->_DT (NN book)))))))) (@VP->_VP (, ,) (@VP->_VP_, (CC or) (@VP->_VP_,_CC (VP (VBZ seems) (@VP->_VBZ (S (VP (TO to))))) (@VP->_VP_,_CC_VP (, ,) (@VP->_VP_,_CC_VP_, (PP (IN about) (@PP->_IN (NP (JJ crippling) (@NP->_JJ (JJ federal) (@NP->_JJ_JJ (NN bureaucracy)))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (ADVP (RB Finally)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (PRP he)) (@S->_ADVP_,_NP (VP (VBD got) (@VP->_VBD (NP (NN help)))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NNP Tymnet)) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (DT a) (@NP->_DT (JJ major) (@NP->_DT_JJ (NN network)))) (@NP->_NP (VP (VBG linking) (@VP->_VBG (NP (NNS computers)))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNPS West) (@NP->_DT_NNPS (NNPS Germans)))) (@S->_NP (ADVP (RB then)) (@S->_NP_ADVP (VP (VP (VBD took) (@VP->_VBD (ADVP (RB over)))) (@VP->_VP (CC and) (@VP->_VP_CC (VP (ADVP (RB finally)) (@VP->_ADVP (VBD found) (@VP->_ADVP_VBD (NP (NNP Markus) (@NP->_NNP (NNP Hess))))))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (S (ADVP (RB Eventually)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (NNP Mr.) (@NP->_NNP (NNP Stoll))) (@S->_ADVP_,_NP (VP (VBD was) (@VP->_VBD (VP (VBN invited) (@VP->_VBN (PP (TO to) (@PP->_TO (NP (DT both) (@NP->_DT (NP (DT the) (@NP->_DT (NNP CIA))) (@NP->_DT_NP (CC and) (@NP->_DT_NP_CC (NP (NNP NSA)))))))) (@VP->_VBN_PP (S (VP (TO to) (@VP->_TO (VP (VB brief) (@VP->_VB (NP (JJ high-ranking) (@NP->_JJ (NNS officers))) (@VP->_VB_NP (PP (IN on) (@PP->_IN (NP (NN computer) (@NP->_NN (NN theft)))))))))))))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (PRP He)) (@S->_NP (VP (VBD savored) (@VP->_VBD (NP (NP (DT the) (@NP->_DT (NN humor))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (PRP$ his) (@NP->_PRP$ (JJ uncombed) (@NP->_PRP$_JJ (NN appearance)))) (@NP->_NP (PP (IN among) (@PP->_IN (NP (DT these) (@NP->_DT (JJ buttoned-up) (@NP->_DT_JJ (NNS chaps)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (S (ADVP (RB Back) (@ADVP->_RB (PP (IN in) (@PP->_IN (NP (NNP Berkeley))))))) (@S->_S (, ,) (@S->_S_, (NP (PRP he)) (@S->_S_,_NP (VP (VBD was) (@VP->_VBD (VP (ADVP (RB violently)) (@VP->_ADVP (VBN scolded) (@VP->_ADVP_VBN (PP (IN by) (@PP->_IN (NP (DT a) (@NP->_DT (JJ left-wing) (@NP->_DT_JJ (NN lady) (@NP->_DT_JJ_NN (NN friend))))))) (@VP->_ADVP_VBN_PP (PP (IN for) (@PP->_IN (S (VP (VBG consorting) (@VP->_VBG (PP (IN with) (@PP->_IN (NP (JJ such) (@NP->_JJ (NNS people)))))))))))))))) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (PRP He)) (@S->_NP (VP (VBD became) (@VP->_VBD (ADJP (JJ angry)) (@VP->_VBD_ADJP (PP (IN in) (@PP->_IN (NP (NN return))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (PP (IN At) (@PP->_IN (NP (JJ several) (@NP->_JJ (JJ different) (@NP->_JJ_JJ (NNS levels)))))) (@S->_PP (, ,) (@S->_PP_, (NP (PRP it)) (@S->_PP_,_NP (VP (VBZ 's) (@VP->_VBZ (NP (DT a) (@NP->_DT (JJ fascinating) (@NP->_DT_JJ (NN tale)))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NNP Mr.) (@NP->_NNP (NNP Melloan))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (JJ deputy) (@NP->_JJ (NN editor))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NNP Journal))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (JJ new) (@NP->_DT_JJ (NNP Mips) (@NP->_DT_JJ_NNP (NN machine))))) (@NP->_NP (, ,) (@NP->_NP_, (VP (VBN called) (@VP->_VBN (S (NP (DT the) (@NP->_DT (NN RC6280)))))) (@NP->_NP_,_VP (, ,))))) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB cost) (@VP->_VB (NP ($ $) (@NP->_$ (CD 150,000))) (@VP->_VB_NP (PP (IN for) (@PP->_IN (NP (DT a) (@NP->_DT (JJ basic) (@NP->_DT_JJ (NN system))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN machine))) (@S->_NP (VP (VBZ employs) (@VP->_VBZ (NP (JJ reduced) (@NP->_JJ (JJ instruction-set) (@NP->_JJ_JJ (NN computing) (@NP->_JJ_JJ_NN (PRN (, ,) (@PRN->_, (CC or) (@PRN->_,_CC (NNP RISC) (@PRN->_,_CC_NNP (, ,))))) (@NP->_JJ_JJ_NN_PRN (NN technology)))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP RISC) (@NP->_NNP (NN technology))) (@S->_NP (VP (VBZ speeds) (@VP->_VBZ (PRT (RP up)) (@VP->_VBZ_PRT (NP (DT a) (@NP->_DT (NN computer))) (@VP->_VBZ_PRT_NP (PP (IN by) (@PP->_IN (S (VP (VBG simplifying) (@VP->_VBG (NP (DT the) (@NP->_DT (JJ internal) (@NP->_DT_JJ (NN software))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (`` ``) (@S->_`` (S (NP (PRP They)) (@S->_NP (VP (VBP 're) (@VP->_VBP (VP (VBG getting) (@VP->_VBG (NP (DT some) (@NP->_DT (JJ major) (@NP->_DT_JJ (NNS wins)))))))))) (@S->_``_S (, ,) (@S->_``_S_, ('' '') (@S->_``_S_,_'' (NP (PRP she)) (@S->_``_S_,_''_NP (VP (VBD added)) (@S->_``_S_,_''_NP_VP (. .)))))))))
+
+(ROOT (S (S (NP (DT The) (@NP->_DT (NN machine))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (ADVP (RB essentially)) (@VP->_VBZ_ADVP (NP (DT a) (@NP->_DT (NN mainframe) (@NP->_DT_NN (NN computer))))))))) (@S->_S (, ,) (@S->_S_, (NP (PRP he)) (@S->_S_,_NP (VP (VBD said)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (SINV (S (NP (NNP Nixdorf) (@NP->_NNP (, ,) (@NP->_NNP_, (NNP Bull) (@NP->_NNP_,_NNP (CC and) (@NP->_NNP_,_NNP_CC (NNS others)))))) (@S->_NP (VP (MD will) (@VP->_MD (ADVP (RB also)) (@VP->_MD_ADVP (VP (VB sell) (@VP->_VB (NP (NP (NNS versions)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NN machine)))))))))))))) (@SINV->_S (, ,) (@SINV->_S_, (VP (VBD said)) (@SINV->_S_,_VP (NP (NNP Mips) (@NP->_NNP (NNP President) (@NP->_NNP_NNP (NNP Robert) (@NP->_NNP_NNP_NNP (NNP Miller))))) (@SINV->_S_,_VP_NP (. .)))))))
+
+(ROOT (S (S (NP (NNP Mips)) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB start) (@VP->_VB (S (VP (VBG shipping) (@VP->_VBG (NP (PRP$ its) (@NP->_PRP$ (JJ new) (@NP->_PRP$_JJ (NN machine))))))) (@VP->_VB_S (PP (IN in) (@PP->_IN (NP (NP (DT the) (@NP->_DT (JJ first) (@NP->_DT_JJ (NN quarter)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (CD 1990))))))))))))))) (@S->_S (, ,) (@S->_S_, (NP (PRP he)) (@S->_S_,_NP (VP (VBD said)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN machine))) (@S->_NP (VP (VBZ uses) (@VP->_VBZ (NP (NP (DT a) (@NP->_DT (JJ single) (@NP->_DT_JJ (NN processor)))) (@NP->_NP (, ,) (@NP->_NP_, (SBAR (WHNP (WDT which)) (@SBAR->_WHNP (S (VP (VBZ makes) (@VP->_VBZ (S (NP (PRP it)) (@S->_NP (ADJP (ADJP (JJR easier) (@ADJP->_JJR (SBAR (S (VP (TO to) (@VP->_TO (VP (VB program)))))))) (@ADJP->_ADJP (PP (IN than) (@PP->_IN (NP (NP (VBG competing) (@NP->_VBG (NNS machines))) (@NP->_NP (VP (VBG using) (@VP->_VBG (NP (JJ several) (@NP->_JJ (NNS processors))))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN computer))) (@S->_NP (VP (MD can) (@VP->_MD (VP (VB process) (@VP->_VB (NP (NP (QP (CD 13.3) (@QP->_CD (CD million))) (@NP->_QP (NNS calculations))) (@NP->_NP (VP (VBD called) (@VP->_VBD (S (NP (JJ floating-point) (@NP->_JJ (NNS operations)))))))) (@VP->_VB_NP (NP (DT every) (@NP->_DT (NN second)))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (S (NP (DT The) (@NP->_DT (NN machine))) (@S->_NP (VP (MD can) (@VP->_MD (VP (VB run) (@VP->_VB (NP (NP (NN software)) (@NP->_NP (VP (VBN written) (@VP->_VBN (PP (IN for) (@PP->_IN (NP (JJ other) (@NP->_JJ (NNP Mips) (@NP->_JJ_NNP (NNS computers)))))))))))))))) (@S->_S (, ,) (@S->_S_, (NP (DT the) (@NP->_DT (NN company))) (@S->_S_,_NP (VP (VBD said)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN spending))) (@S->_NP (VP (MD could) (@VP->_MD (VP (VB be) (@VP->_VB (VP (VBN exempted) (@VP->_VBN (PP (IN from) (@PP->_IN (S (VP (VBG meeting) (@VP->_VBG (NP (NP (JJ deficit-reduction) (@NP->_JJ (NNS targets))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (DT the) (@NP->_DT (NNP Gramm-Rudman) (@NP->_DT_NNP (NN budget) (@NP->_DT_NNP_NN (NN law)))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (NN borrowing))) (@NP->_NP (SBAR (S (VP (TO to) (@VP->_TO (VP (VB raise) (@VP->_VB (NP (DT these) (@NP->_DT (NNS funds))))))))))) (@S->_NP (VP (MD would) (@VP->_MD (VP (VB be) (@VP->_VB (VP (VBN paid) (@VP->_VBN (ADVP (RB off)) (@VP->_VBN_ADVP (SBAR (IN as) (@SBAR->_IN (S (NP (NP (NNS assets)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (JJ sick) (@NP->_JJ (NNS thrifts))))))) (@S->_NP (VP (VBP are) (@VP->_VBP (VP (VBN sold))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNP RTC))) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB have) (@VP->_VB (S (VP (TO to) (@VP->_TO (VP (VB sell) (@VP->_VB (CC or) (@VP->_VB_CC (VB merge) (@VP->_VB_CC_VB (NP (NP (NNS hundreds)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (JJ insolvent) (@NP->_JJ (NNS thrifts))))))) (@VP->_VB_CC_VB_NP (PP (IN over) (@PP->_IN (NP (DT the) (@NP->_DT (JJ next) (@NP->_DT_JJ (CD three) (@NP->_DT_JJ_CD (NNS years))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (RB Then) (@S->_RB (NP (DT the) (@NP->_DT (JJ short-term) (@NP->_DT_JJ (NN debt)))) (@S->_RB_NP (VP (VBZ is) (@VP->_VBZ (VP (VBN paid) (@VP->_VBN (ADVP (RB off)) (@VP->_VBN_ADVP (PP (IN through) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NNS proceeds))) (@NP->_NP (PP (IN of) (@PP->_IN (S (VP (VBG selling) (@VP->_VBG (NP (DT the) (@NP->_DT (NNS assets))))))))))))))))) (@S->_RB_NP_VP (. .))))))
+
+(ROOT (S (S (CC But) (@S->_CC (NP (DT the) (@NP->_DT (JJS worst) (@NP->_DT_JJS (NN possibility)))) (@S->_CC_NP (VP (MD would) (@VP->_MD (VP (VB be) (@VP->_VB (S (VP (VBG raising) (@VP->_VBG (NP (DT no) (@NP->_DT (JJ working) (@NP->_DT_JJ (NN capital)))))))))))))) (@S->_S (, ,) (@S->_S_, (NP (PRP he)) (@S->_S_,_NP (VP (VBD said)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (SQ (ADVP (RB Now)) (@SQ->_ADVP (VBD was) (@SQ->_ADVP_VBD (NP (IN that)) (@SQ->_ADVP_VBD_NP (NP (NP (DT a) (@NP->_DT (NN quarter) (@NP->_DT_NN (NN cup)))) (@NP->_NP (CC or) (@NP->_NP_CC (NP (DT a) (@NP->_DT (JJ half) (@NP->_DT_JJ (NN cup))))))) (@SQ->_ADVP_VBD_NP_NP (. ?)))))))
+
+(ROOT (S (NP (NNP Chez) (@NP->_NNP (NNP Panisse))) (@S->_NP (VP (VBD was) (@VP->_VBD (VP (VBN listed) (@VP->_VBN (PP (IN among) (@PP->_IN (NP (NP (DT the) (@NP->_DT (JJ top) (@NP->_DT_JJ (CD 30) (@NP->_DT_JJ_CD (NNS restaurants))))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (DT the) (@NP->_DT (NN world))))))))) (@VP->_VBN_PP (NP (DT this) (@NP->_DT (NN year))) (@VP->_VBN_PP_NP (PP (IN by) (@PP->_IN (NP (NNP Connoisseur) (@NP->_NNP (NN magazine))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNP Berkeley) (@NP->_DT_NNP (NNS police)))) (@S->_NP (VP (VP (VBP do) (@VP->_VBP (RB n't) (@VP->_VBP_RB (VP (VB have) (@VP->_VB (NP (DT any) (@NP->_DT (NNS leads)))))))) (@VP->_VP (CC but) (@VP->_VP_CC (VP (VB doubt) (@VP->_VB (SBAR (S (NP (DT the) (@NP->_DT (NN crime))) (@S->_NP (VP (VBD was) (@VP->_VBD (VP (VBN driven) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (NP (DT a) (@NP->_DT (NN passion))) (@NP->_NP (PP (IN for) (@PP->_IN (NP (NNS sweets)))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (PP (IN For) (@PP->_IN (NP (DT another)))) (@S->_PP (, ,) (@S->_PP_, (NP (JJ sympathetic) (@NP->_JJ (NNS fans))) (@S->_PP_,_NP (VP (VBP have) (@VP->_VBP (VP (VBN sent) (@VP->_VBN (NP (NNP Ms.) (@NP->_NNP (NNP Shere))) (@VP->_VBN_NP (NP (NP (NNS copies)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (PRP$ her) (@NP->_PRP$ (NNS recipes))))) (@NP->_NP_PP (VP (VBN clipped) (@VP->_VBN (PP (IN from) (@PP->_IN (NP (NNS magazines)))) (@VP->_VBN_PP (PP (IN over) (@PP->_IN (NP (DT the) (@NP->_DT (NNS years)))))))))))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (CC And) (@S->_CC (NP (DT that)) (@S->_CC_NP (VP (VBZ puts) (@VP->_VBZ (NP (JJ added) (@NP->_JJ (NN pressure))) (@VP->_VBZ_NP (PP (IN on) (@PP->_IN (NP (NNP Chez) (@NP->_NNP (NNP Panisse) (@NP->_NNP_NNP (NN dessert-menu) (@NP->_NNP_NNP_NN (NNS planners)))))))))) (@S->_CC_NP_VP (. .))))))
+
+(ROOT (SINV (`` ``) (@SINV->_`` (S (NP (PRP We)) (@S->_NP (VP (VBP make) (@VP->_VBP (SBAR (WHNP (WP what)) (@SBAR->_WHNP (S (NP (PRP we)) (@S->_NP (VP (VBP know) (@VP->_VBP (SBAR (WHADVP (WRB how)) (@SBAR->_WHADVP (S (VP (TO to) (@VP->_TO (VP (VB make))))))))))))))))) (@SINV->_``_S (, ,) (@SINV->_``_S_, ('' '') (@SINV->_``_S_,_'' (VP (VBZ says)) (@SINV->_``_S_,_''_VP (NP (NN business) (@NP->_NN (NN manager) (@NP->_NN_NN (NNP Richard) (@NP->_NN_NN_NNP (NNP Mazzera))))) (@SINV->_``_S_,_''_VP_NP (. .)))))))))
+
+(ROOT (S (`` ``) (@S->_`` (S (NP (PRP It)) (@S->_NP (VP (VBZ 's) (@VP->_VBZ (NP (DT an) (@NP->_DT (JJ overwhelming) (@NP->_DT_JJ (NN job)))))))) (@S->_``_S (, ,) (@S->_``_S_, ('' '') (@S->_``_S_,_'' (NP (PRP she)) (@S->_``_S_,_''_NP (VP (VBZ says)) (@S->_``_S_,_''_NP_VP (. .)))))))))
+
+(ROOT (S (NP (NP (NNP Milton) (@NP->_NNP (NNP B.) (@NP->_NNP_NNP (NNP Hollander)))) (@NP->_NP (, ,) (@NP->_NP_, (ADJP (NP (CD 60) (@NP->_CD (NNS years))) (@ADJP->_NP (JJ old))) (@NP->_NP_,_ADJP (, ,))))) (@S->_NP (VP (VBD was) (@VP->_VBD (VP (VBN named) (@VP->_VBN (S (NP (JJ chief) (@NP->_JJ (NN executive) (@NP->_JJ_NN (NN officer))))) (@VP->_VBN_S (, ,) (@VP->_VBN_S_, (S (VP (VBG succeeding) (@VP->_VBG (NP (NNP Barrett) (@NP->_NNP (NNP B.) (@NP->_NNP_NNP (NNP Weekes))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Mr.) (@NP->_NNP (NNP Hollander))) (@S->_NP (VP (VBD was) (@VP->_VBD (VP (VBN named) (@VP->_VBN (S (NP (NN chairman))) (@VP->_VBN_S (NP (JJ last) (@NP->_JJ (NN week))) (@VP->_VBN_S_NP (, ,) (@VP->_VBN_S_NP_, (S (VP (VBG succeeding) (@VP->_VBG (NP (NP (NNP Mr.) (@NP->_NNP (NNP Weekes))) (@NP->_NP (, ,) (@NP->_NP_, (SBAR (WHNP (WP who)) (@SBAR->_WHNP (S (VP (VBD was) (@VP->_VBD (PP (IN among) (@PP->_IN (NP (DT the) (@NP->_DT (VBN ousted) (@NP->_DT_VBN (NNS directors)))))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT A) (@NP->_DT (NN company) (@NP->_DT_NN (NN spokesman)))) (@S->_NP (VP (VBD did) (@VP->_VBD (RB n't) (@VP->_VBD_RB (VP (VB know) (@VP->_VB (NP (NP (NNP Mr.) (@NP->_NNP (NNP Wakeman) (@NP->_NNP_NNP (POS 's)))) (@NP->_NP (NN age)))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP UNIFIRST) (@NP->_NNP (NNP Corp.))) (@S->_NP (VP (VBD declared) (@VP->_VBD (NP (DT a) (@NP->_DT (JJ 2-for-1) (@NP->_DT_JJ (NN stock) (@NP->_DT_JJ_NN (NN split))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN dividend))) (@S->_NP (VP (VBD had) (@VP->_VBD (VP (VBN been) (@VP->_VBN (NP (NP (CD five) (@NP->_CD (NNS cents))) (@NP->_NP (NP (DT a) (@NP->_DT (NN share))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN split))) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB raise) (@VP->_VB (NP (NP (DT the) (@NP->_DT (NN number))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (NNS shares)) (@NP->_NP (ADJP (JJ outstanding)))))))) (@VP->_VB_NP (PP (TO to) (@PP->_TO (NP (IN about) (@NP->_IN (CD 10.2) (@NP->_IN_CD (CD million))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (ADVP (NP (DT A) (@NP->_DT (NN year))) (@ADVP->_NP (RB earlier))) (@S->_ADVP (NP (NNP UniFirst)) (@S->_ADVP_NP (VP (VBD earned) (@VP->_VBD (NP (NP (QP ($ $) (@QP->_$ (CD 2.4) (@QP->_$_CD (CD million))))) (@NP->_NP (, ,) (@NP->_NP_, (CC or) (@NP->_NP_,_CC (NP (NP (NP (CD 24) (@NP->_CD (NNS cents))) (@NP->_NP (NP (DT a) (@NP->_DT (NN share))))) (@NP->_NP (VP (VBN adjusted) (@VP->_VBN (PP (IN for) (@PP->_IN (NP (DT the) (@NP->_DT (NN split))))))))))))))) (@S->_ADVP_NP_VP (. .))))))
+
+(ROOT (S (NP (NNS Sales)) (@S->_NP (VP (VBD rose) (@VP->_VBD (PP (TO to) (@PP->_TO (NP (QP ($ $) (@QP->_$ (CD 52.4) (@QP->_$_CD (CD million))))))) (@VP->_VBD_PP (PP (IN from) (@PP->_IN (NP (QP ($ $) (@QP->_$ (CD 50.1) (@QP->_$_CD (CD million)))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Healthcare)) (@S->_NP (VP (VBZ has) (@VP->_VBZ (VP (VBN given) (@VP->_VBN (NP (NNP HealthVest)) (@VP->_VBN_NP (NP (NP (DT a) (@NP->_DT (ADJP (CD 12) (@ADJP->_CD (NN %))) (@NP->_DT_ADJP (NN note)))) (@NP->_NP (PP (IN for) (@PP->_IN (NP (DT that) (@NP->_DT (JJ overdue) (@NP->_DT_JJ (NN amount)))))) (@NP->_NP_PP (, ,) (@NP->_NP_PP_, (SBAR (S (VP (TO to) (@VP->_TO (VP (VB be) (@VP->_VB (VP (VBN repaid) (@VP->_VBN (PP (IN over) (@PP->_IN (NP (CD three) (@NP->_CD (NNS years)))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN loan))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (VP (VBN backed) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (NP (NP (NP (NNP Healthcare) (@NP->_NNP (POS 's))) (@NP->_NP (ADJP (CD 5.4) (@ADJP->_CD (NN %))) (@NP->_NP_ADJP (NN stake)))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NNP HealthVest)))))) (@NP->_NP (CC and) (@NP->_NP_CC (NP (NP (NN interest)) (@NP->_NP (PP (IN in) (@PP->_IN (NP (JJ certain) (@NP->_JJ (NNS facilities)))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (NP (NN President)))
+
+(ROOT (NP (DT The) (@NP->_DT (NNP Reserve) (@NP->_DT_NNP (NNP Fund)))))
+
+(ROOT (S (NP (NP (NP (NNS Baskets)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNS roses)))))) (@NP->_NP (CC and) (@NP->_NP_CC (NP (JJ potted) (@NP->_JJ (NNS palms)))))) (@S->_NP (VP (VBD adorned) (@VP->_VBD (NP (PRP$ his) (@NP->_PRP$ (NN bench))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (JJ local) (@NP->_DT_JJ (NNP American) (@NP->_DT_JJ_NNP (NNP Legion) (@NP->_DT_JJ_NNP_NNP (NN color) (@NP->_DT_JJ_NNP_NNP_NN (NN guard))))))) (@S->_NP (VP (VBD led) (@VP->_VBD (NP (DT the) (@NP->_DT (NN way))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (SBAR (IN While) (@SBAR->_IN (S (NP (PRP$ his) (@NP->_PRP$ (NN case))) (@S->_NP (VP (MD may) (@VP->_MD (VP (VB be) (@VP->_VB (ADJP (JJ extreme)))))))))) (@S->_SBAR (, ,) (@S->_SBAR_, (NP (PRP it)) (@S->_SBAR_,_NP (VP (VBZ reflects) (@VP->_VBZ (NP (NP (DT the) (@NP->_DT (NN vulnerability))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (JJ many) (@NP->_JJ (JJ small) (@NP->_JJ_JJ (NNS communities)))))) (@NP->_NP_PP (PP (TO to) (@PP->_TO (NP (JJ domineering) (@NP->_JJ (NNS judges)))))))))) (@S->_SBAR_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNS allegations))) (@S->_NP (, ,) (@S->_NP_, (S (VP (VBG ranging) (@VP->_VBG (PP (PP (IN from) (@PP->_IN (NP (NN theft) (@NP->_NN (CC and) (@NP->_NN_CC (NN bribery)))))) (@PP->_PP (PP (TO to) (@PP->_TO (NP (NN coercion) (@NP->_NN (CC and) (@NP->_NN_CC (NN lewdness))))))))))) (@S->_NP_,_S (, ,) (@S->_NP_,_S_, (VP (VBP paint) (@VP->_VBP (NP (DT a) (@NP->_DT (JJ disquieting) (@NP->_DT_JJ (NN picture)))))) (@S->_NP_,_S_,_VP (. .))))))))
+
+(ROOT (S (NP (NP (DT Some)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NNS allegations))))))) (@S->_NP (VP (VBP are) (@VP->_VBP (ADJP (RB simply) (@ADJP->_RB (JJ bizarre))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (CD One) (@NP->_CD (NN secretary))) (@S->_NP (VP (VBD testified) (@VP->_VBD (SBAR (IN that) (@SBAR->_IN (S (NP (DT the) (@NP->_DT (NN judge))) (@S->_NP (ADVP (RB once)) (@S->_NP_ADVP (VP (VBD called) (@VP->_VBD (NP (PRP her)) (@VP->_VBD_NP (PP (TO to) (@PP->_TO (NP (PRP$ his) (@NP->_PRP$ (NN office))))) (@VP->_VBD_NP_PP (SBAR (IN while) (@SBAR->_IN (S (VP (VBG wearing) (@VP->_VBG (NP (NP (NN nothing)) (@NP->_NP (ADVP (IN at) (@ADVP->_IN (DT all))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (SINV (`` ``) (@SINV->_`` (S (NP (PRP I)) (@S->_NP (VP (VBP do) (@VP->_VBP (RB n't) (@VP->_VBP_RB (VP (VB know) (@VP->_VB (SBAR (WHNP (WP$ whose) (@WHNP->_WP$ (NNS toes))) (@SBAR->_WHNP (S (NP (PRP I)) (@S->_NP (VP (VBP 've) (@VP->_VBP (VP (VBN stepped) (@VP->_VBN (PP (IN on))))))))))))))))) (@SINV->_``_S (, ,) (@SINV->_``_S_, ('' '') (@SINV->_``_S_,_'' (VP (VBZ says)) (@SINV->_``_S_,_''_VP (NP (DT the) (@NP->_DT (NN judge))) (@SINV->_``_S_,_''_VP_NP (. .)))))))))
+
+(ROOT (S (`` ``) (@S->_`` (NP (PRP I)) (@S->_``_NP (VP (MD 'll) (@VP->_MD (VP (VB find) (@VP->_VB (ADVP (RB out)) (@VP->_VB_ADVP (, ,) (@VP->_VB_ADVP_, (ADVP (RB eventually)) (@VP->_VB_ADVP_,_ADVP (, ,) (@VP->_VB_ADVP_,_ADVP_, (SBAR (WHNP (WP who)) (@SBAR->_WHNP (S (VP (VBD pushed) (@VP->_VBD (NP (DT the) (@NP->_DT (NN state) (@NP->_DT_NN (NN police) (@NP->_DT_NN_NN (NNS buttons))))) (@VP->_VBD_NP (PP (IN into) (@PP->_IN (NP (NN action)))))))))))))))))) (@S->_``_NP_VP (. .) (@S->_``_NP_VP_. ('' '')))))))
+
+(ROOT (S (NP (PRP It)) (@S->_NP (VP (VBD was) (@VP->_VBD (ADVP (RB also)) (@VP->_VBD_ADVP (PP (IN in) (@PP->_IN (NP (NN law) (@NP->_NN (NN school))))) (@VP->_VBD_ADVP_PP (SBAR (WHADVP (IN that)) (@SBAR->_WHADVP (S (NP (NP (NNP Mr.) (@NP->_NNP (NNP O'Kicki))) (@NP->_NP (CC and) (@NP->_NP_CC (NP (PRP$ his) (@NP->_PRP$ (JJ first) (@NP->_PRP$_JJ (NN wife))))))) (@S->_NP (VP (VBD had) (@VP->_VBD (NP (NP (DT the) (@NP->_DT (JJ first))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (CD seven) (@NP->_CD (NNS daughters))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP He)) (@S->_NP (VP (VP (VBD divorced) (@VP->_VBD (NP (PRP$ his) (@NP->_PRP$ (JJ first) (@NP->_PRP$_JJ (NN wife)))) (@VP->_VBD_NP (ADVP (NP (CD three) (@NP->_CD (NNS years))) (@ADVP->_NP (RB ago)))))) (@VP->_VP (CC and) (@VP->_VP_CC (VP (VBD married) (@VP->_VBD (NP (NP (DT the) (@NP->_DT (NN daughter))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (PRP$ his) (@NP->_PRP$ (NN court) (@NP->_PRP$_NN (NN clerk))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (ADVP (RB Clearly)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (DT the) (@NP->_DT (NN judge))) (@S->_ADVP_,_NP (VP (VBZ has) (@VP->_VBZ (VP (VBN had) (@VP->_VBN (NP (NP (PRP$ his) (@NP->_PRP$ (NN share))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNS accomplishments)))))))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (PRP He)) (@S->_NP (VP (VBZ has) (@VP->_VBZ (VP (VBN been) (@VP->_VBN (VP (VBN considered) (@VP->_VBN (NP (JJ several) (@NP->_JJ (NNS times))) (@VP->_VBN_NP (PP (IN for) (@PP->_IN (NP (NP (NNS appointments)) (@NP->_NP (PP (TO to) (@PP->_TO (NP (NP (JJ federal) (@NP->_JJ (NN district) (@NP->_JJ_NN (CC and) (@NP->_JJ_NN_CC (JJ appellate) (@NP->_JJ_NN_CC_JJ (NN court) (@NP->_JJ_NN_CC_JJ_NN (NNS vacancies))))))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NNP Pennsylvania))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (`` ``) (@S->_`` (NP (PRP He)) (@S->_``_NP (VP (VBZ 's) (@VP->_VBZ (ADJP (ADJP (JJ sharp)) (@ADJP->_ADJP (PP (IN as) (@PP->_IN (NP (DT a) (@NP->_DT (NN tack))))))))) (@S->_``_NP_VP (. .))))))
+
+(ROOT (S (NP (PRP He)) (@S->_NP (VP (MD could) (@VP->_MD (VP (VB grasp) (@VP->_VB (NP (DT an) (@NP->_DT (NN issue))) (@VP->_VB_NP (PP (IN with) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NN blink))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT an) (@NP->_DT (NN eye)))))))))))))) (@S->_NP_VP (. .) (@S->_NP_VP_. ('' ''))))))
+
+(ROOT (S (PP (IN For) (@PP->_IN (NP (NP (JJR more)) (@NP->_NP (PP (IN than) (@PP->_IN (NP (DT a) (@NP->_DT (NN decade))))))))) (@S->_PP (, ,) (@S->_PP_, (NP (RB virtually) (@NP->_RB (DT no) (@NP->_RB_DT (NN one)))) (@S->_PP_,_NP (VP (VBD complained) (@VP->_VBD (PP (IN about) (@PP->_IN (NP (NNP Judge) (@NP->_NNP (NNP O'Kicki))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (`` ``) (@S->_`` (NP (NN Nobody)) (@S->_``_NP (VP (VBD had) (@VP->_VBD (NP (NP (DT the) (@NP->_DT (NNS guts))) (@NP->_NP (SBAR (S (VP (TO to) (@VP->_TO (VP (VB complain)))))))))) (@S->_``_NP_VP (. .) (@S->_``_NP_VP_. ('' '')))))))
+
+(ROOT (FRAG (RB Certainly) (@FRAG->_RB (RB not) (@FRAG->_RB_RB (NP (DT the) (@NP->_DT (NNS lawyers))) (@FRAG->_RB_RB_NP (. .))))))
+
+(ROOT (SINV (`` ``) (@SINV->_`` (S (NP (DT The) (@NP->_DT (NN judge))) (@S->_NP (ADVP (RB never)) (@S->_NP_ADVP (VP (VBD made) (@VP->_VBD (NP (NP (DT a) (@NP->_DT (NN pretense))) (@NP->_NP (PP (IN of) (@PP->_IN (S (VP (VBG repaying) (@VP->_VBG (NP (DT the) (@NP->_DT (NN money))))))))))))))) (@SINV->_``_S (, ,) (@SINV->_``_S_, ('' '') (@SINV->_``_S_,_'' (VP (VBD said)) (@SINV->_``_S_,_''_VP (NP (NNP Mr.) (@NP->_NNP (NNP Green))) (@SINV->_``_S_,_''_VP_NP (. .)))))))))
+
+(ROOT (S (S (S (ADJP (JJ Appalled))) (@S->_S (, ,) (@S->_S_, (NP (NNP Mr.) (@NP->_NNP (NNP Green))) (@S->_S_,_NP (ADVP (RB never)) (@S->_S_,_NP_ADVP (VP (VBD paid) (@VP->_VBD (NP (DT the) (@NP->_DT (NN money)))))))))) (@S->_S (, ,) (@S->_S_, (NP (PRP he)) (@S->_S_,_NP (VP (VBD testified)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (NNP Mr.) (@NP->_NNP (NNP O'Kicki))) (@S->_NP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (PRP he)) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB respond) (@VP->_VB (PP (TO to) (@PP->_TO (NP (NP (NNP Mr.) (@NP->_NNP (NNP Green) (@NP->_NNP_NNP (POS 's)))) (@NP->_NP (NN allegation))))) (@VP->_VB_PP (PP (IN at) (@PP->_IN (NP (PRP$ his) (@NP->_PRP$ (NN trial))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (CC And) (@S->_CC (NP (NP (DT no) (@NP->_DT (NN one))) (@NP->_NP (PP (IN with) (@PP->_IN (NP (NP (DT a) (@NP->_DT (NN complaint))) (@NP->_NP (PP (IN about) (@PP->_IN (NP (DT the) (@NP->_DT (NN judge))))))))))) (@S->_CC_NP (VP (MD would) (@VP->_MD (VP (VB allow) (@VP->_VB (S (NP (PRP$ his) (@NP->_PRP$ (NN name))) (@S->_NP (VP (TO to) (@VP->_TO (VP (VB be) (@VP->_VB (VP (VBN printed)))))))))))) (@S->_CC_NP_VP (. .))))))
+
+(ROOT (S (NP (PRP One)) (@S->_NP (VP (VBD had) (@VP->_VBD (PRT (RBS best)) (@VP->_VBD_PRT (S (RB not) (@S->_RB (VP (VB dance) (@VP->_VB (PP (IN on) (@PP->_IN (NP (NP (NN top)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT a) (@NP->_DT (NN coffin))))))))) (@VP->_VB_PP (SBAR (IN until) (@SBAR->_IN (S (NP (DT the) (@NP->_DT (NN lid))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (VP (VBN sealed) (@VP->_VBN (S (ADJP (RB tightly) (@ADJP->_RB (VBN shut)))))))))))))))))))) (@S->_NP_VP (. .) (@S->_NP_VP_. ('' ''))))))
+
+(ROOT (S (S (NP (DT The) (@NP->_DT (NN judge))) (@S->_NP (VP (VBD was) (@VP->_VBD (VP (VBN considered) (@VP->_VBN (S (ADJP (JJ imperious) (@ADJP->_JJ (, ,) (@ADJP->_JJ_, (JJ abrasive) (@ADJP->_JJ_,_JJ (CC and) (@ADJP->_JJ_,_JJ_CC (JJ ambitious))))))))))))) (@S->_S (, ,) (@S->_S_, (NP (NP (DT those)) (@NP->_NP (SBAR (WHNP (WP who)) (@SBAR->_WHNP (S (VP (VBD practiced) (@VP->_VBD (PP (IN before) (@PP->_IN (NP (PRP him))))))))))) (@S->_S_,_NP (VP (VBP say)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN judge))) (@S->_NP (PRN (, ,) (@PRN->_, (S (NP (PRP they)) (@S->_NP (VP (VBP say)))) (@PRN->_,_S (, ,)))) (@S->_NP_PRN (VP (VBD was) (@VP->_VBD (ADJP (RB fiercely) (@ADJP->_RB (JJ proud) (@ADJP->_RB_JJ (PP (IN of) (@PP->_IN (NP (PRP$ his) (@NP->_PRP$ (NNS abilities) (@NP->_PRP$_NNS (CC and) (@NP->_PRP$_NNS_CC (NNS accomplishments)))))))))))) (@S->_NP_PRN_VP (. .))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN dealership))) (@S->_NP (ADVP (RB dutifully)) (@S->_NP_ADVP (VP (VBD recorded) (@VP->_VBD (NP (DT the) (@NP->_DT (NN sale))) (@VP->_VBD_NP (PP (IN under) (@PP->_IN (NP (NP (DT the) (@NP->_DT (NN name))) (@NP->_NP (`` ``) (@NP->_NP_`` (NP (NNP Judge) (@NP->_NNP (NNP O'Kicki))))))))))) (@S->_NP_ADVP_VP (. .) (@S->_NP_ADVP_VP_. ('' '')))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN inquiry))) (@S->_NP (ADVP (RB soon)) (@S->_NP_ADVP (VP (VBD focused) (@VP->_VBD (PP (IN on) (@PP->_IN (NP (DT the) (@NP->_DT (NN judge))))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (S (NP (RB Even) (@NP->_RB (PRP$ his) (@NP->_RB_PRP$ (JJ routine) (@NP->_RB_PRP$_JJ (NN business) (@NP->_RB_PRP$_JJ_NN (NNS transactions)))))) (@S->_NP (VP (VBD caused) (@VP->_VBD (NP (NN trouble)) (@VP->_VBD_NP (, ,) (@VP->_VBD_NP_, (PP (VBG according) (@PP->_VBG (PP (TO to) (@PP->_TO (NP (DT the) (@NP->_DT (JJ grand) (@NP->_DT_JJ (NN jury) (@NP->_DT_JJ_NN (NN report))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (CC But) (@S->_CC (SBAR (WHADVP (WRB when)) (@SBAR->_WHADVP (S (NP (DT the) (@NP->_DT (NN judge))) (@S->_NP (VP (VBD received) (@VP->_VBD (NP (PRP$ his) (@NP->_PRP$ (NN payment) (@NP->_PRP$_NN (NN book)))))))))) (@S->_CC_SBAR (, ,) (@S->_CC_SBAR_, (NP (PRP he)) (@S->_CC_SBAR_,_NP (VP (VBD disavowed) (@VP->_VBD (NP (DT the) (@NP->_DT (NN deal))))) (@S->_CC_SBAR_,_NP_VP (. .))))))))
+
+(ROOT (S (ADVP (RBR Later)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (DT the) (@NP->_DT (NN judge))) (@S->_ADVP_,_NP (VP (VBD went) (@VP->_VBD (NP (DT a) (@NP->_DT (NN step))) (@VP->_VBD_NP (ADVP (RB farther))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN judge))) (@S->_NP (VP (VBD wrote) (@VP->_VBD (ADVP (RB again)))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN bank))) (@S->_NP (VP (VBD acquiesced)) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN incident))) (@S->_NP (VP (VBD was) (@VP->_VBD (RB n't) (@VP->_VBD_RB (NP (NP (DT the) (@NP->_DT (JJ only) (@NP->_DT_JJ (NN time)))) (@NP->_NP (SBAR (S (NP (DT the) (@NP->_DT (NN judge))) (@S->_NP (VP (VBD got) (@VP->_VBD (NP (JJ special) (@NP->_JJ (NN treatment))) (@VP->_VBD_NP (PP (IN from) (@PP->_IN (NP (PRP$ his) (@NP->_PRP$ (JJ local) (@NP->_PRP$_JJ (NN bank))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (NNP Paul) (@NP->_NNP (NNP L.) (@NP->_NNP_NNP (NNP Kane)))) (@NP->_NP (, ,) (@NP->_NP_, (NP (NP (NP (NNP Laurel) (@NP->_NNP (POS 's))) (@NP->_NP (NN president))) (@NP->_NP (PP (IN at) (@PP->_IN (NP (DT the) (@NP->_DT (NN time))))))) (@NP->_NP_,_NP (, ,))))) (@S->_NP (VP (ADVP (RB quickly)) (@VP->_ADVP (VBD responded))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (PRP$ His) (@NP->_PRP$ (JJ seven-bedroom) (@NP->_PRP$_JJ (NN cedar) (@NP->_PRP$_JJ_NN (CC and) (@NP->_PRP$_JJ_NN_CC (NN brick) (@NP->_PRP$_JJ_NN_CC_NN (NN house))))))) (@NP->_NP (ADVP (IN outside) (@ADVP->_IN (PP (IN of) (@PP->_IN (NP (NNP Johnstown)))))))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (ADVP (RB up) (@ADVP->_RB (PP (IN for) (@PP->_IN (NP (NN sale)))))) (@VP->_VBZ_ADVP (S (VP (TO to) (@VP->_TO (VP (VB pay) (@VP->_VB (PP (IN for) (@PP->_IN (NP (PRP$ his) (@NP->_PRP$ (NNS lawyers))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN judge))) (@S->_NP (VP (VBZ says) (@VP->_VBZ (SBAR (S (NP (PRP he)) (@S->_NP (VP (VBZ is) (@VP->_VBZ (ADJP (JJ confident) (@ADJP->_JJ (SBAR (S (NP (PRP he)) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB return) (@VP->_VB (PP (TO to) (@PP->_TO (NP (PRP$ his) (@NP->_PRP$ (JJ old) (@NP->_PRP$_JJ (NN bench)))))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (ADVP (RB Already)) (@S->_ADVP (PRN (, ,) (@PRN->_, (S (NP (PRP he)) (@S->_NP (VP (VBZ notes)))) (@PRN->_,_S (, ,)))) (@S->_ADVP_PRN (NP (NP (DT the) (@NP->_DT (CD 76) (@NP->_DT_CD (NNS charges)))) (@NP->_NP (VP (ADVP (RB originally)) (@VP->_ADVP (VBN filed) (@VP->_ADVP_VBN (PP (IN against) (@PP->_IN (NP (PRP him))))))))) (@S->_ADVP_PRN_NP (VP (VBP have) (@VP->_VBP (VP (VBN been) (@VP->_VBN (VP (VBN trimmed) (@VP->_VBN (PP (TO to) (@PP->_TO (NP (CD 27)))))))))) (@S->_ADVP_PRN_NP_VP (. .)))))))
+
+(ROOT (S (NP (NP (NP (DT The) (@NP->_DT (NN heart))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NN case))))))) (@NP->_NP (PRN (: --) (@PRN->_: (`` ``) (@PRN->_:_`` (NP (JJ official) (@NP->_JJ (NN oppression))) (@PRN->_:_``_NP ('' '') (@PRN->_:_``_NP_'' (: --)))))))) (@S->_NP (VP (VBZ remains) (@VP->_VBZ (ADJP (JJ intact)))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (`` ``) (@S->_`` (NP (NP (PRP$ My) (@NP->_PRP$ (NNP God))) (@NP->_NP (CC and) (@NP->_NP_CC (NP (PRP I))))) (@S->_``_NP (VP (VBP know) (@VP->_VBP (SBAR (S (NP (PRP I)) (@S->_NP (VP (VBP am) (@VP->_VBP (ADJP (JJ correct) (@ADJP->_JJ (CC and) (@ADJP->_JJ_CC (JJ innocent))))))))))) (@S->_``_NP_VP (. .))))))
+
+(ROOT (S (NP (PRP It)) (@S->_NP (VP (MD should) (@VP->_MD (VP (VB be) (@VP->_VB (NP (DT a) (@NP->_DT (NN scream))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (NP (NNP William) (@NP->_NNP (NNP S.) (@NP->_NNP_NNP (NNP Smith)))))
+
+(ROOT (S (PP (IN By) (@PP->_IN (NP (NN contrast)))) (@S->_PP (, ,) (@S->_PP_, (NP (DT the) (@NP->_DT (NNP Los) (@NP->_DT_NNP (NNP Angeles) (@NP->_DT_NNP_NNP (NNP Times))))) (@S->_PP_,_NP (, ,) (@S->_PP_,_NP_, (PP (IN for) (@PP->_IN (NP (NN example)))) (@S->_PP_,_NP_,_PP (, ,) (@S->_PP_,_NP_,_PP_, (VP (VBZ uses) (@VP->_VBZ (NP (ADJP (CD 83) (@ADJP->_CD (NN %))) (@NP->_ADJP (JJ recycled) (@NP->_ADJP_JJ (NN paper)))))) (@S->_PP_,_NP_,_PP_,_VP (. .))))))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNP Wall) (@NP->_DT_NNP (NNP Street) (@NP->_DT_NNP_NNP (NNP Journal))))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (DT an) (@NP->_DT (JJ excellent) (@NP->_DT_JJ (NN publication)))) (@NP->_NP (SBAR (WHNP (IN that)) (@SBAR->_WHNP (S (NP (PRP I)) (@S->_NP (VP (VP (VBP enjoy) (@VP->_VBP (S (VP (VBG reading))))) (@VP->_VP (PRN (-LRB- -LRB-) (@PRN->_-LRB- (CC and) (@PRN->_-LRB-_CC (VP (MD must) (@VP->_MD (VP (VB read)))) (@PRN->_-LRB-_CC_VP (-RRB- -RRB-))))) (@VP->_VP_PRN (ADVP (RB daily))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (NP (NNP Virginia) (@NP->_NNP (NNP M.W.) (@NP->_NNP_NNP (NNP Gardiner)))))
+
+(ROOT (NP (NNP Continental) (@NP->_NNP (NNP Cablevision) (@NP->_NNP_NNP (NNP Inc.) (@NP->_NNP_NNP_NNP (: --))))))
+
+(ROOT (NP (NNP Beatrice) (@NP->_NNP (NNP Co.) (@NP->_NNP_NNP (: --)))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (NN size))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NN issue))))))) (@S->_NP (VP (VBD was) (@VP->_VBD (VP (VBN scaled) (@VP->_VBN (PRT (RP back)) (@VP->_VBN_PRT (PP (IN from) (@PP->_IN (NP (DT an) (@NP->_DT (ADJP (RB originally) (@ADJP->_RB (VBN planned))) (@NP->_DT_ADJP (QP ($ $) (@QP->_$ (CD 350) (@QP->_$_CD (CD million)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (NN rate))) (@NP->_NP (PP (IN on) (@PP->_IN (NP (DT the) (@NP->_DT (NNS notes))))))) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB be) (@VP->_VB (VP (VB reset) (@VP->_VB (ADVP (RB annually)) (@VP->_VB_ADVP (S (VP (TO to) (@VP->_TO (VP (VB give) (@VP->_VB (NP (DT the) (@NP->_DT (NN issue))) (@VP->_VB_NP (NP (NP (DT a) (@NP->_DT (NN market) (@NP->_DT_NN (NN value)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (CD 101))))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (ADVP (RB However)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (NP (DT the) (@NP->_DT (NN maximum) (@NP->_DT_NN (NN coupon)))) (@NP->_NP (SBAR (WHPP (IN at) (@WHPP->_IN (WHNP (WDT which)))) (@SBAR->_WHPP (S (NP (DT the) (@NP->_DT (NNS notes))) (@S->_NP (VP (MD can) (@VP->_MD (VP (VB be) (@VP->_VB (VP (VB reset)))))))))))) (@S->_ADVP_,_NP (VP (VBZ is) (@VP->_VBZ (NP (QP (CD 16) (@QP->_CD (CD 1\/4))) (@NP->_QP (NN %))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (JJ minimum) (@NP->_DT_JJ (NN coupon)))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (QP (CD 13) (@QP->_CD (CD 3\/4))) (@NP->_QP (NN %))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (JJ initial) (@NP->_DT_JJ (NN coupon)))) (@NP->_NP (PP (IN on) (@PP->_IN (NP (DT the) (@NP->_DT (JJ floating-rate) (@NP->_DT_JJ (NNS notes)))))))) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB be) (@VP->_VB (NP (CD 12.9375) (@NP->_CD (NN %))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN issue))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (VP (VP (VBN rated) (@VP->_VBN (S (ADJP (JJ single-B-3))) (@VP->_VBN_S (PP (IN by) (@PP->_IN (NP (NNP Moody) (@NP->_NNP (POS 's)))))))) (@VP->_VP (CC and) (@VP->_VP_CC (VP (ADJP (JJ single-B-plus)) (@VP->_ADJP (PP (IN by) (@PP->_IN (NP (NNP S&P))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (NP (NNP New) (@NP->_NNP (NNP Jersey) (@NP->_NNP_NNP (NNP Wastewater) (@NP->_NNP_NNP_NNP (NNP Treatment) (@NP->_NNP_NNP_NNP_NNP (NNP Trust) (@NP->_NNP_NNP_NNP_NNP_NNP (: --))))))))
+
+(ROOT (S (NP (NP (ADJP (QP ($ $) (@QP->_$ (CD 75.1) (@QP->_$_CD (CD million))))) (@NP->_ADJP (, ,) (@NP->_ADJP_, (JJ two-part) (@NP->_ADJP_,_JJ (NN offering))))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNS bonds)))))) (@S->_NP (ADVP (RB apparently)) (@S->_NP_ADVP (VP (VBD was) (@VP->_VBD (VP (VBN won) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (DT a) (@NP->_DT (NNP Merrill) (@NP->_DT_NNP (NNP Lynch) (@NP->_DT_NNP_NNP (NNP Capital) (@NP->_DT_NNP_NNP_NNP (NNPS Markets) (@NP->_DT_NNP_NNP_NNP_NNPS (NN group))))))))))))) (@S->_NP_ADVP_VP (. .))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN Series) (@NP->_DT_NN (CD 1989) (@NP->_DT_NN_CD (NNP A) (@NP->_DT_NN_CD_NNP (NNS bonds)))))) (@S->_NP (VP (VBP are) (@VP->_VBP (VP (VP (JJ insured)) (@VP->_VP (CC and) (@VP->_VP_CC (VP (VBN rated) (@VP->_VBN (S (ADJP (JJ triple-A))) (@VP->_VBN_S (PP (IN by) (@PP->_IN (NP (NNP Moody) (@NP->_NNP (POS 's) (@NP->_NNP_POS (CC and) (@NP->_NNP_POS_CC (NNP S&P))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN Series) (@NP->_DT_NN (CD 1989) (@NP->_DT_NN_CD (NNP B) (@NP->_DT_NN_CD_NNP (NNS bonds)))))) (@S->_NP (VP (VBP are) (@VP->_VBP (UCP (ADJP (JJ uninsured)) (@UCP->_ADJP (CC and) (@UCP->_ADJP_CC (VP (VBN rated) (@VP->_VBN (S (ADJP (JJ double-A))) (@VP->_VBN_S (PP (IN by) (@PP->_IN (NP (NNP Moody) (@NP->_NNP (POS 's) (@NP->_NNP_POS (CC and) (@NP->_NNP_POS_CC (NNP S&P))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (NP (NP (NNP Matagorda) (@NP->_NNP (NNP County) (@NP->_NNP_NNP (NNP Navigation) (@NP->_NNP_NNP_NNP (NNP District) (@NP->_NNP_NNP_NNP_NNP (NNP No.) (@NP->_NNP_NNP_NNP_NNP_NNP (CD 1))))))) (@NP->_NP (, ,) (@NP->_NP_, (NP (NNP Texas)) (@NP->_NP_,_NP (: --))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNS bonds))) (@S->_NP (VP (VBP are) (@VP->_VBP (VP (VP (JJ insured)) (@VP->_VP (CC and) (@VP->_VP_CC (VP (VBN rated) (@VP->_VBN (S (ADJP (JJ triple-A))) (@VP->_VBN_S (PP (IN by) (@PP->_IN (NP (NP (NNP Moody) (@NP->_NNP (POS 's))) (@NP->_NP (CC and) (@NP->_NP_CC (NP (NNP S&P))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (NP (NNP Federal) (@NP->_NNP (NNP Home) (@NP->_NNP_NNP (NNP Loan) (@NP->_NNP_NNP_NNP (NNP Mortgage) (@NP->_NNP_NNP_NNP_NNP (NNP Corp.) (@NP->_NNP_NNP_NNP_NNP_NNP (: --))))))))
+
+(ROOT (S (NP (NP (QP ($ $) (@QP->_$ (CD 500) (@QP->_$_CD (CD million))))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNP Remic) (@NP->_NNP (NN mortgage) (@NP->_NNP_NN (NNS securities)))))))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (VP (VBG being) (@VP->_VBG (VP (VBN offered) (@VP->_VBN (PP (IN in) (@PP->_IN (NP (CD 11) (@NP->_CD (NNS classes))))) (@VP->_VBN_PP (PP (IN by) (@PP->_IN (NP (DT a) (@NP->_DT (NNP Morgan) (@NP->_DT_NNP (NNP Stanley) (@NP->_DT_NNP_NNP (NN group)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (NN offering))) (@NP->_NP (, ,) (@NP->_NP_, (NP (NNP Series) (@NP->_NNP (CD 109))) (@NP->_NP_,_NP (, ,))))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (VP (VBN backed) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (NNP Freddie) (@NP->_NNP (NNP Mac) (@NP->_NNP_NNP (ADJP (CD 10) (@ADJP->_CD (NN %))) (@NP->_NNP_NNP_ADJP (NNS securities))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (JJ Complete) (@NP->_JJ (NNS details))) (@S->_NP (VP (VBD were) (@VP->_VBD (RB n't) (@VP->_VBD_RB (ADJP (RB immediately) (@ADJP->_RB (JJ available)))))) (@S->_NP_VP (. .)))))
+
+(ROOT (NP (NNP Lomas) (@NP->_NNP (NNP Mortgage) (@NP->_NNP_NNP (NNP Funding) (@NP->_NNP_NNP_NNP (NNP Corp.) (@NP->_NNP_NNP_NNP_NNP (NNP II) (@NP->_NNP_NNP_NNP_NNP_NNP (: --))))))))
+
+(ROOT (S (NP (NP (ADJP (QP ($ $) (@QP->_$ (CD 100) (@QP->_$_CD (CD million))))) (@NP->_ADJP (NN issue))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (JJ collateralized) (@NP->_JJ (NN mortgage) (@NP->_JJ_NN (NNS obligations)))))))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (VP (VBG being) (@VP->_VBG (VP (VBN offered) (@VP->_VBN (PP (IN in) (@PP->_IN (NP (CD four) (@NP->_CD (NNS classes))))) (@VP->_VBN_PP (PP (IN by) (@PP->_IN (NP (DT a) (@NP->_DT (NNP Morgan) (@NP->_DT_NNP (NNP Stanley) (@NP->_DT_NNP_NNP (NN group)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (ADJP (CD 10.48) (@ADJP->_CD (NN %))) (@NP->_DT_ADJP (NN yield)))) (@S->_NP (VP (VBZ represents) (@VP->_VBZ (NP (NP (DT a) (@NP->_DT (NN spread))) (@NP->_NP (PP (TO to) (@PP->_TO (NP (DT the) (@NP->_DT (JJ 20-year) (@NP->_DT_JJ (NNP Treasury)))))) (@NP->_NP_PP (PP (IN of) (@PP->_IN (NP (CD 2.45) (@NP->_CD (NN percentage) (@NP->_CD_NN (NNS points))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN issue))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (VP (VBN rated) (@VP->_VBN (S (ADJP (JJ triple-A))) (@VP->_VBN_S (PP (IN by) (@PP->_IN (NP (NP (NNP S&P)) (@NP->_NP (, ,) (@NP->_NP_, (NP (NNP Moody) (@NP->_NNP (POS 's))) (@NP->_NP_,_NP (CC and) (@NP->_NP_,_NP_CC (NP (NNP Fitch) (@NP->_NNP (NNPS Investors) (@NP->_NNP_NNPS (NNP Service) (@NP->_NNP_NNPS_NNP (NNP Inc))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (NP (NNP J.C.) (@NP->_NNP (NNP Penney) (@NP->_NNP_NNP (NNP Co.) (@NP->_NNP_NNP_NNP (: --))))))
+
+(ROOT (S (S (VP (VBN Rated) (@VP->_VBN (S (ADJP (JJ triple-A))) (@VP->_VBN_S (PP (IN by) (@PP->_IN (NP (NP (NNP Moody) (@NP->_NNP (POS 's))) (@NP->_NP (CC and) (@NP->_NP_CC (NP (NNP S&P))))))))))) (@S->_S (, ,) (@S->_S_, (NP (DT the) (@NP->_DT (NN issue))) (@S->_S_,_NP (VP (MD will) (@VP->_MD (VP (VB be) (@VP->_VB (VP (VBN sold) (@VP->_VBN (PP (IN through) (@PP->_IN (NP (NNP First) (@NP->_NNP (NNP Boston) (@NP->_NNP_NNP (NNP Corp)))))))))))) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NN issue))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (VP (VBN backed) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (NP (DT a) (@NP->_DT (ADJP (CD 12) (@ADJP->_CD (NN %))) (@NP->_DT_ADJP (NN letter)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NN credit)))) (@NP->_NP_PP (PP (IN from) (@PP->_IN (NP (NNP Credit) (@NP->_NNP (NNP Suisse)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (NP (NP (NNP Keio) (@NP->_NNP (NNP Teito) (@NP->_NNP_NNP (NNP Electric) (@NP->_NNP_NNP_NNP (NNP Railway) (@NP->_NNP_NNP_NNP_NNP (NNP Co) (@NP->_NNP_NNP_NNP_NNP_NNP (. .))))))) (@NP->_NP (PRN (-LRB- -LRB-) (@PRN->_-LRB- (NP (NNP Japan)) (@PRN->_-LRB-_NP (-RRB- -RRB-)))) (@NP->_NP_PRN (: --)))))
+
+(ROOT (NP (NP (NNP Diesel) (@NP->_NNP (NNP Kiki) (@NP->_NNP_NNP (NNP Co) (@NP->_NNP_NNP_NNP (. .))))) (@NP->_NP (PRN (-LRB- -LRB-) (@PRN->_-LRB- (NP (NNP Japan)) (@PRN->_-LRB-_NP (-RRB- -RRB-)))) (@NP->_NP_PRN (: --)))))
+
+(ROOT (NP (NP (NNP Chugoku) (@NP->_NNP (NNP Electric) (@NP->_NNP_NNP (NNP Power) (@NP->_NNP_NNP_NNP (NNP Co) (@NP->_NNP_NNP_NNP_NNP (. .)))))) (@NP->_NP (PRN (-LRB- -LRB-) (@PRN->_-LRB- (NP (NNP Japan)) (@PRN->_-LRB-_NP (-RRB- -RRB-)))) (@NP->_NP_PRN (: --)))))
+
+(ROOT (NP (NNS Fees) (@NP->_NNS (QP (CD 1) (@QP->_CD (CD 7\/8))) (@NP->_NNS_QP (. .)))))
+
+(ROOT (NP (NP (NNP Monte) (@NP->_NNP (FW dei) (@NP->_NNP_FW (NNP Paschi) (@NP->_NNP_FW_NNP (FW di) (@NP->_NNP_FW_NNP_FW (NNP Siena)))))) (@NP->_NP (, ,) (@NP->_NP_, (NP (NNP Singapore) (@NP->_NNP (NN branch))) (@NP->_NP_,_NP (PRN (-LRB- -LRB-) (@PRN->_-LRB- (NP (JJ Italian) (@NP->_JJ (NN parent))) (@PRN->_-LRB-_NP (-RRB- -RRB-)))) (@NP->_NP_,_NP_PRN (, ,) (@NP->_NP_,_NP_PRN_, (PP (IN via) (@PP->_IN (NP (DT the) (@NP->_DT (NNP Law) (@NP->_DT_NNP (NNP Debenture) (@NP->_DT_NNP_NNP (NNP Trust) (@NP->_DT_NNP_NNP_NNP (NNP Corp.)))))))) (@NP->_NP_,_NP_PRN_,_PP (: --)))))))))
+
+(ROOT (NP (NP (NNP Okobank)) (@NP->_NP (PRN (-LRB- -LRB-) (@PRN->_-LRB- (NP (NNP Finland)) (@PRN->_-LRB-_NP (-RRB- -RRB-)))) (@NP->_NP_PRN (: --)))))
+
+(ROOT (S (NP (NNP EG&G) (@NP->_NNP (NNP Inc.))) (@S->_NP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (PRP it)) (@S->_NP (VP (VBD acquired) (@VP->_VBD (NP (NP (NNP Laboratorium) (@NP->_NNP (NNP Prof.) (@NP->_NNP_NNP (NNP Dr.) (@NP->_NNP_NNP_NNP (NNP Berthold))))) (@NP->_NP (, ,) (@NP->_NP_, (NP (NP (DT a) (@NP->_DT (JJ German) (@NP->_DT_JJ (NN maker)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (JJ scientific) (@NP->_JJ (NNS instruments))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNS Terms)) (@S->_NP (VP (VBD were) (@VP->_VBD (RB n't) (@VP->_VBD_RB (VP (VBN disclosed))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Berthold)) (@S->_NP (VP (VP (VBZ is) (@VP->_VBZ (VP (VBN based) (@VP->_VBN (PP (IN in) (@PP->_IN (NP (NP (NNP Wildbad)) (@NP->_NP (, ,) (@NP->_NP_, (NP (NNP West) (@NP->_NNP (NNP Germany))) (@NP->_NP_,_NP (, ,))))))))))) (@VP->_VP (CC and) (@VP->_VP_CC (VP (ADVP (RB also)) (@VP->_ADVP (VBZ has) (@VP->_ADVP_VBZ (NP (NP (NNS operations)) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NNP Belgium)))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Mason)) (@S->_NP (VP (VBZ serves) (@VP->_VBZ (NP (NP (JJ commercial) (@NP->_JJ (CC and) (@NP->_JJ_CC (NN government) (@NP->_JJ_CC_NN (NNS customers))))) (@NP->_NP (, ,) (@NP->_NP_, (PP (VBG including) (@PP->_VBG (NP (NP (DT the) (@NP->_DT (NNP National) (@NP->_DT_NNP (NNPS Institutes)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNP Health))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNP IRS))) (@S->_NP (VP (VBZ has) (@VP->_VBZ (VP (VBN been) (@VP->_VBN (VP (VBG seeking) (@VP->_VBG (NP (NP (QP (JJR more) (@QP->_JJR (IN than) (@QP->_JJR_IN ($ $) (@QP->_JJR_IN_$ (CD 300) (@QP->_JJR_IN_$_CD (CD million))))))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (JJ back) (@NP->_JJ (NNS taxes))))))) (@VP->_VBG_NP (PP (IN from) (@PP->_IN (NP (NNP Mr.) (@NP->_NNP (NNP Hunt)))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (JJ Peruvian) (@NP->_DT_JJ (NNS minerals) (@NP->_DT_JJ_NNS (NN concern))))) (@S->_NP (VP (VBD had) (@VP->_VBD (VP (VBN been) (@VP->_VBN (VP (VBG seeking) (@VP->_VBG (NP (NP (DT a) (@NP->_DT (NN claim))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (QP ($ $) (@QP->_$ (CD 251) (@QP->_$_CD (CD million))))))) (@NP->_NP_PP (PP (IN against) (@PP->_IN (NP (NNP Mr.) (@NP->_NNP (NNP Hunt)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Minpeco) (@NP->_NNP (NNS attorneys))) (@S->_NP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (PRP they)) (@S->_NP (VP (MD would) (@VP->_MD (VP (VB appeal) (@VP->_VB (NP (DT the) (@NP->_DT (NN decision))) (@VP->_VB_NP (PP (TO to) (@PP->_TO (NP (DT a) (@NP->_DT (JJ federal) (@NP->_DT_JJ (NN district) (@NP->_DT_JJ_NN (NN court))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (S (NP (DT The) (@NP->_DT (NNP IRS))) (@S->_NP (VP (VBD had) (@VP->_VBD (VP (VBN demanded) (@VP->_VBN (NP (QP ($ $) (@QP->_$ (CD 90) (@QP->_$_CD (CD million))))))))))) (@S->_S (CC but) (@S->_S_CC (S (NP (NNP Mr.) (@NP->_NNP (NNP Hunt))) (@S->_NP (VP (MD would) (@VP->_MD (VP (VB agree) (@VP->_VB (PP (TO to) (@PP->_TO (NP (QP (DT no) (@QP->_DT (JJR more) (@QP->_DT_JJR (IN than) (@QP->_DT_JJR_IN ($ $) (@QP->_DT_JJR_IN_$ (CD 60) (@QP->_DT_JJR_IN_$_CD (CD million)))))))))))))))) (@S->_S_CC_S (. .))))))
+
+(ROOT (S (NP (NP (NNP Stephen) (@NP->_NNP (NNP McCartin))) (@NP->_NP (, ,) (@NP->_NP_, (NP (NP (NNP Mr.) (@NP->_NNP (NNP Hunt) (@NP->_NNP_NNP (POS 's)))) (@NP->_NP (NN attorney))) (@NP->_NP_,_NP (, ,))))) (@S->_NP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (PRP$ his) (@NP->_PRP$ (NN client))) (@S->_NP (VP (VBD welcomed) (@VP->_VBD (NP (DT the) (@NP->_DT (NN gamble)))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNP Tax) (@NP->_DT_NNP (NNP Court)))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (RB n't) (@VP->_VBZ_RB (VP (VBN expected) (@VP->_VBN (S (VP (TO to) (@VP->_TO (VP (VB rule) (@VP->_VB (PP (IN before) (@PP->_IN (NP (RB early) (@NP->_RB (JJ next) (@NP->_RB_JJ (NN year)))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Japan)) (@S->_NP (VP (VBZ has) (@VP->_VBZ (VP (VBN found) (@VP->_VBN (NP (NP (NP (DT another) (@NP->_DT (JJ safe) (@NP->_DT_JJ (NN outlet)))) (@NP->_NP (PP (IN for) (@PP->_IN (NP (PRP$ its) (@NP->_PRP$ (NN money))))))) (@NP->_NP (: :) (@NP->_NP_: (NP (NNP U.S.) (@NP->_NNP (NN home) (@NP->_NNP_NN (NNS mortgages))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (`` ``) (@S->_`` (NP (NN Interest)) (@S->_``_NP (VP (VBZ is) (@VP->_VBZ (ADJP (ADJP (NP (DT a) (@NP->_DT (JJ great) (@NP->_DT_JJ (NN deal)))) (@ADJP->_NP (JJR higher))) (@ADJP->_ADJP (SBAR (IN than) (@SBAR->_IN (S (NP (PRP it)) (@S->_NP (VP (VBD was) (@VP->_VBD (ADVP (NP (DT a) (@NP->_DT (NN year))) (@ADVP->_NP (RB ago))))))))))))) (@S->_``_NP_VP (. .) (@S->_``_NP_VP_. ('' '')))))))
+
+(ROOT (S (NP (NP (NN Evidence)) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (DT the) (@NP->_DT (VBG growing) (@NP->_DT_VBG (JJ Japanese) (@NP->_DT_VBG_JJ (NN demand))))) (@NP->_NP (PP (IN for) (@PP->_IN (NP (NN mortgage) (@NP->_NN (NNS securities))))))))))) (@S->_NP (VP (VBZ abounds)) (@S->_NP_VP (. .)))))
+
+(ROOT (S (`` ``) (@S->_`` (NP (DT This) (@NP->_DT (NN year))) (@S->_``_NP (, ,) (@S->_``_NP_, (NP (DT some) (@NP->_DT (NNS investors))) (@S->_``_NP_,_NP (VP (VBP are) (@VP->_VBP (VP (VP (VBG changing) (@VP->_VBG (NP (PRP$ their) (@NP->_PRP$ (NNS policies))))) (@VP->_VP (CC and) (@VP->_VP_CC (VP (VBG investing) (@VP->_VBG (NP (DT a) (@NP->_DT (NN lot)))))))))) (@S->_``_NP_,_NP_VP (. .) (@S->_``_NP_,_NP_VP_. ('' '')))))))))
+
+(ROOT (S (ADVP (RB Ultimately)) (@S->_ADVP (PRN (, ,) (@PRN->_, (S (NP (PRP he)) (@S->_NP (VP (VBZ says)))) (@PRN->_,_S (, ,)))) (@S->_ADVP_PRN (NP (JJ strong) (@NP->_JJ (NN demand))) (@S->_ADVP_PRN_NP (VP (MD could) (@VP->_MD (VP (VB help) (@VP->_VB (S (VP (TO to) (@VP->_TO (VP (VB drive) (@VP->_VB (ADVP (RP down)) (@VP->_VB_ADVP (NP (NP (NN interest) (@NP->_NN (NNS rates))) (@NP->_NP (PP (IN on) (@PP->_IN (NP (NN mortgage) (@NP->_NN (NNS securities))))))))))))))))) (@S->_ADVP_PRN_NP_VP (. .)))))))
+
+(ROOT (S (CC But) (@S->_CC (NP (JJ other) (@NP->_JJ (JJ Japanese) (@NP->_JJ_JJ (NNS institutions)))) (@S->_CC_NP (VP (VBP say) (@VP->_VBP (ADVP (RB privately)) (@VP->_VBP_ADVP (SBAR (IN that) (@SBAR->_IN (S (NP (PRP they)) (@S->_NP (VP (VBP are) (@VP->_VBP (VP (VBG considering) (@VP->_VBG (S (VP (VBG asking) (@VP->_VBG (S (VP (TO to) (@VP->_TO (VP (VB join) (@VP->_VB (NP (DT the) (@NP->_DT (JJ 59-dealer) (@NP->_DT_JJ (VBG selling) (@NP->_DT_JJ_VBG (NN group)))))))))))))))))))))))) (@S->_CC_NP_VP (. .))))))
+
+(ROOT (S (NP (DT These) (@NP->_DT (NNS securities))) (@S->_NP (VP (VBP are) (@VP->_VBP (ADJP (JJ attractive) (@ADJP->_JJ (PP (TO to) (@PP->_TO (NP (JJ Japanese) (@NP->_JJ (NNS investors))))))) (@VP->_VBP_ADJP (PP (IN for) (@PP->_IN (NP (CD three) (@NP->_CD (NNS reasons)))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (ADVP (LS First)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (PRP they)) (@S->_ADVP_,_NP (VP (VBP are) (@VP->_VBP (ADJP (JJ safe)))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (-LRB- -LRB-) (@S->_-LRB- (NP (NNP U.S.) (@NP->_NNP (NNP Treasury) (@NP->_NNP_NNP (NNS bonds)))) (@S->_-LRB-_NP (VP (VBP are) (@VP->_VBP (ADVP (RB still)) (@VP->_VBP_ADVP (NP (NP (DT the) (@NP->_DT (JJ dollar-denominated) (@NP->_DT_JJ (NN investment)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NN choice)))) (@NP->_NP_PP (PP (IN for) (@PP->_IN (NP (JJ long-term) (@NP->_JJ (JJ Japanese) (@NP->_JJ_JJ (NNS investors)))))))))))) (@S->_-LRB-_NP_VP (-RRB- -RRB-) (@S->_-LRB-_NP_VP_-RRB- (. .)))))))
+
+(ROOT (S (ADVP (LS Second)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (PRP they)) (@S->_ADVP_,_NP (VP (VBP are) (@VP->_VBP (ADJP (JJ liquid)))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (ADVP (LS Third)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (PRP they)) (@S->_ADVP_,_NP (VP (VBP offer) (@VP->_VBP (NP (JJ high) (@NP->_JJ (NNS yields))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (S (`` ``) (@S->_`` (ADVP (RB So)) (@S->_``_ADVP (NP (PRP they)) (@S->_``_ADVP_NP (VP (VBD were) (@VP->_VBD (ADJP (ADJP (JJ surprised)) (@ADJP->_ADJP (CC and) (@ADJP->_ADJP_CC (ADJP (RB very) (@ADJP->_RB (JJ disappointed))) (@ADJP->_ADJP_CC_ADJP (PP (IN by) (@PP->_IN (NP (NN prepayment)))))))))) (@S->_``_ADVP_NP_VP (. .) (@S->_``_ADVP_NP_VP_. ('' ''))))))))
+
+(ROOT (S (PP (IN As) (@PP->_IN (NP (DT a) (@NP->_DT (NN result))))) (@S->_PP (, ,) (@S->_PP_, (NP (JJ Japanese) (@NP->_JJ (NNS investors))) (@S->_PP_,_NP (VP (VBD steered) (@VP->_VBD (ADVP (RB clear) (@ADVP->_RB (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NN mortgage) (@NP->_DT_NN (NNS securities)))))))))) (@S->_PP_,_NP_VP (. .)))))))
+
+(ROOT (S (CC But) (@S->_CC (NP (PRP they)) (@S->_CC_NP (VP (VBD did) (@VP->_VBD (RB n't) (@VP->_VBD_RB (VP (VB lose) (@VP->_VB (NP (NN touch)) (@VP->_VB_NP (PP (IN with) (@PP->_IN (NP (DT the) (@NP->_DT (NNP U.S.) (@NP->_DT_NNP (NNS issuers)))))))))))) (@S->_CC_NP_VP (. .))))))
+
+(ROOT (SQ (VBZ Does) (@SQ->_VBZ (NP (DT this) (@NP->_DT (NN corporation))) (@SQ->_VBZ_NP (VP (VB have) (@VP->_VB (NP (NP (DT a) (@NP->_DT (JJ high-quality) (@NP->_DT_JJ (NN management) (@NP->_DT_JJ_NN (NN team))))) (@NP->_NP (PP (IN with) (@PP->_IN (NP (DT a) (@NP->_DT (JJ good) (@NP->_DT_JJ (NN track) (@NP->_DT_JJ_NN (NN record))))))))))) (@SQ->_VBZ_NP_VP (. ?))))))
+
+(ROOT (S (ADVP (RB However)) (@S->_ADVP (, ,) (@S->_ADVP_, (NP (DT the) (@NP->_DT (NN problem))) (@S->_ADVP_,_NP (VP (VBZ is) (@VP->_VBZ (SBAR (DT that) (@SBAR->_DT (S (SBAR (RB once) (@SBAR->_RB (S (NP (JJS most) (@NP->_JJS (JJ poison) (@NP->_JJS_JJ (NNS pills)))) (@S->_NP (VP (VBP are) (@VP->_VBP (VP (VBN adopted)))))))) (@S->_SBAR (, ,) (@S->_SBAR_, (NP (PRP they)) (@S->_SBAR_,_NP (VP (VBP survive) (@VP->_VBP (ADVP (RB forever)))))))))))) (@S->_ADVP_,_NP_VP (. .)))))))
+
+(ROOT (SBARQ (SBAR (IN Although) (@SBAR->_IN (S (NP (DT the) (@NP->_DT (JJ current) (@NP->_DT_JJ (NN management) (@NP->_DT_JJ_NN (NN team))))) (@S->_NP (VP (MD may) (@VP->_MD (VP (VB be) (@VP->_VB (ADJP (JJ outstanding)))))))))) (@SBARQ->_SBAR (, ,) (@SBARQ->_SBAR_, (WHNP (WP who)) (@SBARQ->_SBAR_,_WHNP (SQ (MD will) (@SQ->_MD (VP (VB be) (@VP->_VB (NP (DT the) (@NP->_DT (NNP CEO))) (@VP->_VB_NP (PP (IN in) (@PP->_IN (NP (CD 10) (@NP->_CD (NNS years)))))))))) (@SBARQ->_SBAR_,_WHNP_SQ (. ?)))))))
+
+(ROOT (SBARQ (SBAR (IN Although) (@SBAR->_IN (S (NP (DT the) (@NP->_DT (JJ five-year) (@NP->_DT_JJ (NN strategy)))) (@S->_NP (VP (MD may) (@VP->_MD (VP (VB be) (@VP->_VB (ADJP (JJ excellent)))))))))) (@SBARQ->_SBAR (, ,) (@SBARQ->_SBAR_, (WHNP (WP what)) (@SBARQ->_SBAR_,_WHNP (SQ (MD will) (@SQ->_MD (VP (VB be) (@VP->_VB (NP (DT the) (@NP->_DT (NN strategy))) (@VP->_VB_NP (PP (IN in) (@PP->_IN (NP (CD 25) (@NP->_CD (NNS years)))))))))) (@SBARQ->_SBAR_,_WHNP_SQ (. ?)))))))
+
+(ROOT (S (NP (NP (DT The) (@NP->_DT (NN solution))) (@NP->_NP (PP (TO to) (@PP->_TO (NP (DT this) (@NP->_DT (NN problem))))))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (DT a) (@NP->_DT (JJ time-limited) (@NP->_DT_JJ (NN poison) (@NP->_DT_JJ_NN (NN pill))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT Another) (@NP->_DT (JJ interesting) (@NP->_DT_JJ (NN example)))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (DT the) (@NP->_DT (NN poison) (@NP->_DT_NN (NN pill)))) (@NP->_NP (VP (VBN adopted) (@VP->_VBN (ADVP (RB recently)) (@VP->_VBN_ADVP (PP (IN by) (@PP->_IN (NP (NP (JJ Pittsburgh-based) (@NP->_JJ (NNP National) (@NP->_JJ_NNP (NNP Intergroup) (@NP->_JJ_NNP_NNP (NNP Inc.))))) (@NP->_NP (, ,) (@NP->_NP_, (NP (DT a) (@NP->_DT (JJ diversified) (@NP->_DT_JJ (VBG holding) (@NP->_DT_JJ_VBG (NN company))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT This) (@NP->_DT (NN pill))) (@S->_NP (VP (ADVP (RB automatically)) (@VP->_ADVP (VBZ expires) (@VP->_ADVP_VBZ (PP (IN after) (@PP->_IN (NP (CD three) (@NP->_CD (NNS years))))) (@VP->_ADVP_VBZ_PP (SBAR (IN unless) (@SBAR->_IN (S (VP (VBN continued) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (NP (DT a) (@NP->_DT (NN vote))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (DT the) (@NP->_DT (NNS shareholders)))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Mr.) (@NP->_NNP (NNP Pozen))) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (NP (DT the) (@NP->_DT (JJ general) (@NP->_DT_JJ (NN counsel)))) (@NP->_NP (CC and) (@NP->_NP_CC (NP (DT a) (@NP->_DT (VBG managing) (@NP->_DT_VBG (NN director))))))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NP (NNP Fidelity) (@NP->_NNP (NNPS Investments))) (@NP->_NP (PP (IN in) (@PP->_IN (NP (NNP Boston)))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (NNS Holders)) (@NP->_NP (PP (IN at) (@PP->_IN (NP (DT the) (@NP->_DT (NN meeting))))))) (@S->_NP (VP (VBD elected) (@VP->_VBD (NP (NP (DT a) (@NP->_DT (JJ full) (@NP->_DT_JJ (NN slate)))) (@NP->_NP (PP (IN of) (@PP->_IN (NP (NNP Canadian) (@NP->_NNP (NNP Express) (@NP->_NNP_NNP (NNS nominees)))))))) (@VP->_VBD_NP (PP (TO to) (@PP->_TO (NP (NP (NNP Enfield) (@NP->_NNP (POS 's))) (@NP->_NP (JJ 11-member) (@NP->_NP_JJ (NN board))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NP (NNP Mr.) (@NP->_NNP (NNP Blair))) (@NP->_NP (CC and) (@NP->_NP_CC (NP (NNP Hees))))) (@S->_NP (VP (VBP have) (@VP->_VBP (VP (VBN been) (@VP->_VBN (VP (VBG feuding) (@VP->_VBG (PP (IN for) (@PP->_IN (NP (NNS months)))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (DT The) (@NP->_DT (NNP Ontario) (@NP->_DT_NNP (NNP Supreme) (@NP->_DT_NNP_NNP (NNP Court))))) (@S->_NP (VP (VBD overturned) (@VP->_VBD (NP (NP (NNP Mr.) (@NP->_NNP (NNP Blair) (@NP->_NNP_NNP (POS 's)))) (@NP->_NP (NN decision))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP He)) (@S->_NP (VP (VBD said) (@VP->_VBD (SBAR (S (NP (NP (PRP$ his) (@NP->_PRP$ (NN suit))) (@NP->_NP (PP (IN against) (@PP->_IN (NP (NNP Enfield)))))) (@S->_NP (VP (VBZ seeks) (@VP->_VBZ (NP (NP (CD two) (@NP->_CD (NNS years) (@NP->_CD_NNS (NN severance) (@NP->_CD_NNS_NN (NN pay))))) (@NP->_NP (, ,) (@NP->_NP_, (ADJP (JJ equivalent) (@ADJP->_JJ (PP (TO to) (@PP->_TO (NP ($ C$) (@NP->_$ (CD 720,000))))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Hees) (@NP->_NNP (CC and) (@NP->_NNP_CC (NNP Canadian) (@NP->_NNP_CC_NNP (NNP Express) (@NP->_NNP_CC_NNP_NNP (NNS executives)))))) (@S->_NP (VP (MD could) (@VP->_MD (RB n't) (@VP->_MD_RB (VP (VB be) (@VP->_VB (VP (VBN reached) (@VP->_VBN (PP (IN for) (@PP->_IN (NP (NN comment))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Enfield)) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (DT a) (@NP->_DT (VBG holding) (@NP->_DT_VBG (NN company)))) (@NP->_NP (PP (IN with) (@PP->_IN (NP (NP (NNS interests)) (@NP->_NP (PP (IN in) (@PP->_IN (NP (VBG manufacturing) (@NP->_VBG (NNS concerns))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PRP It)) (@S->_NP (VP (VBZ is) (@VP->_VBZ (VP (NP (CD 38.5) (@NP->_CD (NN %))) (@VP->_NP (VBN owned) (@VP->_NP_VBN (PP (IN by) (@PP->_IN (NP (NP (NNP Canadian) (@NP->_NNP (NNP Express))) (@NP->_NP (, ,) (@NP->_NP_, (NP (DT another) (@NP->_DT (VBG holding) (@NP->_DT_VBG (NN company)))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (NNP Hees)) (@S->_NP (VP (VBZ is) (@VP->_VBZ (NP (NP (DT a) (@NP->_DT (NN merchant) (@NP->_DT_NN (NN bank)))) (@NP->_NP (VP (VBN controlled) (@VP->_VBN (PP (IN by) (@PP->_IN (NP (NNP Toronto) (@NP->_NNP (NNS financiers) (@NP->_NNP_NNS (NNP Peter) (@NP->_NNP_NNS_NNP (CC and) (@NP->_NNP_NNS_NNP_CC (NNP Edward) (@NP->_NNP_NNS_NNP_CC_NNP (NNP Bronfman))))))))))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (NP (PDT All) (@NP->_PDT (DT the) (@NP->_PDT_DT (NNS concerns)))) (@S->_NP (VP (VBP are) (@VP->_VBP (VP (VBN based) (@VP->_VBN (PP (IN in) (@PP->_IN (NP (NNP Toronto)))))))) (@S->_NP_VP (. .)))))
+
+(ROOT (S (S (CC But) (@S->_CC (PP (IN in) (@PP->_IN (NP (DT another) (@NP->_DT (NN sense))))) (@S->_CC_PP (, ,) (@S->_CC_PP_, (NP (DT the) (@NP->_DT (ADJP (QP ($ $) (@QP->_$ (CD 846) (@QP->_$_CD (CD million))))) (@NP->_DT_ADJP (NN purchase)))) (@S->_CC_PP_,_NP (VP (VBZ is) (@VP->_VBZ (ADJP (RB uncharacteristically) (@ADJP->_RB (JJ nervy)))))))))) (@S->_S (, ,) (@S->_S_, (NP (NN industry) (@NP->_NN (NNS analysts))) (@S->_S_,_NP (VP (VBP say)) (@S->_S_,_NP_VP (. .)))))))
+
+(ROOT (S (`` ``) (@S->_`` (PP (IN On) (@PP->_IN (NP (NN balance)))) (@S->_``_PP (, ,) (@S->_``_PP_, (NP (PRP we)) (@S->_``_PP_,_NP (VP (VBP think) (@VP->_VBP (SBAR (S (NP (PRP it)) (@S->_NP (VP (MD will) (@VP->_MD (VP (VB be) (@VP->_VB (ADJP (JJ positive))))))))))) (@S->_``_PP_,_NP_VP (. .) (@S->_``_PP_,_NP_VP_. ('' '')))))))))
+
+(ROOT (S (`` ``) (@S->_`` (CC But) (@S->_``_CC (NP (PRP they)) (@S->_``_CC_NP (VP (VBD did) (@VP->_VBD (RB n't) (@VP->_VBD_RB (VP (VB have) (@VP->_VB (S (VP (TO to) (@VP->_TO (VP (VB choose) (@VP->_VB (NP (DT this) (@NP->_DT (JJ particular) (@NP->_DT_JJ (NN moment)))))))))))))) (@S->_``_CC_NP_VP (. .) (@S->_``_CC_NP_VP_. ('' ''))))))))
+
+(ROOT (S (CC But) (@S->_CC (PP (TO to) (@PP->_TO (NP (NNP Mitsubishi) (@NP->_NNP (NNP Estate))))) (@S->_CC_PP (, ,) (@S->_CC_PP_, (NP (DT the) (@NP->_DT (NN acquisition))) (@S->_CC_PP_,_NP (VP (VBZ has) (@VP->_VBZ (NP (NP (RB just) (@NP->_RB (DT the) (@NP->_RB_DT (NNS elements)))) (@NP->_NP (SBAR (WHNP (WDT that)) (@SBAR->_WHNP (S (VP (MD should) (@VP->_MD (VP (VB win) (@VP->_VB (NP (NN support)) (@VP->_VB_NP (PP (IN from) (@PP->_IN (NP (DT both) (@NP->_DT (NNS sides))))))))))))))))) (@S->_CC_PP_,_NP_VP (. .))))))))
+
