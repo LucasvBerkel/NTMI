@@ -8,6 +8,10 @@ parser.add_argument("-output", help="path to binarized file", type=str)
 args = parser.parse_args()
 
 # Converts the textfile to a list
+# Input(s):
+# - non_binarized_file, string which represents the path to the txt-file to be read
+# Output(s):
+# - sentencelist, list containing unbinarized sencentes
 def convert_txt_to_sentencelist(non_binarized_file):
 	print("Convert text file to sentencelist:")
 	sentencelist = []
@@ -35,17 +39,6 @@ def convert_txt_to_sentencelist(non_binarized_file):
 				sentencelist.append(sentence)
 	print("Completed            ")
 	return sentencelist
-
-
-def write_binarized_list_to_txt(binarizedlist, binarized_file):
-	for sentence in binarizedlist:
-		sentenceString = ' , '.join(map(str, [sentence]))
-		terminalList = re.findall("\[\S+,", sentenceString)
-		for terminal in terminalList:
-			word = re.findall("[^(\s+]+", terminal)
-			substitute = "[\'{}\' ".format(word[0])
-		# 	line = line.replace(terminal, substitute)
-		# terminalList = re.findall("\s[^\s)]+\)", line)
 
 # Function takes unbinarized sentencelist and binarizes the sentences
 # Input(s):
@@ -131,9 +124,42 @@ def writestatus(currentline, totallines):
     i = (currentline / totallines) * 100
     print("{} %            ".format(i), end="\r")
 
+# Converts the list of binarized sentences to strings and writes to a text specified by path binarized_file
+# Input(s)
+# - binarizedlist, list containing binarized sencentes
+# - non_binarized_file, string which represents the path to the txt-file to be written to
+# Delivers no output(s) 
+def write_binarized_list_to_txt(binarizedlist, binarized_file):
+	with open(binarized_file, "w") as textfile:
+		for sentence in binarizedlist:
+			sentence = ' '.join(map(str, [sentence]))
+			terminalList = re.findall("\[\S+,", sentence)
+			for terminal in terminalList:
+				print(terminal)
+				word = terminal[2:-2]
+				substitute = "(" + word
+				print(substitute)
+				sentence = sentence.replace(terminal, substitute)
+			terminalList = re.findall("\s[^\s+\]]+\]", sentence) # [^(\s+]+
+			for terminal in terminalList:
+				print(terminal)
+				word = terminal[2:-2]
+				substitute = " " + word + ")" 
+				print(substitute)
+				sentence = sentence.replace(terminal, substitute)
+			sentence = sentence.replace(']', ')')
+			sentence = sentence.replace('),', ')')
+			textfile.write(sentence)
+
+
 if __name__ == "__main__":
 	non_binarized_file = args.input
 	binarized_file = args.output
-	sentencelist = convert_txt_to_sentencelist(non_binarized_file)
-	binarizedlist = binarizeSentenceList(sentencelist)
-	checkForBinarizeErrors(binarizedlist)
+
+	if non_binarized_file and binarized_file:
+		sentencelist = convert_txt_to_sentencelist(non_binarized_file)
+		binarizedlist = binarizeSentenceList(sentencelist)
+		checkForBinarizeErrors(binarizedlist)
+		write_binarized_list_to_txt(binarizedlist, binarized_file)
+	else:
+		parser.print_help()
