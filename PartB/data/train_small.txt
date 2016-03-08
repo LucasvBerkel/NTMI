@@ -1,0 +1,1 @@
+(NP (NNP Rolls-Royce) (NNP Motor) (NNPS Cars) (NNP Inc.))
