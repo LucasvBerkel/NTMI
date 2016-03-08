@@ -135,17 +135,13 @@ def write_binarized_list_to_txt(binarizedlist, binarized_file):
 			sentence = ' '.join(map(str, [sentence]))
 			terminalList = re.findall("\[\S+,", sentence)
 			for terminal in terminalList:
-				print(terminal)
 				word = terminal[2:-2]
 				substitute = "(" + word
-				print(substitute)
 				sentence = sentence.replace(terminal, substitute)
 			terminalList = re.findall("\s[^\s+\]]+\]", sentence) # [^(\s+]+
 			for terminal in terminalList:
-				print(terminal)
 				word = terminal[2:-2]
 				substitute = " " + word + ")" 
-				print(substitute)
 				sentence = sentence.replace(terminal, substitute)
 			sentence = sentence.replace(']', ')')
 			sentence = sentence.replace('),', ')')
