@@ -9,9 +9,14 @@ args = parser.parse_args()
 
 # Converts the textfile to a list
 def convert_txt_to_sentencelist(non_binarized_file):
+	print("Convert text file to sentencelist:")
 	sentencelist = []
+	counter = 0
 	with open(non_binarized_file) as data_file:
 		for line in data_file:
+			if ((counter % 100) == 0):
+				writestatus(counter, 33335)
+			counter += 1
 			if line != '\n':
 				line = line.replace('\n', '')
 				terminalList = re.findall("\(\S+\s", line)
@@ -28,6 +33,7 @@ def convert_txt_to_sentencelist(non_binarized_file):
 				line = line.replace(')', ']')
 				sentence = ast.literal_eval(line)
 				sentencelist.append(sentence)
+	print("Completed            ")
 	return sentencelist
 
 
@@ -41,16 +47,35 @@ def write_binarized_list_to_txt(binarizedlist, binarized_file):
 		# 	line = line.replace(terminal, substitute)
 		# terminalList = re.findall("\s[^\s)]+\)", line)
 
-# def binarize(sentencelist):
-# 	binarizedList
-# 	for sentence in sentencelist
-# 		print
-def binarize(sentence):
+# Function takes unbinarized sentencelist and binarizes the sentences
+# Input(s):
+# - sentencelist, list containting unbinarized sentences
+# Output(s):
+# - binarizedlist, list containing binarized sencentes
+def binarizeSentenceList(sentencelist):
+	print("Converting sentences to binarized sentences:")
+	binarizedlist = []
+	counter = 0
+	length = len(sentencelist)
+	for sentence in sentencelist:
+		if((counter % 100) == 0):
+			writestatus(counter, length)
+		counter += 1
+		binarizedlist.append(binarizeSentence(sentence))
+	print("Completed            ")
+	return binarizedlist
+
+# Function recieves unbinarized sentence and binarizes it, due to recursing also 
+# sub-sentences may be given as input
+# Input(s):
+# - sentence, whole or part of unbinarized sentence
+# Output(s):
+# - sentence, binarized part of sentence
+def binarizeSentence(sentence):
 	length = len(sentence)
-	# print(sentence[0])
 	if isinstance(sentence[1], str) :
 		return sentence
-	sentence[1] = binarize(sentence[1])
+	sentence[1] = binarizeSentence(sentence[1])
 	if length == 2:
 		return sentence
 	if length > 3:
@@ -60,16 +85,55 @@ def binarize(sentence):
 		else:
 			name =  "@" + name + "|" + sentence[1][0]
 		sentence[2] = [name] + sentence[2:]
-	sentence[2] = binarize(sentence[2])
+	sentence[2] = binarizeSentence(sentence[2])
 	del sentence[3:]
 	return sentence
+
+# Function to chechk if the binarized sentences does not contain errors
+# Input(s):
+# - sentencelist, list containing alleged binarized sentences
+# Delivers no output(s)
+def checkForBinarizeErrors(sentencelist):
+	print("Check sentences for binarized errors:")
+	errors = 0
+	counter = 0
+	length = len(sentencelist)
+	for sentence in sentencelist:
+		writestatus(counter, length)
+		counter += 1
+		errors = checkSentenceBinarizeErrors(sentence, errors)
+	print("Completed            ")
+	print("{} misstakes were made over {} sentences.".format(errors, length))
+
+# Receives whole or part of sentence to check if it is binarized
+# Input(s):
+# - sentence, whole or part of sentence to be checked
+# - counter, current counter of errors in sentencelist
+# Output(s):
+# - counter, current counter of errors in sentencelist after checking the sentence
+def checkSentenceBinarizeErrors(sentence, counter):
+	if len(sentence) > 3:
+		counter += 1
+	if isinstance(sentence[1], str):
+		return counter
+	counter = checkSentenceBinarizeErrors(sentence[1], counter)
+	if len(sentence) == 2:
+		return counter
+	counter = checkSentenceBinarizeErrors(sentence[2], counter)
+	return counter
+
+# Prints the current status of a progress
+# Input(s)
+# - currentline, a counter which will eventualy add up to the totallines
+# - totallines, total amount of steps in progress until convergence, default is length of trainingcorpus
+# Delivers no output(s) 
+def writestatus(currentline, totallines):
+    i = (currentline / totallines) * 100
+    print("{} %            ".format(i), end="\r")
 
 if __name__ == "__main__":
 	non_binarized_file = args.input
 	binarized_file = args.output
 	sentencelist = convert_txt_to_sentencelist(non_binarized_file)
-
-	binarizedlist = []
-	for sentence in sentencelist:
-		binarizedlist.append(binarize(sentence))
-	print(binarizedlist)
+	binarizedlist = binarizeSentenceList(sentencelist)
+	checkForBinarizeErrors(binarizedlist)
