@@ -433,21 +433,6 @@ if __name__ == "__main__":
 			# Smooth lexical model
 			wordTag_dictTuringSmoothN = wordTag_dict.copy()
 			wordTag_dictTuringSmoothN, totalN_1 = smoothLexicalGoodTuring(wordTag_dictTuringSmoothN)
-<<<<<<< HEAD
-			evaluation(sentencelist, test_sentencelist, wordTag_dictTuringSmoothN, tagSeq_dictTuringSmoothN, tag_dictTuringSmoothN1s, test_set_predicted, smoothing)	
-
-		else:
-=======
-			
-
-			# print(tag_dict)
-			# print(tag_dictTuringSmoothN1)
-			# for element in tag_dict:
-			# 	if tag_dict[element]<100:
-			# 		print(element, tag_dict[element])
-			# print(len(tag_dict))
-			# print(len(tag_dictTuringSmoothN1))
-			# sys.exit()
 			if "STOP" in tag_dictTuringSmoothN1:
 				tag_dictTuringSmoothN1.pop("STOP")
 			evaluation(sentencelist, test_sentencelist, wordTag_dictTuringSmoothN, tagSeq_dictTuringSmoothN, tag_dictTuringSmoothN1, test_set_predicted, smoothing)
@@ -455,7 +440,6 @@ if __name__ == "__main__":
 		else:
 			if "STOP" in tag_dict:
 				tag_dict.pop("STOP")
->>>>>>> 69c6f6789e315732372b2df12a6b993575e5c63d
 			evaluation(sentencelist, test_sentencelist, wordTag_dict, tagSeq_dict, tag_dict, test_set_predicted, smoothing)	
 	else:
 		parser.print_help()

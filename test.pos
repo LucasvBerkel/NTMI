@@ -20,13 +20,7 @@ apart/RB
 as/IN 
 [ the/DT Dow/NNP Jones/NNP Industrial/NNP Average/NNP ]
 plunged/VBD 
-[ 190.58/CD points/NNS ]
---/: most/JJS of/IN 
-[ it/PRP ]
-in/IN 
-[ the/DT final/JJ hour/NN ]
---/: 
-[ it/PRP ]
+[ 190.58/CD points/NNS ]NNt/PRP ]
 barely/RB managed/VBD to/TO stay/VB 
 [ this/DT side/NN ]
 of/IN 

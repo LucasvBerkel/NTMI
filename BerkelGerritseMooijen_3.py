@@ -172,7 +172,6 @@ def percentage_0_probability(sequence_dict):
 			counter+=1
 	return counter/total
 
-
 if __name__ == "__main__":
 	train_corpus = args.train_corpus
 	test_corpus = args.test_corpus
