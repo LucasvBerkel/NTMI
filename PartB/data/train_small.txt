@@ -1,1 +1,1 @@
-(NP (NNP Rolls-Royce) (NNP Motor) (NNPS Cars) (NNP Inc.))
+(ROOT (S (`` ``) (ADVP (RB Apparently)) (NP (DT the) (NN commission)) (VP (VBD did) (RB not) (ADVP (RB really)) (VP (VB believe) (PP (IN in) (NP (DT this) (NN ideal))))) (. .) ('' '')))
