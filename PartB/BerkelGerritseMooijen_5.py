@@ -1,5 +1,5 @@
 import re
-import ast # string to list literal
+import ast
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -7,9 +7,9 @@ parser.add_argument("-input", help="path to non-binarized file", type=str)
 parser.add_argument("-output", help="path to binarized file", type=str)
 args = parser.parse_args()
 
-# Converts the textfile to a list
+# Converts the text file to a list
 # Input(s):
-# - non_binarized_file, string which represents the path to the txt-file to be read
+# - non_binarized_file, string which represents the path to the text file to be read
 # Output(s):
 # - sentencelist, list containing unbinarized sencentes
 def convert_txt_to_sentencelist(non_binarized_file):
@@ -127,11 +127,15 @@ def writestatus(currentline, totallines):
 # Converts the list of binarized sentences to strings and writes to a text specified by path binarized_file
 # Input(s)
 # - binarizedlist, list containing binarized sencentes
-# - non_binarized_file, string which represents the path to the txt-file to be written to
+# - non_binarized_file, string which represents the path to the text file to be written to
 # Delivers no output(s) 
 def write_binarized_list_to_txt(binarizedlist, binarized_file):
+	print("Writting list to text file:")
 	with open(binarized_file, "w") as textfile:
-		for sentence in binarizedlist:
+		length = len(binarizedlist) 
+		for counter, sentence in enumerate(binarizedlist):
+			if ((counter % 100) == 0):
+				writestatus(counter, length)
 			sentence = ' '.join(map(str, [sentence]))
 			terminalList = re.findall("\[\S+,", sentence)
 			for terminal in terminalList:
@@ -145,8 +149,8 @@ def write_binarized_list_to_txt(binarizedlist, binarized_file):
 				sentence = sentence.replace(terminal, substitute)
 			sentence = sentence.replace(']', ')')
 			sentence = sentence.replace('),', ')')
-			textfile.write(sentence)
-
+			textfile.write(sentence + '\n\n')
+	print("Completed            ")
 
 if __name__ == "__main__":
 	non_binarized_file = args.input
