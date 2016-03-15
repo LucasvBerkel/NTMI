@@ -159,9 +159,15 @@ def write_binarized_list_to_txt(binarizedlist, binarized_file):
 	print("Completed            ")
 
 def vertical_markovization(sentencelist, v):
+	print("Add vertical markovization:")
 	verticalList = []
+	length = len(sentencelist)
+	counter = 0
 	for sentence in sentencelist:
+		counter += 1
+		writestatus(counter, length)
 		verticalList.append(verticalize_sentence(sentence,v))
+	print("Completed            ")
 	return verticalList
 
 def verticalize_sentence(sentence, v):
@@ -177,10 +183,17 @@ def verticalize_sentence(sentence, v):
 	return sentence
 
 def horizontal_markovization(sentencelist, h):
+	print("Add horizontal markovization:")
 	horizontalList = []
+	length = len(sentencelist)
+	counter = 0
 	for sentence in sentencelist:
+		counter += 1
+		writestatus(counter, length)
 		horizontalList.append(horizontalize_sentence(sentence,h))
+	print("Completed            ")
 	return horizontalList
+
 
 def horizontalize_sentence(sentence, h):
 	if isinstance(sentence[1], str):
@@ -194,11 +207,8 @@ def horizontalize_sentence(sentence, h):
 			rhs = "_" + "_".join(rhs[len(rhs)-h:])
 			sentence[2][0] = lhs + "->" + rhs
 		else:
-			# tempName = sentence[0].split("->")[0].replace("@","")
-			# name = "@" + tempName + "->_" + sentence[1][0]
-
-			name = "@" + sentence[0] + "->_" + sentence[1][0]
-
+			tempName = sentence[0].split("->")[0].replace("@","")
+			name = "@" + tempName + "->_" + sentence[1][0]
 			sentence[2] = [name, sentence[2]]
 		horizontalize_sentence(sentence[2], h)
 	return sentence
@@ -216,6 +226,5 @@ if __name__ == "__main__":
 		horizontallist = horizontal_markovization(binarizedlist, h)
 		# checkForBinarizeErrors(binarizedlist)
 		write_binarized_list_to_txt(horizontallist, binarized_file)
-		# write_binarized_list_to_txt(binarizedlist, binarized_file)
 	else:
 		parser.print_help()
