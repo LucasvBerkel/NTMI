@@ -47,7 +47,7 @@ def convert_txt_to_sentencelist(non_binarized_file):
 # - sentencelist, list containting unbinarized sentences
 # Output(s):
 # - binarizedlist, list containing binarized sencentes
-def binarizeSentenceList(sentencelist, h, v):
+def binarizeSentenceList(sentencelist):
 	print("Converting sentences to binarized sentences:")
 	binarizedlist = []
 	counter = 0
@@ -57,39 +57,11 @@ def binarizeSentenceList(sentencelist, h, v):
 			writestatus(counter, length)
 		counter += 1
 		binSentence = binarizeSentence(sentence)
-		verBinSen = verticalMarkovization(binSentence, v)
-		binarizedlist.append(verBinSen)
+		binarizedlist.append(binSentence)
+		# verBinSen = verticalMarkovization(binSentence, v)
+		# binarizedlist.append(verBinSen)
 	print("Completed            ")
 	return binarizedlist
-
-def verticalMarkovization(sentence, v):
-	name = sentence[0].split("^")
-	
-	if isinstance(sentence[1], str):
-		return sentence
-
-	if not isinstance(sentence[1][1], str):
-		if len(name) < v:
-			sentence[1][0] = "^".join(name) + "^" + sentence[1][0]
-		else:
-			sentence[1][0] = "^".join(name[len(name)-v+1]) + "^" + sentence[1][0]
-	sentence[1] = verticalMarkovization(sentence[1], v)
-
-	if len(sentence) > 2:
-		if not isinstance(sentence[2][1], str):
-			if len(name) < v:
-				sentence[2][0] = "^".join(name) + "^" + sentence[2][0]
-			else:
-				sentence[2][0] = "^".join(name[len(name)-v+1]) + "^" + sentence[2][0]
-		sentence[2] = verticalMarkovization(sentence[2], v)
-
-	return sentence
-
-
-# def horizontalMarkovization(sentence, h):
-
-
-
 
 # Function recieves unbinarized sentence and binarizes it, due to recursing also 
 # sub-sentences may be given as input
@@ -106,10 +78,11 @@ def binarizeSentence(sentence):
 		return sentence
 	if length > 3:
 		name = sentence[0]
-		if "|" in name:
-			name = name + "_" + sentence[1][0]
+		horName = sentence[1][0].split("^")[0]
+		if "->" in name:
+			name = name + "_" + horName
 		else:
-			name =  "@" + name + "|" + sentence[1][0]
+			name =  "@" + name + "->" + horName
 		sentence[2] = [name] + sentence[2:]
 	sentence[2] = binarizeSentence(sentence[2])
 	del sentence[3:]
@@ -185,6 +158,51 @@ def write_binarized_list_to_txt(binarizedlist, binarized_file):
 			textfile.write(sentence + '\n\n')
 	print("Completed            ")
 
+def vertical_markovization(sentencelist, v):
+	verticalList = []
+	for sentence in sentencelist:
+		verticalList.append(verticalize_sentence(sentence,v))
+	return verticalList
+
+def verticalize_sentence(sentence, v):
+	for children in sentence[1:]:
+		if isinstance(children, str):
+			return sentence
+		name = children[0] + "^" + sentence[0]
+		if len(name.split("^")) > v:
+			name = "^".join(name.split("^")[:v])
+		if not isinstance(children[1], str): 
+			children[0] = name
+		verticalize_sentence(children, v)
+	return sentence
+
+def horizontal_markovization(sentencelist, h):
+	horizontalList = []
+	for sentence in sentencelist:
+		horizontalList.append(horizontalize_sentence(sentence,h))
+	return horizontalList
+
+def horizontalize_sentence(sentence, h):
+	if isinstance(sentence[1], str):
+		return sentence
+	horizontalize_sentence(sentence[1], h)
+	if(len(sentence) == 3):
+		if "->" in sentence[2][0]:
+			parts = sentence[2][0].split("->") 
+			lhs = parts[0]
+			rhs = parts[1].split("_")
+			rhs = "_" + "_".join(rhs[len(rhs)-h:])
+			sentence[2][0] = lhs + "->" + rhs
+		else:
+			# tempName = sentence[0].split("->")[0].replace("@","")
+			# name = "@" + tempName + "->_" + sentence[1][0]
+
+			name = "@" + sentence[0] + "->_" + sentence[1][0]
+
+			sentence[2] = [name, sentence[2]]
+		horizontalize_sentence(sentence[2], h)
+	return sentence
+	
 if __name__ == "__main__":
 	h = args.hor
 	v = args.ver
@@ -193,8 +211,11 @@ if __name__ == "__main__":
 
 	if h and v and non_binarized_file and binarized_file:
 		sentencelist = convert_txt_to_sentencelist(non_binarized_file)
-		binarizedlist = binarizeSentenceList(sentencelist, h, v)
+		verticalList = vertical_markovization(sentencelist, v)
+		binarizedlist = binarizeSentenceList(verticalList)
+		horizontallist = horizontal_markovization(binarizedlist, h)
 		# checkForBinarizeErrors(binarizedlist)
-		write_binarized_list_to_txt(binarizedlist, binarized_file)
+		write_binarized_list_to_txt(horizontallist, binarized_file)
+		# write_binarized_list_to_txt(binarizedlist, binarized_file)
 	else:
 		parser.print_help()
