@@ -158,6 +158,12 @@ def write_binarized_list_to_txt(binarizedlist, binarized_file):
 			textfile.write(sentence + '\n\n')
 	print("Completed            ")
 
+# Takes a list of sentences and processes them individualy through vertical markovization
+# Input(s):
+# - sentencelist, list containing sentences not processed
+# - v, the degree of vertical history added to the nodes
+# Output(s):
+# - verticalList, list containing sentences which have been verticalized
 def vertical_markovization(sentencelist, v):
 	print("Add vertical markovization:")
 	verticalList = []
@@ -170,6 +176,12 @@ def vertical_markovization(sentencelist, v):
 	print("Completed            ")
 	return verticalList
 
+# Takes sentence and adjust every name of its children to the proper vertical history, works with recursion
+# Input(s):
+# - sentence, sentence to be verticalized
+# - v, the degree of vertical history added to the nodes
+# Output(s):
+# - sentence, verticalized sentence
 def verticalize_sentence(sentence, v):
 	for children in sentence[1:]:
 		if isinstance(children, str):
@@ -182,6 +194,13 @@ def verticalize_sentence(sentence, v):
 		verticalize_sentence(children, v)
 	return sentence
 
+# Takes a list of sentences and processes them individualy through horizontal markovization after it has been
+# verticalized and binarized
+# Input(s):
+# - sentencelist, list containing sentences not processed
+# - h, the degree of horizontal history added to the nodes
+# Output(s):
+# - horizontalList, list containing sentences which have been horizontalized
 def horizontal_markovization(sentencelist, h):
 	print("Add horizontal markovization:")
 	horizontalList = []
@@ -194,7 +213,12 @@ def horizontal_markovization(sentencelist, h):
 	print("Completed            ")
 	return horizontalList
 
-
+# Takes sentence and adjust every name of its children to the proper horizontal history, works with recursion
+# Input(s):
+# - sentence, sentence to be horizontalized
+# - h, the degree of horizontal history added to the nodes
+# Output(s):
+# - sentence, horizontalized sentence
 def horizontalize_sentence(sentence, h):
 	if isinstance(sentence[1], str):
 		return sentence
